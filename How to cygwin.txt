@@ -1,0 +1,106 @@
+User@LAPTOP-9OOC480I /
+$ cd C:/Users
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users
+$ ls -a
+ .   ..  'All Users'   Default  'Default User'   Public   User   desktop.ini   wgautilacc
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users
+$ cd desktop.ini
+-bash: cd: desktop.ini: Not a directory
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users
+$ cd User
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User
+$ ls -a
+ .                   BullseyeCoverageError.txt   NTUSER.DAT{9b89c8a1-c593-11eb-af2e-d1e0ba7aab39}.TxR.0.regtrans-ms                             SendTo
+ ..                  Contacts                    NTUSER.DAT{9b89c8a1-c593-11eb-af2e-d1e0ba7aab39}.TxR.1.regtrans-ms                             SomeLocalDir
+ .cache              Cookies                     NTUSER.DAT{9b89c8a1-c593-11eb-af2e-d1e0ba7aab39}.TxR.2.regtrans-ms                            'Start Menu'
+ .dbus-keyrings     'Creative Cloud Files'       NTUSER.DAT{9b89c8a1-c593-11eb-af2e-d1e0ba7aab39}.TxR.blf                                       Templates
+ .eclipse            Desktop                     NTUSER.DAT{9b89c8a2-c593-11eb-af2e-d1e0ba7aab39}.TM.blf                                        Tracing
+ .gitconfig          Documents                   NTUSER.DAT{9b89c8a2-c593-11eb-af2e-d1e0ba7aab39}.TMContainer00000000000000000001.regtrans-ms   Videos
+ .lemminx            Downloads                   NTUSER.DAT{9b89c8a2-c593-11eb-af2e-d1e0ba7aab39}.TMContainer00000000000000000002.regtrans-ms   eclipse
+ .m2                 Favorites                   NetHood                                                                                        eclipse-workspace
+ .opera              Links                       OneDrive                                                                                      'hanningcharlie@gmail.com Creative Cloud Files'
+ .p2                'Local Settings'             Pictures                                                                                       ntuser.dat.LOG1
+ .vscode             MicrosoftEdgeBackups        PrintHood                                                                                      ntuser.dat.LOG2
+'3D Objects'         Music                       Recent                                                                                         ntuser.ini
+ AppData            'My Documents'              'Saved Games'                                                                                   test
+'Application Data'   NTUSER.DAT                  Searches
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User
+$ cd Documents
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents
+$ ls -a
+ .                                                    GameMakerStudio2                                                         'Unorganised Uni Stuff'
+ ..                                                   GitHub                                                                    Wellbeing
+ 4421-engineer-5E-ver1.14_17AUGUST2015.pdf           'Indian Philosophy'                                                       'Wondershare Filmora 9'
+'Academic Transcript.pdf'                             Jobs                                                                      Work
+ Adobe                                               'Mariel is a damphyr turned vampire of the first order of vampires.docx'   Zoom
+ Audacity                                            'McAfee Vaults'                                                            desktop.ini
+'BWD cover letter.docx'                               Memes                                                                     dnd
+ BioWare                                             'My Games'                                                                'error theory paper write up.docx'
+'CURRICULUM VITAE 2021.docx'                         'My Music'                                                                 mcf.docx
+'CURRICULUM VITAE.docx'                              'My Pictures'                                                              meshes
+'Cabin in the Woods text adventure.docx'             'My Princess is Perfect.docx'                                             'text adventure.docx'
+ Cards                                               'My Videos'                                                                textures
+'Charlie Hanning - Ebsford Cover Letter.docx'        'NMM CLI'                                                                 '~$ arguments for a predictive.docx'
+"Charlie's Folder"                                   'Olivia Wilde'                                                            '~$RRICULUM VITAE.docx'
+'Coding projects'                                    'Paradox Interactive'                                                     '~$Synonyms.pptx'
+ Coursework                                          'Phil of Mind'                                                            '~$arlie Hanning - CV.docx'
+'Cover letter Wells Academy Yorkshire Limited.docx'  'Phil of Psych'                                                           '~$cond neo-stoic draft.docx'
+'Custom Office Templates'                            'Phil of Psych Paper'                                                     '~$istemology error thoery.docx'
+ Default.rdp                                          Physics                                                                  '~$mcf.docx'
+ Dissertation                                         Projects                                                                 '~$piosexual.docx'
+'Do arguments for a predictive.docx'                 'Proof of education.pdf'                                                  '~$pply desk.docx'
+ Downloads                                           'Proposition to become Human Resources Guy.docx'                          '~$ror theory paper write up.docx'
+'Dragon adventure.docx'                              'Quantum mechanics'                                                       '~$shaunessy.docx'
+'Emulated Games'                                      Scans                                                                    '~$ver note Wells Academy Yorkshire Limited.docx'
+'Epistemology error thoery.docx'                     'Sound recordings'                                                        '~$xt adventure.docx'
+'Existentialist texts'                               'Spectrum Cover Letter.docx'                                              '~WRL0170.tmp'
+ Finances                                            'Supply desk.docx'                                                        '~WRL0442.tmp'
+ Fonts                                               'The Witcher'
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents
+$ cd Projects
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects
+$ ls -a
+ .   ..  'New Workspace'  'OOD - Module 5 - Methods - testcases'  'TCG Neo'   poketcg2-master  '~$to do.xlsx'
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects
+$ cd TCG Neo
+-bash: cd: too many arguments
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects
+$ cd 'TCG Neo'
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects/TCG Neo
+$ ls -a
+ .              'Deck Pointers - new cards.txt'   FunctionsEffect.txt  'Neo Destiny.png'    Neo_Revelation.png   libpng16.dll         rgbasm.exe   rgblink.exe
+ ..             'Effect Commands.txt'            'My Card Data.txt'     Neo_Discovery.png  'Other Cards.rb'     'my poketcg-master'   rgbfix.exe  'to do.xlsx'
+'Card Data.rb'   Functions.txt                   'My Functions.txt'     Neo_Genesis.png    'empty gfx.png'       poketcg-master       rgbgfx.exe   zlib1.dll
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects/TCG Neo
+$ ls -a
+ .   'Card Data.rb'                   'Effect Commands.txt'   FunctionsEffect.txt  'My Functions.txt'   Neo_Discovery.png   Neo_Revelation.png  'empty gfx.png'  'my poketcg-master'  'to do.xlsx'
+ ..  'Deck Pointers - new cards.txt'   Functions.txt         'My Card Data.txt'    'Neo Destiny.png'    Neo_Genesis.png    'Other Cards.rb'      libpng16.dll     poketcg-master       zlib1.dll
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects/TCG Neo
+$ cd poketcg-master
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects/TCG Neo/poketcg-master
+$ Make
+-bash: Make: command not found
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects/TCG Neo/poketcg-master
+$ make
+-bash: make: command not found
+
+User@LAPTOP-9OOC480I /cygdrive/c/Users/User/Documents/Projects/TCG Neo/poketcg-master
+$
+
+
+/cygdrive/c/Documents and Settings/User/Documents/Projects/TCG Neo/neo-master

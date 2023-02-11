@@ -1,0 +1,1661 @@
+DeckPointers: ; 30000 (c:4000)
+	db UnnamedDeck
+	db UnnamedDeck2
+	db SamsPracticeDeck
+	db PracticePlayerDeck
+	db CyndaquilAndFriendsDeck
+	db CyndaquilExtraDeck
+	db TotodileAndFriendsDeck
+	db TotodileExtraDeck
+	db ChikoritaAndFriendsDeck
+	db ChikoritaExtraDeck
+	db LightningAndFireDeck
+	db WaterAndFightingDeck
+	db GrassAndPsychicDeck
+	db LegendaryEnteiDeck
+	db LegendaryRaikouDeck
+	db LegendarySuicuneDeck
+	db LugiaAndHoOhDeck
+	db RiversideDeck
+	db AuguryDeck
+	db MemoriesOfYouthDeck
+	db EcholocationDeck
+	db EveelutionsDeck
+	db PredatorDeck
+	db ExcavationDeck
+	db DamageVariationDeck
+	db ImRonaldDeck
+	db PowerfulRonaldDeck
+	db InvincibleRonaldDeck
+	db LegendaryRonaldDeck
+	db VersatilityDeck
+	db CertainDeathDeck
+	db ToxicSpikesDeck
+	db CephalopodDeck
+	db MonstrosityDeck
+	db EnergyManipulationDeck
+	db DefibrillationDeck
+	db MetamorphosisDeck
+	db DancePlantsDeck
+	db PikachuDeck
+	db BenchHazardDeck
+	db WaterMemoryDeck
+	db InvincibilityDeck
+	db GardeningDeck
+	db BabylutionsDeck
+	db BenchLuckDeck
+	db BabySpinnerDeck
+	db CambrianHustleDeck
+	db BlisseyStallDeck
+	db NoRetreatDeck
+	db OvertideDeck
+	db ElectromagneticDeck
+	db FlamethrowerDeck
+	db EarthquakeDeck
+	db ImakuniDeck
+	db NULL
+
+UnnamedDeck: ; 30070 (c:4070)
+	db 20, PSYCHIC_ENERGY
+	db 4, SLOWPOKE
+	db 4, CLEFAIRY
+	db 4, CELEBI2
+	db 4, HOOTHOOT
+	db 2, NOCTOWL
+	db 2, DELIBIRD
+	db 2, NEW_POKEDEX
+	db 2, MARY
+	db 2, PROFESSOR_ELM
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, SUPER_ENERGY_RETRIEVAL
+	db 2, ENERGY_ARK
+	db 2, POKEMON_BREEDER_FIELDS
+	db 2, TEAM_ROCKETS_EVIL_DEEDS
+	db 1, SUPER_SCOOP_UP
+	db 1, DEVOLUTION_SPRAY
+	db 1, HEAL_POWDER
+	db 1, MOOMOO_MILK
+	db 0 ; end
+
+; 30097 (c:4097)
+	db 8, LIGHTNING_ENERGY
+	db 8, GRASS_ENERGY
+	db 4, RAICHU2
+	db 4, MAGNEMITE
+	db 4, MAGNETON
+	db 4, PIKACHU
+	db 4, RAICHU
+	db 4, EEVEE
+	db 4, CATERPIE
+	db 4, METAPOD
+	db 4, BUTTERFREE
+	db 4, HERACROSS
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 300b2 (c:40b2)
+	db 24, FIRE_ENERGY
+	db 4, DUNSPARCE
+	db 4, CYNDAQUIL2
+	db 4, PORYGON
+	db 4, GASTLY2
+	db 4, PORYGON_TWO
+	db 4, MILKTANK
+	db 2, ENERGY_ARK
+	db 2, MARY
+	db 2, OLD_ROD
+	db 2, PROFESSOR_ELM
+	db 2, POKEMON_BREEDER_FIELDS
+	db 2, SUPER_SCOOP_UP
+	db 1, HEAL_POWDER
+	db 1, MOOMOO_MILK
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 300d3 (c:40d3)
+	db 4, PSYCHIC_ENERGY
+	db 4, FIGHTING_ENERGY
+	db 4, WEEDLE
+	db 4, GEODUDE
+	db 4, GRAVELER
+	db 4, SLOWPOKE
+	db 4, SLOWKING
+	db 4, ESPEON2
+	db 4, EEVEE
+	db 4, IGGLYBUFF
+	db 4, JIGGLYPUFF
+	db 4, CHANSEY
+	db 4, BLISSEY
+	db 4, DUNSPARCE
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 300f2 (c:40f2)
+	db 10, PSYCHIC_ENERGY
+	db 12, LIGHTNING_ENERGY
+	db 2, NATU1
+	db 2, NATU2
+	db 2, XATU1
+	db 1, XATU2
+	db 2, CELEBI2
+	db 2, ELEKID
+	db 2, ELECTABUZZ
+	db 2, PICHU
+	db 2, PIKACHU
+	db 1, RAICHU
+	db 2, RAIKOU2
+	db 2, CHINCHOU1
+	db 2, LANTURN1
+	db 4, AIPOM1
+	db 3, SMEARGLE
+	db 2, SUDOWOODO2
+	db 1, PROFESSOR_ELM
+	db 2, POKEMON_BREEDER_FIELDS
+	db 2, BILLS_TELEPORTER
+	db 0 ; end
+
+; 3011d (c:411d)
+	db 10, PSYCHIC_ENERGY
+	db 10, LIGHTNING_ENERGY
+	db 4, SUDOWOODO2
+	db 4, SLOWPOKE
+	db 4, SLOWKING
+	db 4, NATU1
+	db 4, XATU2
+	db 4, WOBBUFFET
+	db 4, MAGNEMITE
+	db 4, MAGNETON
+	db 4, ELECTABUZZ
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 30136 (c:4136)
+	db 24, FIRE_ENERGY
+	db 4, TOGEPI
+	db 4, TOGETIC
+	db 4, FARFETCHD
+	db 4, SLUGMA
+	db 4, DUNSPARCE
+	db 4, SENTRET2
+	db 4, FURRET
+	db 4, POKEMON_BREEDER_FIELDS
+	db 2, SUPER_SCOOP_UP
+	db 1, HEAL_POWDER
+	db 1, MOOMOO_MILK
+	db 0 ; end
+
+; 3014f (c:414f)
+	db 20, PSYCHIC_ENERGY
+	db 4, SLOWPOKE
+	db 4, SLOWKING
+	db 4, CLEFAIRY
+	db 4, HOOTHOOT
+	db 4, PORYGON
+	db 4, DUNSPARCE
+	db 4, GIRAFARIG
+	db 4, CELEBI2
+	db 4, MISDREAVUS
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 30166 (c:4166)
+	db 24, PSYCHIC_ENERGY
+	db 4, SLOWPOKE
+	db 4, SLOWKING
+	db 4, CLEFAIRY
+	db 4, CELEBI2
+	db 4, NATU1
+	db 4, HOOTHOOT
+	db 4, PORYGON
+	db 4, SNUBBULL1
+	db 4, GRANBULL
+	db 0 ; end
+
+; 3017b (c:417b)
+	db 24, PSYCHIC_ENERGY
+	db 4, SLOWPOKE
+	db 4, CLEFAIRY
+	db 4, CELEBI2
+	db 4, NATU1
+	db 4, XATU1
+	db 4, SENTRET1
+	db 4, PORYGON
+	db 4, POKEMON_BREEDER_FIELDS
+	db 2, SUPER_SCOOP_UP
+	db 1, HEAL_POWDER
+	db 1, MOOMOO_MILK
+	db 0 ; end
+
+; 30194 (c:4194)
+	db 24, PSYCHIC_ENERGY
+	db 4, ONIX
+	db 4, STEELIX
+	db 4, GEODUDE
+	db 4, NATU1
+	db 4, XATU1
+	db 4, SENTRET2
+	db 4, POKEMON_BREEDER_FIELDS
+	db 2, MAGNIFIER
+	db 2, DOUBLE_GUST
+	db 2, SUPER_SCOOP_UP
+	db 1, HEAL_POWDER
+	db 1, MOOMOO_MILK
+	db 0 ; end
+
+; 301af (c:41af)
+	db 12, LIGHTNING_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, ELECTABUZZ
+	db 4, MAGNEMITE
+	db 4, EEVEE
+	db 4, UMBREON2
+	db 4, MURKROW1
+	db 4, PIKACHU
+	db 4, RAICHU
+	db 4, MAREEP1
+	db 4, MAREEP2
+	db 4, FLAAFFY1
+	db 4, AMPHAROS1
+	db 0 ; end
+
+; 301ca (c:41ca)
+	db 24, FIGHTING_ENERGY
+	db 4, HITMONTOP
+	db 4, SUDOWOODO1
+	db 4, PHANPY
+	db 4, SNUBBULL1
+	db 4, SENTRET1
+	db 4, DELIBIRD
+	db 2, NEW_POKEDEX
+	db 2, MAGNIFIER
+	db 2, MAX_REVIVE
+	db 2, DOUBLE_GUST
+	db 2, SUPER_SCOOP_UP
+	db 1, HEAL_POWDER
+	db 1, MOOMOO_MILK
+	db 0 ; end
+
+UnnamedDeck2: ; 301e7 (c:41e7)
+	db 4, FIRE_ENERGY
+	db 20, GRASS_ENERGY
+	db 2, KANGASKHAN
+	db 4, ODDISH
+	db 2, GLOOM
+	db 2, BELLOSSOM
+	db 4, CHIKORITA1
+	db 3, BAYLEEF2
+	db 4, MEGANIUM2
+	db 3, CYNDAQUIL2
+	db 2, QUILAVA2
+	db 2, POKEMON_BREEDER_FIELDS
+	db 2, CHANSEY
+	db 2, SUPER_ENERGY_RETRIEVAL
+	db 2, PROFESSOR_ELM
+	db 2, DOUBLE_GUST
+	db 2, DOUBLE_COLORLESS_ENERGY
+	db 0 ; end
+
+; 3020a (c:420a)
+	db 4, FIRE_ENERGY
+	db 20, GRASS_ENERGY
+	db 4, MILKTANK
+	db 4, CHIKORITA2
+	db 3, BAYLEEF1
+	db 2, MEGANIUM1
+	db 4, CYNDAQUIL1
+	db 3, QUILAVA2
+	db 2, TYPHLOSION1
+	db 3, POKEMON_BREEDER_FIELDS
+	db 3, MASTER_BALL
+	db 2, SUPER_ENERGY_RETRIEVAL
+	db 2, PROFESSOR_ELM
+	db 2, DOUBLE_GUST
+	db 2, DOUBLE_COLORLESS_ENERGY
+	db 0 ; end
+
+; 30229 (c:4229)
+	db 4, PSYCHIC_ENERGY
+	db 4, FIGHTING_ENERGY
+	db 4, CELEBI2
+	db 4, PHANPY
+	db 4, DONPHAN
+	db 4, LUGIA1
+	db 4, STANTLER1
+	db 4, SNUBBULL2
+	db 4, GRANBULL
+	db 4, AIPOM2
+	db 4, HOOTHOOT
+	db 4, NOCTOWL
+	db 4, FARFETCHD
+	db 4, JIGGLYPUFF
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 30248 (c:4248)
+	db 24, GRASS_ENERGY
+	db 4, CLEFAIRY
+	db 4, CLEFFA
+	db 4, CATERPIE
+	db 4, FOSSIL_EGG
+	db 4, SCYTHER
+	db 4, PARAS
+	db 4, JIGGLYPUFF
+	db 4, WEEDLE
+	db 4, AERODACTYL
+	db 0 ; end
+
+; 3025d (c:425d)
+	db 8, LIGHTNING_ENERGY
+	db 8, GRASS_ENERGY
+	db 4, RAIKOU2
+	db 4, MAGNEMITE
+	db 4, MAGNETON
+	db 4, YANMA
+	db 4, SPINARAK2
+	db 4, ARIADOS
+	db 4, CHIKORITA1
+	db 4, BAYLEEF1
+	db 4, MEGANIUM2
+	db 4, CLEFFA
+	db 4, POKEMON_BREEDER
+	db 0 ; end
+
+; 30278 (c:4278)
+	db 24, FIRE_ENERGY
+	db 4, MAGMAR
+	db 4, ENTEI1
+	db 4, HOUNDOUR1
+	db 4, EEVEE
+	db 4, CYNDAQUIL2
+	db 4, SLUGMA
+	db 4, MURKROW2
+	db 4, UMBREON2
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 3028d (c:428d)
+	db 20, GRASS_ENERGY
+	db 4, CATERPIE
+	db 4, FOSSIL_EGG
+	db 4, POKEMON_BREEDER_FIELDS
+	db 4, STARYU
+	db 4, JIGGLYPUFF
+	db 4, WEEDLE
+	db 4, AERODACTYL
+	db 4, CHIKORITA2
+	db 4, BAYLEEF1
+	db 4, MEGANIUM1
+	db 0 ; end
+
+; 302a4 (c:42a4)
+	db 24, GRASS_ENERGY
+	db 4, MAGNIFIER
+	db 4, BILLS_TELEPORTER
+	db 4, MOOMOO_MILK
+	db 4, CATERPIE
+	db 4, HERACROSS
+	db 4, SCYTHER
+	db 4, PARAS
+	db 4, PARASECT
+	db 4, WEEDLE
+	db 0 ; end
+
+; 302b9 (c:42b9)
+	db 24, WATER_ENERGY
+	db 4, FERALIGATR1
+	db 4, TOTODILE1
+	db 4, HORSEA
+	db 4, CROCONAW1
+	db 4, POLIWAG
+	db 4, FOSSIL_EGG
+	db 4, SEADRA
+	db 4, AERODACTYL
+	db 4, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+
+; 302ce (c:42ce)
+	db 24, WATER_ENERGY
+	db 4, FERALIGATR1
+	db 4, CROCONAW2
+	db 4, TOTODILE2
+	db 4, GOLDEEN
+	db 4, SEAKING
+	db 4, POLIWAG
+	db 4, FOSSIL_EGG
+	db 4, AERODACTYL
+	db 4, MOOMOO_MILK
+	db 0 ; end
+
+; 302e3 (c:42e3)
+	db 24, GRASS_ENERGY
+	db 4, HERACROSS
+	db 4, ZUBAT
+	db 4, GOLBAT
+	db 4, CROBAT
+	db 4, FARFETCHD
+	db 4, JIGGLYPUFF
+	db 4, MOOMOO_MILK
+	db 3, MAGNIFIER
+	db 2, PROFESSOR_ELM
+	db 3, BILLS_TELEPORTER
+	db 0 ; end
+
+; 302fa (c:42fa)
+	db 12, LIGHTNING_ENERGY
+	db 4, MAREEP1
+	db 4, ELECTABUZZ
+	db 4, MAGNEMITE
+	db 4, FLAAFFY1
+	db 4, RAIKOU2
+	db 4, AMPHAROS1
+	db 4, PIKACHU
+	db 4, RAICHU
+	db 4, PICHU
+	db 4, CHINCHOU1
+	db 4, LANTURN1
+	db 4, ELECTABUZZ
+	db 0 ; end
+
+; 30315 (c:4315)
+	db 4, RAICHU
+	db 4, MAGNEMITE
+	db 4, MAGNETON
+	db 24, WATER_ENERGY
+	db 4, SEAKING
+	db 4, OMASTAR
+	db 4, OMANYTE
+	db 4, CROCONAW1
+	db 4, FERALIGATR1
+	db 4, KABUTO
+	db 4, KINGDRA1
+	db 4, GOLDEEN
+	db 4, JYNX
+	db 0 ; end
+
+; 30330 (c:4330)
+	db $4544
+	db $4d52
+	db $4c5b
+	db $4156
+	db $4a51
+	db $4753
+	db $4648
+	db $4e4b
+	db $5e55
+	db $5949
+
+PracticePlayerDeck: ; 30344 (c:4344)
+	db 2, WATER_ENERGY
+	db 1, PSYCHIC_ENERGY
+	db 1, SEAKING
+	db 1, STARYU
+	db 1, HEAL_POWDER
+	db 1, GOLDEEN
+	db 5, WATER_ENERGY
+	db 1, SLOWPOKE
+	db 1, POTION
+	db 1, SEAKING
+	db 1, STARMIE
+	db 1, WATER_ENERGY
+	db 1, BILLS_TELEPORTER
+	db 1, PSYCHIC_ENERGY
+	db 1, JYNX
+	db 1, TOTODILE1
+	db 1, WATER_ENERGY
+	db 1, TOTODILE1
+	db 1, WATER_ENERGY
+	db 1, PSYCHIC_ENERGY
+	db 1, CROCONAW1
+	db 1, BILLS_TELEPORTER
+	db 1, WATER_ENERGY
+	db 1, FERALIGATR1
+	db 1, WATER_ENERGY
+	db 1, PSYCHIC_ENERGY
+	db 1, WATER_ENERGY
+	db 1, PSYCHIC_ENERGY
+	db 1, SENTRET
+	db 1, NATU1
+	db 1, PSYCHIC_ENERGY
+	db 1, SLOWKING
+	db 1, WATER_ENERGY
+	db 1, PSYCHIC_ENERGY
+	db 1, MARILL
+	db 1, PSYCHIC_ENERGY
+	db 1, XATU1
+	db 1, MOOMOO_MILK
+	db 1, PSYCHIC_ENERGY
+	db 1, SLOWPOKE
+	db 1, PSYCHIC_ENERGY
+	db 1, SENTRET
+	db 1, GOLDEEN
+	db 1, MARILL
+	db 1, AZUMARILL
+	db 1, GOLDEEN
+	db 1, STARYU
+	db 1, MANTINE
+	db 1, NATU1
+	db 1, SLOWPOKE
+	db 1, SLOWKING
+	db 1, SENTRET
+	db 1, FURRET
+	db 1, FURRET
+	db 1, XATU1
+	db 0 ; end
+	tx PracticePlayerDeckName
+
+SamsPracticeDeck: ; 303b5 (c:43b5)
+	db 2, LIGHTNING_ENERGY
+	db 2, FIGHTING_ENERGY
+	db 1, GEODUDE
+	db 1, FURRET
+	db 1, LIGHTNING_ENERGY
+	db 2, FIGHTING_ENERGY
+	db 1, LIGHTNING_ENERGY
+	db 1, SENTRET
+	db 2, FIGHTING_ENERGY
+	db 1, GEODUDE
+	db 1, FIGHTING_ENERGY
+	db 1, FURRET
+	db 1, LIGHTNING_ENERGY
+	db 1, GEODUDE
+	db 1, BILLS_TELEPORTER
+	db 1, FIGHTING_ENERGY
+	db 1, SWINUB2
+	db 1, PILOSWINE2
+	db 1, FIGHTING_ENERGY
+	db 1, GRAVELER
+	db 1, LIGHTNING_ENERGY
+	db 1, LIGHTNING_ENERGY
+	db 1, DOUBLE_GUST
+	db 1, ELEKID
+	db 1, LIGHTNING_ENERGY
+	db 1, ELECTABUZZ
+	db 1, FIGHTING_ENERGY
+	db 1, HITMONTOP
+	db 1, LIGHTNING_ENERGY
+	db 1, PROFESSOR_OAK
+	db 1, FIGHTING_ENERGY
+	db 1, EEVEE
+	db 1, FIGHTING_ENERGY
+	db 1, DOUBLE_COLORLESS_ENERGY
+	db 1, PIKACHU
+	db 1, LIGHTNING_ENERGY
+	db 1, PIKACHU
+	db 1, LIGHTNING_ENERGY
+	db 1, MOOMOO_MILK
+	db 1, LIGHTNING_ENERGY
+	db 1, PIKACHU
+	db 1, LIGHTNING_ENERGY
+	db 1, RAICHU
+	db 1, RAICHU
+	db 1, LIGHTNING_ENERGY
+	db 1, ELEKID
+	db 1, SWINUB2
+	db 1, GEODUDE
+	db 1, GRAVELER
+	db 1, ONIX
+	db 1, PHANPY
+	db 1, PHANPY
+	db 1, DONPHAN
+	db 1, SENTRET
+	db 1, EEVEE
+	db 1, EEVEE
+	db 0 ; end
+	tx SamsPracticeDeckName
+
+CyndaquilAndFriendsDeck: ; 30428 (c:4428)
+	db 10, FIRE_ENERGY
+	db 8, LIGHTNING_ENERGY
+	db 6, FIGHTING_ENERGY
+	db 2, CYNDAQUIL2
+	db 1, QUILAVA1
+	db 1, TYPHLOSION1
+	db 2, SLUGMA
+	db 2, HOUNDOUR1
+	db 1, HOUNDOOM1
+	db 1, MAGMAR
+	db 1, ELECTABUZZ
+	db 2, PIKACHU
+	db 1, RAICHU
+	db 1, RAIKOU2
+	db 2, PHANPY	
+	db 1, DONPHAN
+	db 1, GEODUDE
+	db 1, GRAVELER
+	db 2, SENTRET1
+	db 1, FURRET
+	db 1, SNUBBULL1
+	db 2, MAGNEMITE
+	db 1, MAGNETON
+	db 2, HEAL_POWDER
+	db 1, MASTER_BALL
+	db 1, PROFESSOR_ELM
+	db 1, DOUBLE_GUST
+	db 2, MAGNIFIER
+	db 1, MAX_REVIVE
+	db 1, NEW_POKEDEX
+	db 0 ; end
+	tx CyndaquilAndFriendsDeckName
+
+CyndaquilExtraDeck: ; 30465 (c:4465)
+	db 4, GRASS_ENERGY
+	db 4, WATER_ENERGY
+	db 3, PSYCHIC_ENERGY
+	db 1, CHIKORITA2
+	db 1, BAYLEEF1
+	db 2, TEDDIURSA
+	db 2, CATERPIE
+	db 1, METAPOD
+	db 1, YANMA
+	db 1, AIPOM1
+	db 1, SMOOCHUM
+	db 2, MARILL
+	db 1, AZUMARILL
+	db 2, GOLDEEN
+	db 1, SEAKING
+	db 2, NATU1
+	db 1, XATU1
+	db 30, GRASS_ENERGY ; irrelevant
+	db 0 ; end
+	tx CyndaquilExtraDeckName
+
+TotodileAndFriendsDeck: ; 3048c (c:448c)
+	db 11, WATER_ENERGY
+	db 6, FIGHTING_ENERGY
+	db 8, PSYCHIC_ENERGY
+	db 2, TOTODILE2
+	db 1, CROCONAW2
+	db 1, FERALIGATR1
+	db 2, MARILL
+	db 1, AZUMARILL
+	db 1, STARYU
+	db 1, STARMIE
+	db 1, GOLDEEN
+	db 1, SEAKING
+	db 1, MANTINE
+	db 2, NATU1
+	db 1, XATU2
+	db 2, SMOOCHUM
+	db 1, JYNX
+	db 2, GEODUDE
+	db 1, GRAVELER
+	db 1, HITMONTOP
+	db 2, SENTRET
+	db 1, FURRET
+	db 1, ONIX
+	db 2, HEAL_POWDER
+	db 1, MASTER_BALL
+	db 1, PROFESSOR_ELM
+	db 1, DOUBLE_GUST
+	db 2, MAGNIFIER
+	db 1, MAX_REVIVE
+	db 1, NEW_POKEDEX
+	db 0 ; end
+	tx TotodileAndFriendsDeckName
+
+TotodileExtraDeck: ; 304cf (c:44cf)
+	db 3, GRASS_ENERGY
+	db 4, FIRE_ENERGY
+	db 4, LIGHTNING_ENERGY
+	db 2, TEDDIURSA
+	db 1, AIPOM1
+	db 1, CATERPIE
+	db 1, METAPOD
+	db 1, WEEDLE
+	db 1, KAKUNA
+	db 1, YANMA
+	db 2, CYNDAQUIL1
+	db 1, QUILAVA2
+	db 1, MAGMAR
+	db 1, HOUNDOUR1
+	db 1, HOUNDOOM1
+	db 2, PIKACHU
+	db 1, MAGNEMITE
+	db 1, MAGNETON
+	db 1, ELECTABUZZ
+	db 30, GRASS_ENERGY ; irrelevant
+	db 0 ; end
+	tx TotodileExtraDeckName
+
+ChikoritaAndFriendsDeck: ; 304fa (c:44fa)
+	11, GRASS_ENERGY
+	3, FIRE_ENERGY
+	9, WATER_ENERGY
+	2, CHIKORITA1
+	1, BAYLEEF2
+	1, MEGANIUM2
+	2, TEDDIURSA
+	1, URSARING
+	2, CATERPIE
+	1, METAPOD
+	2, SUNKERN
+	1, SUNFLORA
+	2, PARAS
+	1, PARASECT
+	2, GOLDEEN
+	1, SEAKING
+	1, MAGBY
+	1, MAGMAR
+	1, STANTLER1
+	2, MARILL
+	1, AZUMARILL
+	1, AIPOM1
+	1, DUNSPARCE
+	1, YANMA
+	2, HEAL_POWDER
+	1, MASTER_BALL
+	1, PROFESSOR_ELM
+	1, DOUBLE_GUST
+	2, MAGNIFIER
+	1, MAX_REVIVE
+	1, NEW_POKEDEX
+	db 0 ; end
+	tx ChikoritaAndFriendsDeckName
+
+ChikoritaExtraDeck: ; 3053b (c:453b)
+	db 4, LIGHTNING_ENERGY
+	db 4, PSYCHIC_ENERGY
+	db 3, FIGHTING_ENERGY
+	db 2, PIKACHU
+	db 1, RAICHU
+	db 1, MAGNEMITE
+	db 1, MAGNETON
+	db 1, ELECTABUZZ
+	db 2, NATU1
+	db 1, XATU1
+	db 1, JYNX
+	db 2, STARYU
+	db 1, STARMIE
+	db 1, GEODUDE
+	db 1, GRAVELER
+	db 1, HITMONTOP
+	db 1, BILLS_TELEPORTER
+	db 2, HEAL_POWDER
+	db 1, DOUBLE_GUST
+	db 30, GRASS_ENERGY ; irrelevant
+	db 0 ; end
+	tx ChikoritaExtraDeckName
+
+LightningAndFireDeck: ; 30564 (c:4564)
+	db 10, FIRE_ENERGY
+	db 10, LIGHTNING_ENERGY
+	db 2, DOUBLE_COLORLESS_ENERGY
+	db 2, CYNDAQUIL1
+	db 1, QUILAVA1
+	db 1, TYPHLOSION1
+	db 2, HOUNDOUR1
+	db 1, HOUNDOOM1
+	db 2, SLUGMA
+	db 1, MAGCARGO
+	db 1, MAGBY
+	db 1, MAGMAR
+	db 1, PICHU
+	db 1, PIKACHU
+	db 1, RAICHU
+	db 2, MAGNEMITE
+	db 1, MAGNETON
+	db 3, CHINCHOU1
+	db 1, LANTURN1
+	db 1, LANTURN2
+	db 2, SENTRET
+	db 1, FURRET
+	db 1, PROFESSOR_ELM
+	db 2, BILLS_TELEPORTER
+	db 2, ENERGY_ARK
+	db 2, DOUBLE_GUST
+	db 2, MAGNIFIER
+	db 2, MOOMOO_MILK
+	db 1, HEAL_POWDER
+	db 0 ; end
+	tx LightningAndFireDeckName
+
+WaterAndFightingDeck: ; 305a1 (c:45a1)
+	db 12, WATER_ENERGY
+	db 10, FIGHTING_ENERGY
+	db 2, DOUBLE_COLORLESS_ENERGY
+	db 2, POLIWAG
+	db 1, POLIWHIRL
+	db 1, POLITOED
+	db 2, REMORAID
+	db 1, OCTILLERY
+	db 2, GOLDEEN
+	db 1, SEAKING
+	db 2, STARYU
+	db 1, STARMIE
+	db 2, GEODUDE
+	db 1, GRAVELER
+	db 3, SWINUB2
+	db 2, PILOSWINE2
+	db 1, POLIWRATH
+	db 1, HITMONTOP
+	db 2, PHANPY
+	db 1, DONPHAN
+	db 1, PROFESSOR_ELM
+	db 2, BILLS_TELEPORTER
+	db 2, ENERGY_ARK
+	db 3, MOOMOO_MILK
+	db 2, HEAL_POWDER
+	db 0 ; end
+	tx WaterAndFightingDeckName
+
+GrassAndPsychicDeck: ; 305d6 (c:45d6)
+	db 12, GRASS_ENERGY
+	db 12, PSYCHIC_ENERGY
+	db 2, WEEDLE
+	db 1, KAKUNA
+	db 1, BEEDRILL
+	db 2, LEDYBA
+	db 1, LEDIAN
+	db 2, PARAS
+	db 1, PARASECT
+	db 2, SUNKERN
+	db 1, SUNFLORA
+	db 1, HERACROSS
+	db 3, NATU2
+	db 2, XATU2
+	db 3, GIRAFARIG
+	db 2, SMOOCHUM
+	db 1, JYNX
+	db 1, FARFETCHD
+	db 1, MILTANK
+	db 2, BILLS_TELEPORTER
+	db 2, ENERGY_ARK
+	db 2, DOUBLE_GUST
+	db 2, HEAL_POWDER
+	db 2, MOOMOO_MILK
+	db 0 ; end
+	tx GrassAndPsychicDeckName
+
+LegendaryEnteiDeck: ; 30609 (c:4609)
+	db 18 FIRE_ENERGY
+	db 2, METAL_ENERGY
+	db 4, SLUGMA
+	db 4, MAGCARGO
+	db 4, ENTEI2
+	db 2, CLEFFA
+	db 4, PROFESSOR_ELM
+	db 4, BILLS_TELEPORTER
+	db 4, MASTER_BALL
+	db 4, DOUBLE_GUST
+	db 4, SUPER_SCOOP_UP
+	db 2, ENERGY_ARK
+	db 2, ENERGY_CHARGE
+	db 2, POKEGEAR
+	db 0 ; end
+	tx LegendaryEnteiDeckName
+
+LegendaryRaikouDeck: ; 30630 (c:4630)
+	db 17, LIGHTNING_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, RAIKOU1
+	db 2, CLEFFA
+	db 2, ELEKID
+	db 4, SNEASEL1
+	db 2, MURKROW1
+	db 4, PROFESSOR_ELM
+	db 2, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, HEAL_POWDER
+	db 2, MAGNIFIER
+	db 4, NEW_POKEDEX
+	db 4, MARY
+	db 3, MASTER_BALL
+	db 0 ; end
+	tx LegendaryRaikouDeckName
+
+LegendarySuicuneDeck: ; 30651 (c:4651)
+	db 22, WATER_ENERGY
+	db 4, TOTODILE1
+	db 4, CROCONAW2
+	db 3, FERALIGATR2
+	db 4, SUICUNE1
+	db 2, CLEFFA
+	db 1, MAGBY
+	db 4, PROFESSOR_ELM
+	db 4, DOUBLE_GUST
+	db 4, ENERGY_ARK
+	db 4, MOOMOO_MILK
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, OLD_ROD
+	db 0 ; end
+	tx LegendarySuicuneDeckName
+
+LugiaAndHoOhDeck: ; 30670 (c:4670)
+	db 7, FIRE_ENERGY
+	db 7, WATER_ENERGY
+	db 7, LIGHTNING_ENERGY
+	db 3, PSYCHIC_ENERGY
+	db 3, FIGHTING_ENERGY
+	db 4, LUGIA2
+	db 4, HO-OH2
+	db 4, PORYGON
+	db 3, PORYGON_TWO
+	db 1, SUICUNE1
+	db 1, ENTEI2
+	db 1, RAIKOU1
+	db 2, ENEGY_AMPLIFIER
+	db 2, SUPER_ENERGY_RETRIEVAL
+	db 2, ENERGY_ARK
+	db 4, PROFESSOR_ELM
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, TEAM_ROCKETS_EVIL_DEEDS
+	db 1, MOOMOO_MILK
+	db 0 ; end
+	tx LugiaAndHoOhDeckName
+
+RiversideDeck: ; 30699 (c:4699)
+	db 11, WATER_ENERGY
+	db 5, FIGHTING_ENERGY
+	db 4, POLIWAG
+	db 4, POLIWHIRL
+	db 4, POLITOED
+	db 2, POLIWRATH
+	db 4, WOOPER1
+	db 4, QUAGSIRE2
+	db 4, POKEMON_BREEDER_FIELDS
+	db 2, SUPER_ROD
+	db 4, POKEMON_MARCH
+	db 4, MASTER_BALL
+	db 4, HEAL_POWDER
+	db 4, OLD_ROD
+	db 0 ; end
+	tx RiversideDeckName
+
+AuguryDeck: ; 306b8 (c:46b8)
+	db 4, DOUBLE_COLORLESS_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 2, MURKROW2
+	db 2, MURKROW1
+	db 4, MASTER_BALL
+	db 4, HOOTHOOT
+	db 4, FARFETCHD
+	db 4, POKEMON MARCH
+	db 4, NATU2
+	db 4, XATU1
+	db 4, MAX_REVIVE
+	db 4, PROFESSOR_ELM
+	db 4, OLD_ROD
+	db 4, DOUBLE_GUST
+	db 3, NOCTOWL
+	db 1, MOOMOO_MILK
+	db 0 ; end
+	tx AuguryDeckName
+
+MemoriesOfYouthDeck: ; 306dd (c:46dd)
+	db 9, WATER_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, HORSEA
+	db 4, SEADRA
+	db 4, KINGDRA2
+	db 3, CLEFFA
+	db 3, PICHU
+	db 1, MAGBY
+	db 4, PROFESSOR_ELM
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, DOUBLE_GUST
+	db 3, BILLS_TELEPORTER
+	db 4, MOOMOO_MILK
+	db 3, HEAL_POWDER
+	db 4, MASTER_BALL
+	db 2, POKEGEAR
+	db 0 ; end
+	tx MemoriesOfYouthDeckName
+
+EcholocationDeck: ; 30704 (c:4704)
+	db 15, GRASS_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, ZUBAT
+	db 4, GOLBAT
+	db 4, CROBAT
+	db 3, CLEFFA
+	db 3, PICHU
+	db 1, MAGBY
+	db 4, PROFESSOR_ELM
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, MASTER_BALL
+	db 1, SUPER_ENERGY_RETRIEVAL
+	db 2, BILLS_TELEPORTER
+	db 2, MAX_REVIVE
+	db 2, HEAL_POWDER
+	db 3, MOOMOO_MILK
+	db 0 ; end
+	tx EcholocationDeckName
+
+EeveelutionsDeck: ; 30725 (c:4725)
+	db 4, DARKNESS_ENERGY
+	db 5, PSYCHIC_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, CLEFFA
+	db 4, EEVEE
+	db 3, ESPEON2
+	db 3, UMBREON1
+	db 3, PORYGON
+	db 2, PORYGON2
+	db 1, WOBBUFFET
+	db 1, SNEASEL1
+	db 4, PROFESSOR_ELM
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, DOUBLE_GUST
+	db 1, ENERGY_CHARGE
+	db 2, MAX_REVIVE
+	db 4, MASTER_BALL
+	db 2, MOOMOO_MILK
+	db 0 ; end
+	tx EeveelutionsDeckName
+
+PredatorDeck: ; 30748 (c:4748)
+	db 4, METAL_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 3, DOUBLE_COLORLESS_ENERGY
+	db 4, CLEFFA
+	db 3, HOOTHOOT
+	db 3, NOCTOWL
+	db 2, ONIX
+	db 2, STEELIX
+	db 2, IGGLYBUFF
+	db 4, MASTER_BALL
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 3, POKEGEAR
+	db 3, ENERGY_CHARGE
+	db 3, DOUBLE_GUST
+	db 4, PROFESSOR_ELM
+	db 2, MOOMOO_MILK
+	db 2, MAX_REVIVE
+	db 2, BILLS_TELEPORTER
+	db 2, NEW_POKEDEX
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, MARY
+	db 0 ; end
+	tx PredatorDeckName
+
+ExcavationDeck: ; 30769 (c:4769)
+	db 5, FIGHTING_ENERGY
+	db 4, METAL_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, CLEFFA
+	db 3, KABUTO
+	db 3, KABUTOPS
+	db 3, ONIX
+	db 3, STEELIX
+	db 2, AERODACTYL
+	db 4, PROFESSOR_ELM
+	db 4, FOSSIL_EGG
+	db 3, ENERGY_CHARGE
+	db 2, DOUBLE_GUST
+	db 4, MASTER_BALL
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, HEAL_POWDER
+	db 4, DOUBLE_GUST
+	db 0 ; end
+	tx ExcavationDeckName
+
+DamageVariationDeck: ; 30792 (c:4792)
+	db 12, FIGHTING_ENERGY
+	db 4, DOUBLE_COLORLESS_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 3, GLIGAR
+	db 4, SWINUB2
+	db 3, PILOSWINE2
+	db 2, SENTRET2
+	db 2, FURRET
+	db 4, DUNSPARCE
+	db 4, TEDDIURSA
+	db 3, URSARING
+	db 4, STANTLER1
+	db 4, DELIBIRD
+	db 3, PROFESSOR_ELM
+	db 4, NEW_POKEDEX
+	db 3, THOUGHT_WAVE_MACHINE
+	db 2, TEAM_ROCKETS_EVIL_DEEDS
+	db 3, MASTER_BALL
+	db 0 ; end
+	tx DamageVariationDeckName
+
+ImRonaldDeck: ; 307bd (c:47bd)
+	dw 14, GRASS_ENERGY
+	dw 4, RECYCLE_ENERGY
+	dw 4, CHIKORITA1
+	dw 4, BAYLEEF1
+	dw 3, MEGANIUM1
+	dw 3, MILTANK
+	db 3, HOPPIP2
+	db 3, SKIPLOOM2
+	db 2, JUMPLUFF1
+	db 4, PROFESSOR_ELM
+	db 4, POKEMON_MARCH
+	db 4, DEVOLUTION_SPRAY
+	db 2, ENERGY_CHARGE
+	db 2, SUPER_SCOOP_UP
+	db 3, MOOMOO_MILK
+	db 1, DOUBLE_GUST
+	db 0 ; end
+	tx ImRonaldDeckName
+
+PowerfulRonaldDeck: ; 307ea (c:47ea)
+	dw 20, GRASS_ENERGY
+	dw 4, CHIKORITA2
+	dw 4, BAYLEEF2
+	dw 4, MEGANIUM2
+	dw 4, PARAS
+	dw 4, PARASECT
+	dw 3, SHUCKLE1
+	dw 4, CELEBI1
+	dw 3, ENERGY_ARK
+	dw 4, PROFESSOR_ELM
+	dw 3, NEW_POKEDEX
+	dw 3, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+	tx PowerfulRonaldDeckName
+
+InvincibleRonaldDeck: ; 3081d (c:481d)
+	db 19, WATER_ENERGY
+	db 4, TOTODILE2
+	db 4, CROCONAW1
+	db 3, FERALIGATR1
+	db 1, FERALIGATR2
+	db 4, REMORAID
+	db 3, OCTILLERY
+	db 4, PROFESSOR_ELM
+	db 4, POKEMON_MARCH
+	db 4, DEVOLUTION_SPRAY
+	db 2, ENERGY_CHARGE
+	db 2, SUPER_SCOOP_UP
+	db 3, MOOMOO_MILK
+	db 2, MARY
+	db 1, DOUBLE_GUST
+	db 0 ; end
+	tx InvincibleRonaldDeckName
+
+LegendaryRonaldDeck: ; 30848 (c:4848)
+	db 5, LIGHTNING_ENERGY
+	db 15, FIRE_ENERGY
+	db 5, WATER_ENERGY
+	db 1, SUICUNE1
+	db 2, ENTEI1
+	db 2, ENTEI2
+	db 1, RAIKOU1
+	db 1, LUGIA2
+	db 1, HO_OH2
+	db 2, HO_OH1
+	db 1, CLEFFA
+	db 1, MAGBY
+	db 1, PICHU
+	db 1, ELEKID
+	db 1, IGGLYBUFF
+	db 1, TYROUGE
+	db 4, MASTER_BALL
+	db 4, PROFESSOR_ELM
+	db 4, DOUBLE_GUST
+	db 3, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, ENERGY_CHARGE
+	db 0 ; end
+	tx LegendaryRonaldDeckName
+
+VersatilityDeck: ; 30873 (c:4873)
+	db 2, FIGHTING_ENERGY
+	db 2, PSYCHIC
+	db 2, LIGHTNING_ENERGY	
+	db 2, FIRE_ENERGY
+	db 4, DOUBLE_COLOURLESS_ENERGY
+	db 2, WATER_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, TOGEPI
+	db 4, TOGETIC
+	db 4, SUDOWOODO2
+	db 4, PORYGON
+	db 3, PORYGON_TWO
+	db 4, SMEARGLE
+	db 4, PROFESSOR_ELM
+	db 4, ENERGY_AMPLIFIER
+	db 3, ENERGY_ARK
+	db 2, SUPER_ENERGY_RETRIEVAL
+	db 2, NEW_POKEDEX
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, BILLS_TELEPORTER
+	db 0 ; end
+	tx VersatilityDeckName
+
+CertainDeathDeck: ; 308a2 (c:48a2)
+	db 17, GRASS_ENERGY
+	db 7, PSYCHIC_ENERGY
+	db 4, SPINARAK1
+	db 4, ARIADOS
+	db 4, MISDREAVUS
+	db 4, WOBBUFFET
+	db 4, DOUBLE_GUST
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 4, MASTER_BALL
+	db 4, THOUGHT_WAVE_MACHINE
+	db 4, BILLS_TELEPORTER
+	db 0 ; end
+	tx CertainDeathDeckName
+
+ToxicSpikesDeck: ; 308c5 (c:48c5)
+	db 16, GRASS_ENERGY
+	db 4, METAL_ENERGY
+	db 4, PINECO
+	db 4, FORRETRESS
+	db 3, SHUCKLE
+	db 4, WEEDLE
+	db 4, KAKUNA
+	db 3, BEEDRILL
+	db 3, POKEMON_BREEDER_FIELDS
+	db 4, DOUBLE_GUST
+	db 2, PROFESSOR_ELM
+	db 3, ENERGY_ARK
+	db 4, MASTER_BALL
+	db 2, POKEMON_MARCH
+	db 0 ; end
+	tx ToxicSpikesDeckName
+
+CephalopodDeck: ; 308e6 (c:48e6)
+	db 18, WATER_ENERGY
+	db 5, PSYCHIC_ENERGY
+	db 3, STARYU
+	db 2, STARMIE
+	db 3, OMANYTE
+	db 2, OMASTAR
+	db 4, SUICUNE2
+	db 4, DUNSPARCE
+	db 4, REMORAID
+	db 3, OCTILLERY
+	db 3, FOSSIL_EGG
+	db 4, PROFESSOR_ELM
+	db 2, MASTER_BALL
+	db 2, NEW_POKEDEX
+	tx CephalopodDeckName
+
+MonstrosityPokemonDeck: ; 3090d (c:490d)
+	db 12, FIGHTING_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, LARVITAR
+	db 4, PUPITAR
+	db 4, TYRANITAR
+	db 3, SNUBBULL1
+	db 2, GRANBULL
+	db 4, MURKROW
+	db 1, ELEKID
+	db 2, SUDOWOODO1
+	db 3, POKEMON_MARCH
+	db 3, PROFESSOR_ELM
+	db 4, DOUBLE_GUST
+	db 4, TEAM_ROCKETS_EVIL_DEEDS
+	db 3, MASTER_BALL
+	db 1, POKEMON_BREEDER_FIELDS
+	db 0 ; end
+	tx MonstrosityDeckName
+
+EnergyManipulationDeck: ; 30938 (c:4938)
+	EnergyManipulationDeck
+	db 9, WATER_ENERGY
+	db 15, PSYCHIC_ENERGY
+	db 4, STARYU
+	db 4, STARMIE
+	db 4, NATU1	
+	db 3, XATU2
+	db 2, SMOOCHUM
+	db 4, JYNX
+	db 2, CELEBI2
+	db 4, PROFESSOR_ELM
+	db 1, POKEMON_BREEDER_FIELDS
+	db 2, MASTER_BALL
+	db 2, SUPER_ROD
+	db 2, DOUBLE_GUST
+	db 2, NEW_POKEDEX
+	db 0 ; end
+	tx EnergyManipulationDeckName
+
+DefibrillationDeck: ; 30959 (c:4959)
+	db 23, LIGHTNING_ENERGY
+	db 2, DOUBLE_COLORLESS_ENERGY
+	db 3, RECYCLE_ENERGY
+	db 4, MAREEP1
+	db 3, FLAAFFY2
+	db 3, AMPHAROS2
+	db 2, ELECTABUZZ
+	db 2, AIPOM2
+	db 2, MILKTANK
+	db 3, LUGIA1
+	db 3, PROFESSOR_ELM
+	db 2, POKEMON_MARCH
+	db 3, HEAL_POWDER
+	db 2, NEW_POKEDEX
+	db 3, MAGNIFIER
+	db 0 ; end
+	tx DefibrillationDeckName
+
+MetamorphosisDeck: ; 30990 (c:4990)
+	db 13, GRASS_ENERGY
+	db 8, PSYCHIC_ENERGY
+	db 4, CATERPIE
+	db 4, METAPOD
+	db 3, BUTTERFREE
+	db 3, CELEBI1
+	db 4, EEVEE
+	db 3, ESPEON1
+	db 3, SLOWPOKE
+	db 2, SLOWKING
+	db 3, PROFESSOR_ELM
+	db 3, POKEMON_BREEDER_FIELDS
+	db 3, DOUBLE_GUST
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, ENERGY_ARK
+	db 0 ; end
+	tx MetamorphosisDeckName
+
+DancePlantsDeck: ; 309b7 (c:49b7)
+	db 13, GRASS_ENERGY
+	db 4, ODDISH
+	db 4, GLOOM
+	db 4, BELLOSSOM
+	db 4, LEDYBA
+	db 4, LEDIAN
+	db 3, SUNKERN
+	db 2, SUNFLORA
+	db 2, QWILFISH
+	db 4, PROFESSOR_ELM
+	db 2, POKEMON_BREEDER_FIELDS
+	db 2, DOUBLE_GUST
+	db 2, SUPER_ROD
+	db 3, OLD_ROD
+	db 2, MASTER_BALL
+	db 3, BILLS_TELEPORTER
+	db 0 ; end
+	tx DancePlantsDeckName
+
+PikachuDeck: ; 309dc (c:49dc)
+	db 14,LIGHTNING_ENERGY
+	db 8, WATER_ENERGY
+	db 4, PICHU
+	db 4, PIKACHU
+	db 3, RAICHU
+	db 4, MARILL
+	db 4, AZUMARILL
+	db 4, PROFESSOR_ELM
+	db 4, MASTER_BALL
+	db 4, ENERGY_ARK
+	db 4, ENERGY_AMPLIFIER
+	db 4, MARY
+	db 4, POKEGEAR
+	db 2, HEAL_POWDER
+	db 4, MOOMOO_MILK
+	db 3, POKEMON_BREEDER_FIELDS
+	tx PikachuName
+
+BenchHazardDeck: ; 30a01 (c:4a01)
+	db 14, FIRE_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, LARVITAR
+	db 3, PUPITAR
+	db 2, TYRANITAR
+	db 4, CYNDAQUIL1
+	db 3, QUILAVA2
+	db 2, TYPHLOSION2
+	db 4, HOUNDOUR2
+	db 3, HOUNDOOM2
+	db 4, PROFESSOR_ELM
+	db 4, ENERGY_AMPLIFIER
+	db 4, HEAL_POWDER
+	db 3, POKEMON_BREEDER_FIELDS
+	db 3, SUPER_ROD
+	db 0 ; end
+	tx BenchHazardDeckName
+
+WaterMemoryDeck: ; 30a20 (c:4a20)
+	db 16, WATER_ENERGY
+	db 2, CLEFFA
+	db 4, POLIWAG
+	db 4, POLIWHIRL
+	db 4, POLITOED
+	db 3, AERODACTYL
+	db 4, PROFESSOR_ELM
+	db 4, DOUBLE_GUST
+	db 4, FOSSIL_EGG
+	db 4, SUPER_ROD
+	db 4, SUPER_ENERGY_RETRIEVAL
+	db 3, BILLS_TELEPORTER
+	db 2, TEAM_ROCKETS_EVIL_DEEDS
+	db 2, THOUGHT_WAVE_MACHINE
+	db 0 ; end
+	tx WaterMemoryDeckName
+
+InvincibilityDeck: ; 30a4b (c:4a4b)
+	db 17, WATER_ENERGY
+	db 4, METAL_ENERGY
+	db 4, HORSEA
+	db 4, SEADRA
+	db 3, KINGDRA1
+	db 4, SKARMORY2
+	db 4, PINECO
+	db 3, FORRETRESS
+	db 4, MANTINE
+	db 3, GIRAFARIG
+	db 3, ENERGY_ARK
+	db 3, PROFESSOR_ELM
+	db 3, DOUBLE_GUST
+	db 1, POKEGEAR
+	db 0 ; end
+	tx InvincibilityDeckName
+
+GardeningDeck: ; 30a7e (c:4a7e)
+	db 14, GRASS_ENERGY
+	db 4, HOPPIP1
+	db 4, SKIPLOOM1
+	db 2, JUMPLUFF1
+	db 2, JUMPLUFF2
+	db 4, ODDISH
+	db 4, GLOOM
+	db 4, BELLOSSOM
+	db 4, POKEMON_MARCH
+	db 4, SUPER_SCOOP_UP
+	db 4, MASTER_BALL
+	db 4, PROFESSOR_ELM
+	db 0 ; end
+	tx GardeningDeckName
+
+BabylutionsDeck: ; 30aa9 (c:4aa9)
+	db 7, PSYCHIC_ENERGY
+	db 4, DOUBLE_COLORLESS_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, CLEFFA
+	db 4, CLEFAIRY
+	db 4, IGGLYBUFF
+	db 4, JIGGLYPUFF
+	db 4, TOGEPI
+	db 4, TOGETIC
+	db 4, LUGIA1
+	db 4, NEW_POKEDEX
+	db 4, MASTER_BALL
+	db 4, PROFESSOR_ELM
+	db 2, THOUGHT_WAVE_MACHINE
+	db 3, DOUBLE_GUST
+	db 0 ; end
+	tx BabylutionsDeckName
+
+BenchLuckDeck: ; 30ad6 (c:4ad6)
+	db 9, WATER_ENERGY
+	db 9, LIGHTNING_ENERGY
+	db 3, MARILL
+	db 2, AZUMARILL
+	db 4, SWINUB1
+	db 4, PILOSWINE1
+	db 4, MAREEP2
+	db 4, FLAAFFY2
+	db 3, AMPHAROS1
+	db 2, ELEKID
+	db 3, RAIKOU2
+	db 3, PROFESSOR_ELM
+	db 2, TEAM_ROCKETS_EVIL_DEEDS
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, ENERGY_AMPLIFIER
+	db 2, POKEMON_BREEDER_FIELDS
+	db 2, SUPER_ROD
+	db 0 ; end
+	tx BenchLuckName
+
+BabySpinnerDeck: ; 30aff (c:4aff)
+	db 12, FIGHTING_ENERGY
+	db 4, RECYCLE_ENERGY
+	db 4, PHANPY
+	db 4, DONPHAN
+	db 2, TYROUGE
+	db 3, HITMONTOP
+	db 2, PICHU
+	db 2, MAGBY
+	db 4, MARY
+	db 4, DOUBLE_GUST
+	db 4, PROFESSOR_ELM
+	db 3, HEAL_POWDER
+	db 3, NEW_POKEDEX
+	db 4, THOUGHT_WAVE_MACHINE
+	db 3, OLD_ROD
+	db 0 ; end
+	tx BabySpinnerDeckName
+
+CambrianHustleDeck: ; 30b1e (c:4b1e)
+	db 10, WATER_ENERGY
+	db 7, FIGHTING_ENERGY
+	db 4, KABUTO
+	db 4, OMANYTE
+	db 2, KABUTOPS
+	db 1, OMASTAR
+	db 4, WOOPER2
+	db 4, QUAGSIRE1
+	db 4, FOSSIL_EGG
+	db 4, ENERGY_AMPLIFIER
+	db 4, SUPER_SCOOPUP
+	db 4, MAX_REVIVE
+	db 2, HYPER_DEVOLUTION_SPRAY
+	db 3, ENERGY_ARK
+	db 3, PROFESSOR_ELM
+	db 0 ; end
+	tx CambrianHustleDeckName
+
+BlisseyStallDeck: ; 30b49 (c:4b49)
+	db 7, GRASS_ENERGY
+	db 4, DOUBLE_COLORLESS_ENERGY
+	db 4, METAL_ENERGY
+	db 4, ONIX
+	db 3, STEELIX
+	db 4, SCYTHER
+	db 4, SCIZOR
+	db 4, SKARMORY1
+	db 4, CHANSEY
+	db 4, BLISSEY
+	db 4, PROFESSOR_ELM
+	db 4, DOUBLE_GUST
+	db 4, ENERGY_ARK
+	db 3, OLD_ROD
+	db 3, MOOMOO_MILK
+	db 0 ; end
+	tx BlisseyStallDeckName
+
+NoRetreatDeck: ; 30b6c (c:4b6c)
+	db 15, GRASS_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, SPINARAK2
+	db 3, ARIADOS
+	db 4, YANMA
+	db 4, MURKROW1
+	db 4, SNEASEL2
+	db 2, ELEKID
+	db 4, EEVEE
+	db 3, UMBREON2
+	db 4, DOUBLE_GUST
+	db 4, MASTER_BALL
+	db 4, THOUGHT_WAVE_MACHINE
+	db 3, BILLS_TELEPORTER
+	db 1, ROCKETS_EVIL_DEEDS
+	db 0 ; end
+	tx NoRetreatDeckName
+
+OvertideDeck: ; 30b99 (c:4b99)
+	db 10, WATER_ENERGY
+	db 6, LIGHTNING_ENERGY
+	db 6, FIGHTING_ENERGY
+	db 4, CHINCHOU1
+	db 4, LANTURN1
+	db 4, KABUTO
+	db 4, KABUTOPS
+	db 4, CORSOLA
+	db 2, STANTLER1
+	db 4, DUNSPARCE
+	db 4, ENERGY_ARK
+	db 2, ENERGY_AMPLIFIER
+	db 4, PROFESSOR_ELM
+	db 2, DOUBLE_GUST
+	db 3, POKEMON_BREEDER_FIELDS
+	db 2, SUPER_ROD
+	db 3, BILLS_TELEPORTER
+	db 2, MARY
+	db 0 ; end
+	tx OvertideName
+
+ElectromagneticDeck: ; 30bbe (c:4bbe)
+	db 17, LIGHTNING_ENERGY
+	db 4, METAL_ENERGY
+	db 4, CHINCHOU2
+	db 4, LANTURN2
+	db 2, ELEKID
+	db 4, ELECTABUZZ
+	db 4, MAGNEMITE
+	db 3, MAGNETON
+	db 3, AIPOM1
+	db 3, PROFESSOR_ELM
+	db 3, MASTER_BALL
+	db 2, POKEGEAR
+	db 3, BILLS_TELEPORTER
+	db 0 ; end
+	tx ElectromagneticDeckName
+
+FlamethrowerDeck: ; 30be5 (c:4be5)
+	db 22, FIRE_ENERGY
+	db 4, DARKNESS_ENERGY
+	db 4, CYNDAQUIL2
+	db 4, QUILAVA1
+	db 4, TYPHLOSION1
+	db 4, HOUNDOUR1
+	db 4, HOUNDOOM1
+	db 3, ENTEI1
+	db 2, MAGMAR
+	db 3, SUPER_ENERGY_RETRIEVAL
+	db 3, MASTER_BALL
+	db 3, PROFESSOR_ELM
+	db 2, HEAL_POWDER
+	db 0 ; end
+	tx FlamethrowerDeckName
+
+EarthquakeDeck: ; 30c0e (c:4c0e)
+	db 10, FIGHTING_ENERGY
+	db 6, GRASS_ENERGY
+	db 4, WATER_ENERGY
+	db 4, GEODUDE
+	db 4, GRAVELER
+	db 4, WOOPER2
+	db 4, QUAGSIRE1
+	db 4, STANTLER2
+	db 4, HERACROSS
+	db 4, PROFESSOR_ELM
+	db 3, ENERGY_AMPLIFIER
+	db 3, OLD_ROD
+	db 3, SUPER_ROD
+	db 3, THOUGHT_WAVE_MACHINE
+	db 0 ; end
+	tx EarthquakeDeckName
+
+ImakuniDeck: ; 30c3d (c:4c3d)
+	db 26, PSYCHIC_ENERGY
+	db 4, SNUBBULL2
+	db 3, GRANBULL
+	db 2, SLOWPOKE1
+	db 2, SLOWKING
+	db 3, WOBBUFFET
+	db 4, SUDOWOODO2
+	db 3, SMOOCHUM
+	db 4, FARFETCHD
+	db 4, MASTER_BALL
+	db 2, THOUGHT_WAVE_MACHINE
+	db 2, POKEMON_MARCH
+	db 1, DOUBLE_GUST
+	db 0 ; end
+	tx ImakuniDeckName
