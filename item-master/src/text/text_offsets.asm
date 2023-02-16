@@ -2969,17 +2969,15 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer HealPowderDescription								; 0x0b95
 	textpointer GustOfWindName                                      ; 0x0b96
 	textpointer GustOfWindDescription                               ; 0x0b97
-	textpointer GustOfWindName                                      ; 0x0b98
-	textpointer GustOfWindDescription                               ; 0x0b99
-	textpointer EnergyRemovalName                                   ; 0x0b9a
-	textpointer EnergyRemovalDescription                            ; 0x0b9b
-	textpointer SuperEnergyRemovalName                              ; 0x0b9c
-	textpointer SuperEnergyRemovalDescription                       ; 0x0b9d
-	textpointer ComputerSearchName                                  ; 0x0b9e
-	textpointer ComputerSearchDescription                           ; 0x0b9f
-	textpointer PokemonTraderName                                   ; 0x0ba0
-	textpointer PokemonTraderDescription                            ; 0x0ba1
-	textpointer PokemonBreederName                                  ; 0x0ba2
-	textpointer PokemonBreederDescription                           ; 0x0ba3
-	textpointer MysteriousFossilDescription                         ; 0x0ba4
-	textpointer MysteriousFossilDescriptionCont                     ; 0x0ba5
+	textpointer EnergyRemovalName                                   ; 0x0b98
+	textpointer EnergyRemovalDescription                            ; 0x0b99
+	textpointer SuperEnergyRemovalName                              ; 0x0b9a
+	textpointer SuperEnergyRemovalDescription                       ; 0x0b9b
+	textpointer ComputerSearchName                                  ; 0x0b9c
+	textpointer ComputerSearchDescription                           ; 0x0b9d
+	textpointer PokemonTraderName                                   ; 0x0b9f
+	textpointer PokemonTraderDescription                            ; 0x0ba0
+	textpointer PokemonBreederName                                  ; 0x0ba1
+	textpointer PokemonBreederDescription                           ; 0x0ba2
+	textpointer MysteriousFossilDescription                         ; 0x0ba3
+	textpointer MysteriousFossilDescriptionCont                     ; 0x0ba4

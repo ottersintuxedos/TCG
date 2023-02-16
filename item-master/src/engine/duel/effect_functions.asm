@@ -1599,13 +1599,13 @@ ZubatLeechLifeEffect: ; 2c7e3 (b:47e3)
 	call ApplyAndAnimateHPRecovery
 	ret
 
-Twineedle_AIEffect: ; 2c7ed (b:47ed)
+ExpectingTwenty_AIEffect: ; 2c7ed (b:47ed)
 	ld a, 60 / 2
 	lb de, 0, 60
 	jp SetExpectedAIDamage
 
 ; Flip 2 coins; deal 30x number of heads
-Twineedle_MultiplierEffect: ; 2c7f5 (b:47f5)
+ThirtyTimesTwo_MultiplierEffect: ; 2c7f5 (b:47f5)
 	ld hl, 30
 	call LoadTxRam3
 	ldtx de, DamageCheckIfHeadsXDamageText
@@ -2050,42 +2050,6 @@ HornHazard_NoDamage50PercentEffect: ; 2ca96 (b:4a96)
 NidorinaSupersonicEffect: ; 2caac (b:4aac)
 	call Confusion50PercentEffect
 	call nc, SetNoEffectFromStatus
-	ret
-
-NidorinaDoubleKick_AIEffect: ; 2cab3 (b:4ab3)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
-NidorinaDoubleKick_MultiplierEffect: ; 2cabb (b:4abb)
-	ld hl, 30
-	call LoadTxRam3
-	ldtx de, DamageCheckIfHeadsXDamageText
-	ld a, 2
-	call TossCoinATimes_BankB
-	ld e, a
-	add a
-	add e
-	call ATimes10
-	call SetDefiniteDamage
-	ret
-
-NidorinoDoubleKick_AIEffect: ; 2cad3 (b:4ad3)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
-NidorinoDoubleKick_MultiplierEffect: ; 2cabb (b:4abb)
-	ld hl, 30
-	call LoadTxRam3
-	ldtx de, DamageCheckIfHeadsXDamageText
-	ld a, 2
-	call TossCoinATimes_BankB
-	ld e, a
-	add a
-	add e
-	call ATimes10
-	call SetDefiniteDamage
 	ret
 
 ButterfreeWhirlwind_CheckBench: ; 2caf3 (b:4af3)
@@ -2796,11 +2760,6 @@ OmastarWaterGunEffect: ; 2cf05 (b:4f05)
 	lb bc, 1, 1
 	jr ApplyExtraWaterEnergyDamageBonus
 
-OmastarSpikeCannon_AIEffect: ; 2cf0a (b:4f0a)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
 OmastarSpikeCannon_MultiplierEffect: ; 2cf12 (b:4f12)
 	ld hl, 30
 	call LoadTxRam3
@@ -2840,11 +2799,11 @@ HydroPumpEffect: ; 2cf48 (b:4f48)
 	lb bc, 3, 0
 	jp ApplyExtraWaterEnergyDamageBonus
 
-KinglerFlail_AIEffect: ; 2cf4e (b:4f4e)
-	call KinglerFlail_HPCheck
+Flail_AIEffect: ; 2cf4e (b:4f4e)
+	call Flail_HPCheck
 	jp SetDefiniteAIDamage
 
-KinglerFlail_HPCheck: ; 2cf54 (b:4f54)
+Flail_HPCheck: ; 2cf54 (b:4f54)
 	ld e, PLAY_AREA_ARENA
 	call GetCardDamageAndMaxHP
 	call SetDefiniteDamage
@@ -2954,16 +2913,6 @@ KrabbyCallForFamily_PutInPlayAreaEffect: ; 2cfca (b:4fca)
 	call Func_2c0bd
 	ret
 
-MagikarpFlail_AIEffect: ; 2cfff (b:4fff)
-	call MagikarpFlail_HPCheck
-	jp SetDefiniteAIDamage
-
-MagikarpFlail_HPCheck: ; 2d005 (b:5005)
-	ld e, PLAY_AREA_ARENA
-	call GetCardDamageAndMaxHP
-	call SetDefiniteDamage
-	ret
-
 HeadacheEffect: ; 2d00e (b:500e)
 	ld a, DUELVARS_ARENA_CARD_SUBSTATUS3
 	call GetNonTurnDuelistVariable
@@ -3044,7 +2993,7 @@ SeadraWaterGunEffect: ; 2d085 (b:5085)
 	lb bc, 1, 1
 	jp ApplyExtraWaterEnergyDamageBonus
 
-SeadraAgilityEffect: ; 2d08b (b:508b)
+AgilityEffect: ; 2d08b (b:508b)
 	ldtx de, IfHeadsDoNotReceiveDamageOrEffectText
 	call TossCoin_BankB
 	ret nc ; return if tails
@@ -3239,24 +3188,6 @@ ApplyAmnesiaToAttack: ; 2d18a (b:518a)
 	call SwapTurn
 	ret
 
-PoliwhirlDoubleslap_AIEffect: ; 2d1c0 (b:51c0)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
-PoliwhirlDoubleslap_MultiplierEffect: ; 2d1c8 (b:51c8)
-	ld hl, 30
-	call LoadTxRam3
-	ldtx de, DamageCheckIfHeadsXDamageText
-	ld a, 2
-	call TossCoinATimes_BankB
-	ld e, a
-	add a
-	add e
-	call ATimes10
-	call SetDefiniteDamage
-	ret
-
 PoliwrathWaterGunEffect: ; 2d1e0 (b:51e0)
 	lb bc, 2, 1
 	jp ApplyExtraWaterEnergyDamageBonus
@@ -3318,24 +3249,6 @@ ClampEffect: ; 2d22d (b:522d)
 	ld [wLoadedAttackAnimation], a
 	call SetDefiniteDamage
 	call SetWasUnsuccessful
-	ret
-
-CloysterSpikeCannon_AIEffect: ; 2d246 (b:5246)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
-CloysterSpikeCannon_MultiplierEffect: ; 2d24e (b:524e)
-	ld hl, 30
-	call LoadTxRam3
-	ldtx de, DamageCheckIfHeadsXDamageText
-	ld a, 2
-	call TossCoinATimes_BankB
-	ld e, a
-	add a
-	add e
-	call ATimes10
-	call SetDefiniteDamage
 	ret
 
 Blizzard_BenchDamage50PercentEffect: ; 2d266 (b:5266)
@@ -3514,15 +3427,15 @@ ArcanineFlamethrower_CheckEnergy: ; 2d363 (b:5363)
 	cp 1
 	ret
 
-ArcanineFlamethrower_PlayerSelectEffect: ; 2d371 (b:5371)
+FireCardToDiscard_PlayerSelectEffect: ; 2d371 (b:5371)
 	call PlayerPickFireEnergyCardToDiscard
 	ret
 
-ArcanineFlamethrower_AISelectEffect: ; 2d375 (b:5375)
+DiscardFireEnergy_AISelectEffect: ; 2d375 (b:5375)
 	call AIPickFireEnergyCardToDiscard
 	ret
 
-ArcanineFlamethrower_DiscardEffect: ; 2d379 (b:5379)
+DiscardEffect: ; 2d379 (b:5379)
 	ldh a, [hTempList]
 	call PutCardInDiscardPile
 	ret
@@ -3616,16 +3529,6 @@ RapidashStomp_DamageBoostEffect: ; 2d400 (b:5400)
 	call AddToDamage
 	ret
 
-RapidashAgilityEffect: ; 2d413 (b:5413)
-	ldtx de, IfHeadsDoNotReceiveDamageOrEffectText
-	call TossCoin_BankB
-	ret nc ; return if tails
-	ld a, ATK_ANIM_AGILITY_PROTECT
-	ld [wLoadedAttackAnimation], a
-	ld a, SUBSTATUS1_AGILITY
-	call ApplySubstatus1ToDefendingCard
-	ret
-
 ; returns carry if Opponent has no Pokemon in bench
 NinetalesLure_CheckBench: ; 2d425 (b:5425)
 	ld a, DUELVARS_NUMBER_OF_POKEMON_IN_PLAY_AREA
@@ -3663,52 +3566,8 @@ NinetalesLure_SwitchEffect: ; 2d44f (b:544f)
 	ld [wDuelDisplayedScreen], a
 	ret
 
-; return carry if no Fire energy cards
-FireBlast_CheckEnergy: ; 2d463 (b:5463)
-	ld e, PLAY_AREA_ARENA
-	call GetPlayAreaCardAttachedEnergies
-	ldtx hl, NotEnoughFireEnergyText
-	ld a, [wAttachedEnergies]
-	cp 1
-	ret
-
-FireBlast_PlayerSelectEffect: ; 2d471 (b:5471)
-	call PlayerPickFireEnergyCardToDiscard
-	ret
-
-FireBlast_AISelectEffect: ; 2d475 (b:5475)
-	call AIPickFireEnergyCardToDiscard
-	ret
-
-FireBlast_DiscardEffect: ; 2d479 (b:5479)
-	ldh a, [hTempList]
-	call PutCardInDiscardPile
-	ret
-
-; return carry if no Fire energy cards
-Ember_CheckEnergy: ; 2d47f (b:547f)
-	ld e, PLAY_AREA_ARENA
-	call GetPlayAreaCardAttachedEnergies
-	ldtx hl, NotEnoughFireEnergyText
-	ld a, [wAttachedEnergies]
-	cp 1
-	ret
-
-Ember_PlayerSelectEffect: ; 2d48d (b:548d)
-	call PlayerPickFireEnergyCardToDiscard
-	ret
-
-Ember_AISelectEffect: ; 2d491 (b:5491)
-	call AIPickFireEnergyCardToDiscard
-	ret
-
-Ember_DiscardEffect: ; 2d495 (b:5495)
-	ldh a, [hTempList]
-	call PutCardInDiscardPile
-	ret
-
-; return carry if no Fire energy cards
-Wildfire_CheckEnergy: ; 2d49b (b:549b)
+; return carry if no Fire energy attached
+Fire_CheckEnergy: ; 2d463 (b:5463)
 	ld e, PLAY_AREA_ARENA
 	call GetPlayAreaCardAttachedEnergies
 	ldtx hl, NotEnoughFireEnergyText
@@ -3847,50 +3706,6 @@ FlareonQuickAttack_DamageBoostEffect: ; 2d549 (b:5549)
 	call AddToDamage
 	ret
 
-; return carry if no Fire Energy attached
-FlareonFlamethrower_CheckEnergy: ; 2d55c (b:555c)
-	ld e, PLAY_AREA_ARENA
-	call GetPlayAreaCardAttachedEnergies
-	ldtx hl, NotEnoughFireEnergyText
-	ld a, [wAttachedEnergies]
-	cp 1
-	ret
-
-FlareonFlamethrower_PlayerSelectEffect: ; 2d56a (b:556a)
-	call PlayerPickFireEnergyCardToDiscard
-	ret
-
-FlareonFlamethrower_AISelectEffect: ; 2d56e (b:556e)
-	call AIPickFireEnergyCardToDiscard
-	ret
-
-FlareonFlamethrower_DiscardEffect: ; 2d572 (b:5572)
-	ldh a, [hTempList]
-	call PutCardInDiscardPile
-	ret
-
-; return carry if no Fire Energy attached
-MagmarFlamethrower_CheckEnergy: ; 2d578 (b:5578)
-	ld e, PLAY_AREA_ARENA
-	call GetPlayAreaCardAttachedEnergies
-	ldtx hl, NotEnoughFireEnergyText
-	ld a, [wAttachedEnergies]
-	cp 1
-	ret
-
-MagmarFlamethrower_PlayerSelectEffect: ; 2d586 (b:5586)
-	call PlayerPickFireEnergyCardToDiscard
-	ret
-
-MagmarFlamethrower_AISelectEffect: ; 2d58a (b:558a)
-	call AIPickFireEnergyCardToDiscard
-	ret
-
-MagmarFlamethrower_DiscardEffect: ; 2d58e (b:558e)
-	ldh a, [hTempList]
-	call PutCardInDiscardPile
-	ret
-
 MagmarSmokescreenEffect: ; 2d594 (b:5594)
 	ld a, SUBSTATUS2_SMOKESCREEN
 	call ApplySubstatus2ToDefendingCard
@@ -3900,28 +3715,6 @@ MagmarSmog_AIEffect: ; 2d59a (b:559a)
 	ld a, 5
 	lb de, 0, 10
 	jp UpdateExpectedAIDamage_AccountForPoison
-
-; return carry if no Fire Energy attached
-CharmeleonFlamethrower_CheckEnergy: ; 2d5a2 (b:55a2)
-	ld e, PLAY_AREA_ARENA
-	call GetPlayAreaCardAttachedEnergies
-	ldtx hl, NotEnoughFireEnergyText
-	ld a, [wAttachedEnergies]
-	cp 1
-	ret
-
-CharmeleonFlamethrower_PlayerSelectEffect: ; 2d5b0 (b:55b0)
-	call PlayerPickFireEnergyCardToDiscard
-	ret
-
-CharmeleonFlamethrower_AISelectEffect: ; 2d5b4 (b:55b4)
-	call AIPickFireEnergyCardToDiscard
-	ret
-
-CharmeleonFlamethrower_DiscardEffect: ; 2d5b8 (b:55b8)
-	ldh a, [hTempList]
-	call PutCardInDiscardPile
-	ret
 
 EnergyBurnEffect: ; 2d5be (b:55be)
 	scf
@@ -4592,11 +4385,6 @@ DestinyBond_AISelectEffect: ; 2d976 (b:5976)
 	call CreateListOfEnergyAttachedToArena
 	ld a, [wDuelTempList]
 	ldh [hTempList], a
-	ret
-
-DestinyBond_DiscardEffect: ; 2d981 (b:5981)
-	ldh a, [hTempList]
-	call PutCardInDiscardPile
 	ret
 
 DestinyBond_DestinyBondEffect: ; 2d987 (b:5987)
@@ -5871,12 +5659,7 @@ OnixHardenEffect: ; 2e075 (b:6075)
 	call ApplySubstatus1ToDefendingCard
 	ret
 
-PrimeapeFurySwipes_AIEffect: ; 2e07b (b:607b)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
-PrimeapeFurySwipes_MultiplierEffect: ; 2e083 (b:6083)
+TwentyTimesThree_MultiplierEffect: ; 2e083 (b:6083)
 	ld hl, 20
 	call LoadTxRam3
 	ldtx de, DamageCheckIfHeadsXDamageText
@@ -5939,11 +5722,6 @@ CuboneRage_DamageBoostEffect: ; 2e0d7 (b:60d7)
 	call GetCardDamageAndMaxHP
 	call AddToDamage
 	ret
-
-Bonemerang_AIEffect: ; 2e0e0 (b:60e0)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
 
 Bonemerang_MultiplierEffect: ; 2e0e8 (b:60e8)
 	ld hl, 30
@@ -6190,22 +5968,6 @@ SandAttackEffect: ; 2e26b (b:626b)
 	call ApplySubstatus2ToDefendingCard
 	ret
 
-SandslashFurySwipes_AIEffect: ; 2e271 (b:6271)
-	ld a, 60 / 2
-	lb de, 0, 60
-	jp SetExpectedAIDamage
-
-SandslashFurySwipes_MultiplierEffect: ; 2e279 (b:6279)
-	ld hl, 20
-	call LoadTxRam3
-	ldtx de, DamageCheckIfHeadsXDamageText
-	ld a, 3
-	call TossCoinATimes_BankB
-	add a
-	call ATimes10
-	call SetDefiniteDamage
-	ret
-
 EarthquakeEffect: ; 2e28f (b:628f)
 	ld a, $01
 	ld [wIsDamageToSelf], a
@@ -6437,7 +6199,7 @@ MagnemiteSelfdestructEffect: ; 2e3db (b:63db)
 	call SwapTurn
 	ret
 
-ZapdosThunder_Recoil50PercentEffect: ; 2e3fa (b:63fa)
+Thunder_Recoil50PercentEffect: ; 2e3fa (b:63fa)
 	ld hl, 30
 	call LoadTxRam3
 	ldtx de, IfTailsDamageToYourselfTooText
@@ -6445,7 +6207,7 @@ ZapdosThunder_Recoil50PercentEffect: ; 2e3fa (b:63fa)
 	ldh [hTemp_ffa0], a
 	ret
 
-ZapdosThunder_RecoilEffect: ; 2e409 (b:6409)
+Thunder_RecoilEffect: ; 2e409 (b:6409)
 	ld hl, 30
 	call LoadTxRam3
 	ldh a, [hTemp_ffa0]
@@ -6743,34 +6505,6 @@ ChainLightningEffect: ; 2e595 (b:6595)
 	inc d
 	dec e
 	jr nz, .check_damage
-	ret
-
-RaichuAgilityEffect: ; 2e5dc (b:65dc)
-	ldtx de, IfHeadsDoNotReceiveDamageOrEffectText
-	call TossCoin_BankB
-	ret nc ; skip if got tails
-	ld a, ATK_ANIM_AGILITY_PROTECT
-	ld [wLoadedAttackAnimation], a
-	ld a, SUBSTATUS1_AGILITY
-	call ApplySubstatus1ToDefendingCard
-	ret
-
-RaichuThunder_Recoil50PercentEffect: ; 2e5ee (b:65ee)
-	ld hl, 30
-	call LoadTxRam3
-	ldtx de, IfTailsDamageToYourselfTooText
-	call TossCoin_BankB
-	ldh [hTemp_ffa0], a
-	ret
-
-RaichuThunder_RecoilEffect: ; 2e5fd (b:65fd)
-	ld hl, 30
-	call LoadTxRam3
-	ldh a, [hTemp_ffa0]
-	or a
-	ret nz ; return if got heads
-	ld a, 30
-	call DealRecoilDamageToSelf
 	ret
 
 Gigashock_PlayerSelectEffect: ; 2e60d (b:660d)
@@ -7647,16 +7381,6 @@ MirrorMoveEffects: ; 2e98c (b:698c)
 	jp z, SleepEffect
 	cp PARALYZED
 	jp z, ParalysisEffect
-	ret
-
-FearowAgilityEffect: ; 2eab8 (b:6ab8)
-	ldtx de, IfHeadsDoNotReceiveDamageOrEffectText
-	call TossCoin_BankB
-	ret nc
-	ld a, ATK_ANIM_AGILITY_PROTECT
-	ld [wLoadedAttackAnimation], a
-	ld a, SUBSTATUS1_AGILITY
-	call ApplySubstatus1ToDefendingCard
 	ret
 
 ; return carry if cannot use Step In

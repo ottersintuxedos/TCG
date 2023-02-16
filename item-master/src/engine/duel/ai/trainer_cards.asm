@@ -2541,9 +2541,9 @@ AIDecide_ProfessorOak:
 ; before checking for playable cards
 	call CreateHandCardList
 	ld hl, wDuelTempList
-	ld e, PROFESSOR_OAK
+	ld e, PROFESSOR_ELM
 	farcall RemoveCardIDInList
-	ld e, PROFESSOR_OAK
+	ld e, PROFESSOR_ELM
 	farcall RemoveCardIDInList
 
 ; look in hand for cards that can be played.
@@ -5069,7 +5069,7 @@ AIDecide_ComputerSearch_RockCrusher:
 	cp 3
 	jr nz, .graveler
 
-	ld e, PROFESSOR_OAK
+	ld e, PROFESSOR_ELM
 	ld a, CARD_LOCATION_DECK
 	call LookForCardIDInLocation
 	jr c, .find_discard_cards_1
@@ -5098,7 +5098,7 @@ AIDecide_ComputerSearch_RockCrusher:
 
 ; if any of the following cards are in the hand,
 ; return no carry.
-	cp PROFESSOR_OAK
+	cp PROFESSOR_ELM
 	jr z, .no_carry
 	cp FIGHTING_ENERGY
 	jr z, .no_carry
@@ -5246,8 +5246,8 @@ AIDecide_ComputerSearch_WondersOfScience:
 	cp 5
 	jr nc, .look_in_hand
 
-; target Professor Oak for Computer Search
-	ld e, PROFESSOR_OAK
+; target Professor Elm for Computer Search
+	ld e, PROFESSOR_ELM
 	ld a, CARD_LOCATION_DECK
 	call LookForCardIDInLocation
 	jp nc, .look_in_hand ; can be a jr

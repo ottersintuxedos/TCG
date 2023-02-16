@@ -1,0 +1,19 @@
+engine/duel/ai/trainer_cards.asm
+
+Replaced PROFESSOR_OAK with PROFESSOR_ELM
+
+AIPlay_Lass:
+Need to learn AI affectations
+DELETED
+
+
+ai/retreat.asm
+ai/deck_ai.asm
+data/auto_deck_card_lists.asm
+duel/core.asm
+data/cards.asm
+duel/effec_commands.asm
+macros/code.asm
+duel/effect_functions.asm
+macros/script.asm
+/data/duel/ai_trainer_card_logic.asm:::ai_trainer_card_logic

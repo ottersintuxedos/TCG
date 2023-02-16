@@ -122,8 +122,8 @@ ZubatLeechLifeEffectCommands:
 	db  $00
 
 BeedrillTwineedleEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, Twineedle_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, Twineedle_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 BeedrillPoisonStingEffectCommands:
@@ -212,13 +212,13 @@ NidorinaSupersonicEffectCommands:
 	db  $00
 
 NidorinaDoubleKickEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, NidorinaDoubleKick_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, NidorinaDoubleKick_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 NidorinoDoubleKickEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, NidorinoDoubleKick_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, NidorinoDoubleKick_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 ButterfreeWhirlwindEffectCommands:
@@ -378,8 +378,8 @@ GyaradosBubblebeamEffectCommands:
 	db  $00
 
 KinglerFlailEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, KinglerFlail_HPCheck
-	dbw EFFECTCMDTYPE_AI, KinglerFlail_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, Flail_HPCheck
+	dbw EFFECTCMDTYPE_AI, Flail_AIEffect
 	db  $00
 
 KrabbyCallForFamilyEffectCommands:
@@ -390,8 +390,8 @@ KrabbyCallForFamilyEffectCommands:
 	db  $00
 
 MagikarpFlailEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, MagikarpFlail_HPCheck
-	dbw EFFECTCMDTYPE_AI, MagikarpFlail_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, Flail_HPCheck
+	dbw EFFECTCMDTYPE_AI, Flail_AIEffect
 	db  $00
 
 PsyduckHeadacheEffectCommands:
@@ -419,7 +419,7 @@ SeadraWaterGunEffectCommands:
 	db  $00
 
 SeadraAgilityEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, SeadraAgilityEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, AgilityEffect
 	db  $00
 
 ShellderSupersonicEffectCommands:
@@ -485,8 +485,8 @@ PoliwhirlAmnesiaEffectCommands:
 	db  $00
 
 PoliwhirlDoubleslapEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, PoliwhirlDoubleslap_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, PoliwhirlDoubleslap_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 PoliwrathWaterGunEffectCommands:
@@ -510,8 +510,8 @@ CloysterClampEffectCommands:
 	db  $00
 
 CloysterSpikeCannonEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, CloysterSpikeCannon_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, CloysterSpikeCannon_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 ArticunoFreezeDryEffectCommands:
@@ -583,7 +583,7 @@ RapidashStompEffectCommands:
 	db  $00
 
 RapidashAgilityEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, RapidashAgilityEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, AgilityEffect
 	db  $00
 
 NinetalesLureEffectCommands:
@@ -594,25 +594,25 @@ NinetalesLureEffectCommands:
 	db  $00
 
 NinetalesFireBlastEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, FireBlast_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireBlast_PlayerSelectEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, FireBlast_DiscardEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, FireBlast_AISelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 CharmanderEmberEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Ember_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, Ember_PlayerSelectEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, Ember_DiscardEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, Ember_AISelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 MoltresWildfireEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Wildfire_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, Wildfire_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
 	dbw EFFECTCMDTYPE_AFTER_DAMAGE, Wildfire_DiscardDeckEffect
 	dbw EFFECTCMDTYPE_DISCARD_ENERGY, Wildfire_DiscardEnergyEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, Wildfire_AISelectEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 MoltresLv35DiveBombEffectCommands:
@@ -626,17 +626,17 @@ FlareonQuickAttackEffectCommands:
 	db  $00
 
 FlareonFlamethrowerEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, FlareonFlamethrower_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FlareonFlamethrower_PlayerSelectEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, FlareonFlamethrower_DiscardEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, FlareonFlamethrower_AISelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 MagmarFlamethrowerEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, MagmarFlamethrower_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, MagmarFlamethrower_PlayerSelectEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, MagmarFlamethrower_DiscardEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, MagmarFlamethrower_AISelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 MagmarSmokescreenEffectCommands:
@@ -649,10 +649,10 @@ MagmarSmogEffectCommands:
 	db  $00
 
 CharmeleonFlamethrowerEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, CharmeleonFlamethrower_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, CharmeleonFlamethrower_PlayerSelectEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, CharmeleonFlamethrower_DiscardEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, CharmeleonFlamethrower_AISelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 CharizardEnergyBurnEffectCommands:
@@ -718,7 +718,7 @@ GastlyDestinyBondEffectCommands:
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, DestinyBond_CheckEnergy
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, DestinyBond_PlayerSelectEffect
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, DestinyBond_DestinyBondEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DestinyBond_DiscardEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
 	dbw EFFECTCMDTYPE_AI_SELECTION, DestinyBond_AISelectEffect
 	db  $00
 
@@ -898,8 +898,8 @@ OnixHardenEffectCommands:
 	db  $00
 
 PrimeapeFurySwipesEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, PrimeapeFurySwipes_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, PrimeapeFurySwipes_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, TwentyTimesThree_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 PrimeapeTantrumEffectCommands:
@@ -928,8 +928,8 @@ CuboneRageEffectCommands:
 	db  $00
 
 MarowakBonemerangEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, Bonemerang_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, Bonemerang_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 MarowakCallforFriendEffectCommands:
@@ -978,8 +978,8 @@ SandshrewSandAttackEffectCommands:
 	db  $00
 
 SandslashFurySwipesEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, SandslashFurySwipes_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, SandslashFurySwipes_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, TwentyTimesThree_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 DugtrioEarthquakeEffectCommands:
@@ -1032,8 +1032,8 @@ MagnemiteSelfdestructEffectCommands:
 	db  $00
 
 ZapdosThunderEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ZapdosThunder_Recoil50PercentEffect
-	dbw EFFECTCMDTYPE_AFTER_DAMAGE, ZapdosThunder_RecoilEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, Thunder_Recoil50PercentEffect
+	dbw EFFECTCMDTYPE_AFTER_DAMAGE, Thunder_RecoilEffect
 	db  $00
 
 ZapdosThunderboltEffectCommands:
@@ -1095,12 +1095,12 @@ ElectrodeChainLightningEffectCommands:
 	db  $00
 
 RaichuAgilityEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, RaichuAgilityEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, AgilityEffect
 	db  $00
 
 RaichuThunderEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, RaichuThunder_Recoil50PercentEffect
-	dbw EFFECTCMDTYPE_AFTER_DAMAGE, RaichuThunder_RecoilEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, Thunder_Recoil50PercentEffect
+	dbw EFFECTCMDTYPE_AFTER_DAMAGE, Thunder_RecoilEffect
 	db  $00
 
 RaichuGigashockEffectCommands:
@@ -1182,7 +1182,7 @@ SpearowMirrorMoveEffectCommands:
 	db  $00
 
 FearowAgilityEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, FearowAgilityEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, AgilityEffect
 	db  $00
 
 DragoniteStepInEffectCommands:
@@ -1248,8 +1248,8 @@ MeowthPayDayEffectCommands:
 	db  $00
 
 DragonairSlamEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, DragonairSlam_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, DragonairSlam_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 DragonairHyperBeamEffectCommands:
