@@ -4381,46 +4381,6 @@ AIDecide_Recycle:
 	ld [wce08 + 4], a
 	jr .loop_2
 
-AIPlay_Lass:
-	ld a, [wCurrentAIFlags]
-	or AI_FLAG_MODIFIED_HAND
-	ld [wCurrentAIFlags], a
-	ld a, [wAITrainerCardToPlay]
-	ldh [hTempCardIndex_ff9f], a
-	ld a, OPPACTION_EXECUTE_TRAINER_EFFECTS
-	bank1call AIMakeDecision
-	ret
-
-AIDecide_Lass:
-; skip if player has less than 7 cards in hand
-	ld a, DUELVARS_NUMBER_OF_CARDS_IN_HAND
-	call GetNonTurnDuelistVariable
-	cp 7
-	jr c, .no_carry
-
-; look for Trainer cards in hand (except for Lass)
-; if any is found, return no carry.
-; otherwise, return carry.
-	call CreateHandCardList
-	ld hl, wDuelTempList
-.loop
-	ld a, [hli]
-	cp $ff
-	jr z, .set_carry
-	ld b, a
-	call LoadCardDataToBuffer1_FromDeckIndex
-	cp LASS
-	jr z, .loop
-	ld a, [wLoadedCard1Type]
-	cp TYPE_TRAINER
-	jr nz, .loop
-.no_carry
-	or a
-	ret
-.set_carry
-	scf
-	ret
-
 AIPlay_ItemFinder:
 	ld a, [wCurrentAIFlags]
 	or AI_FLAG_MODIFIED_HAND

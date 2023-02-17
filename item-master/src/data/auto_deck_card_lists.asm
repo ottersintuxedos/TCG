@@ -22,10 +22,10 @@ AllFightingPokemonCardList: ; 1b0da (6:70da)
 	db  1, HITMONCHAN
 	db  2, RHYHORN
 	db  1, RHYDON
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  1, SWITCH
-	db  2, POTION
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  1, DOUBLE_GUST
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 BenchAttackCardList: ; 1b10b (6:710b)
@@ -37,17 +37,17 @@ BenchAttackCardList: ; 1b10b (6:710b)
 	db  4, HITMONLEE
 	db  2, HITMONCHAN
 	db  4, MEOWTH_LV14
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  1, MR_FUJI
-	db  2, ENERGY_RETRIEVAL
-	db  2, SWITCH
-	db  1, SCOOP_UP
-	db  2, PLUSPOWER
-	db  2, DEFENDER
-	db  1, ITEM_FINDER
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  1, POKEMON_BREEDER_FIELDS
+	db  2, ENERGY_AMPLIFER
+	db  2, DOUBLE_GUST
+	db  1, SUPER_SCOOP_UP
+	db  2, POKEGEAR
+	db  2, ENERGY_ARK
+	db  1, SUPER_ROD
 	db  1, GUST_OF_WIND
-	db  1, MAINTENANCE
+	db  1, SUPER_ROD
 	db  0 ; end of list
 
 BattleContestCardList: ; 1b132 (6:7132)
@@ -63,10 +63,10 @@ BattleContestCardList: ; 1b132 (6:7132)
 	db  3, DRATINI
 	db  2, DRAGONAIR
 	db  1, DRAGONITE_LV45
-	db  1, PROFESSOR_OAK
-	db  3, PLUSPOWER
-	db  3, DEFENDER
-	db  2, POTION
+	db  1, PROFESSOR_ELM
+	db  3, POKEGEAR
+	db  3, ENERGY_ARK
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 HeatedBattleCardList: ; 1b153 (6:7153)
@@ -80,12 +80,12 @@ HeatedBattleCardList: ; 1b153 (6:7153)
 	db  3, HITMONLEE
 	db  3, HITMONCHAN
 	db  2, KANGASKHAN
-	db  2, ENERGY_SEARCH
-	db  2, SCOOP_UP
-	db  3, PLUSPOWER
-	db  2, DEFENDER
-	db  3, POTION
-	db  2, FULL_HEAL
+	db  2, ENERGY_ARK
+	db  2, SUPER_SCOOP_UP
+	db  3, POKEGEAR
+	db  2, ENERGY_ARK
+	db  3, HEAL_POWDER
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 FirstStrikeCardList: ; 1b174 (6:7174)
@@ -97,12 +97,12 @@ FirstStrikeCardList: ; 1b174 (6:7174)
 	db  4, HITMONLEE
 	db  4, MANKEY
 	db  1, PRIMEAPE
-	db  2, POTION
-	db  2, DEFENDER
-	db  2, PLUSPOWER
-	db  2, SWITCH
+	db  2, HEAL_POWDER
+	db  2, ENERGY_ARK
+	db  2, POKEGEAR
+	db  2, DOUBLE_GUST
 	db  3, GUST_OF_WIND
-	db  4, BILL
+	db  4, MARY
 	db  0 ; end of list
 
 SqueakingMouseCardList: ; 1b191 (6:7191)
@@ -117,15 +117,15 @@ SqueakingMouseCardList: ; 1b191 (6:7191)
 	db  3, SANDSLASH
 	db  4, RATTATA
 	db  3, RATICATE
-	db  1, PROFESSOR_OAK
-	db  2, BILL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
 	db  1, POKEMON_TRADER
-	db  2, ENERGY_RETRIEVAL
+	db  2, ENERGY_AMPLIFER
 	db  1, COMPUTER_SEARCH
-	db  3, PLUSPOWER
-	db  2, DEFENDER
-	db  2, POTION
-	db  1, SUPER_POTION
+	db  3, POKEGEAR
+	db  2, ENERGY_ARK
+	db  2, HEAL_POWDER
+	db  1, SUPER_HEAL_POWDER
 	db  0 ; end of list
 
 GreatQuakeCardList: ; 1b1ba (6:71ba)
@@ -138,12 +138,12 @@ GreatQuakeCardList: ; 1b1ba (6:71ba)
 	db  2, KANGASKHAN
 	db  1, TAUROS
 	db  1, SNORLAX
-	db  1, PROFESSOR_OAK
-	db  2, BILL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
 	db  2, POKEMON_TRADER
-	db  3, SWITCH
-	db  4, DEFENDER
-	db  3, POTION
+	db  3, DOUBLE_GUST
+	db  4, ENERGY_ARK
+	db  3, HEAL_POWDER
 	db  0 ; end of list
 
 BoneAttackCardList: ; 1b1d9 (6:71d9)
@@ -159,12 +159,12 @@ BoneAttackCardList: ; 1b1d9 (6:71d9)
 	db  2, MAROWAK_LV32
 	db  2, RHYHORN
 	db  1, RHYDON
-	db  2, BILL
-	db  1, MR_FUJI
+	db  2, MARY
+	db  1, POKEMON_BREEDER_FIELDS
 	db  2, POKE_BALL
-	db  1, POKEDEX
-	db  3, DEFENDER
-	db  2, POKEMON_FLUTE
+	db  1, NEW_POKEDEX
+	db  3, ENERGY_ARK
+	db  2, POKEMON_MARCH
 	db  0 ; end of list
 
 ExcavationCardList: ; 1b1fe (6:71fe)
@@ -182,8 +182,8 @@ ExcavationCardList: ; 1b1fe (6:71fe)
 	db  2, KABUTO
 	db  1, KABUTOPS
 	db  2, AERODACTYL
-	db  2, PROFESSOR_OAK
-	db  2, BILL
+	db  2, PROFESSOR_ELM
+	db  2, MARY
 	db  2, POKEMON_BREEDER
 	db  4, MYSTERIOUS_FOSSIL
 	db  0 ; end of list
@@ -198,14 +198,14 @@ RockCrusherCardList: ; 1b223 (6:7223)
 	db  2, GOLEM
 	db  3, ONIX
 	db  3, RHYHORN
-	db  2, PROFESSOR_OAK
+	db  2, PROFESSOR_ELM
 	db  1, POKEMON_BREEDER
 	db  2, ENERGY_REMOVAL
-	db  2, SWITCH
+	db  2, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
-	db  2, DEFENDER
-	db  1, SUPER_POTION
-	db  2, POTION
+	db  2, ENERGY_ARK
+	db  1, SUPER_HEAL_POWDER
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 BlueWaterCardList: ; 1b246 (6:7246)
@@ -229,14 +229,14 @@ BlueWaterCardList: ; 1b246 (6:7246)
 	db  1, OMANYTE
 	db  1, OMASTAR
 	db  1, ARTICUNO_LV35
-	db  1, PROFESSOR_OAK
-	db  2, BILL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
 	db  1, POKEMON_TRADER
 	db  2, MYSTERIOUS_FOSSIL
-	db  1, ENERGY_SEARCH
+	db  1, ENERGY_ARK
 	db  1, POKE_BALL
-	db  1, POTION
-	db  1, SUPER_POTION
+	db  1, HEAL_POWDER
+	db  1, SUPER_HEAL_POWDER
 	db  0 ; end of list
 
 OnTheBeachCardList: ; 1b27f (6:727f)
@@ -252,11 +252,11 @@ OnTheBeachCardList: ; 1b27f (6:727f)
 	db  2, STARMIE
 	db  3, SANDSHREW
 	db  2, SANDSLASH
-	db  2, BILL
-	db  2, ENERGY_RETRIEVAL
+	db  2, MARY
+	db  2, ENERGY_AMPLIFER
 	db  2, ENERGY_REMOVAL
 	db  2, GUST_OF_WIND
-	db  3, POTION
+	db  3, HEAL_POWDER
 	db  0 ; end of list
 
 ParalyzeCardList: ; 1b2a2 (6:72a2)
@@ -271,11 +271,11 @@ ParalyzeCardList: ; 1b2a2 (6:72a2)
 	db  2, CLOYSTER
 	db  4, STARYU
 	db  3, STARMIE
-	db  2, PROFESSOR_OAK
-	db  2, BILL
-	db  2, PLUSPOWER
-	db  2, DEFENDER
-	db  4, POTION
+	db  2, PROFESSOR_ELM
+	db  2, MARY
+	db  2, POKEGEAR
+	db  2, ENERGY_ARK
+	db  4, HEAL_POWDER
 	db  0 ; end of list
 
 EnergyRemovalCardList: ; 1b2c3 (6:72c3)
@@ -291,12 +291,12 @@ EnergyRemovalCardList: ; 1b2c3 (6:72c3)
 	db  3, HAUNTER_LV17
 	db  3, DRATINI
 	db  2, DRAGONAIR
-	db  1, PROFESSOR_OAK
-	db  1, BILL
-	db  1, LASS
-	db  2, ENERGY_SEARCH
+	db  1, PROFESSOR_ELM
+	db  1, MARY
+	db  1, MASTER_BALL
+	db  2, ENERGY_ARK
 	db  2, ENERGY_REMOVAL
-	db  1, SUPER_ENERGY_REMOVAL
+	db  1, THOUGHT_WAVE_MACHINE
 	db  0 ; end of list
 
 RainDancerCardList: ; 1b2e8 (6:72e8)
@@ -309,15 +309,15 @@ RainDancerCardList: ; 1b2e8 (6:72e8)
 	db  3, HORSEA
 	db  2, SEADRA
 	db  2, LAPRAS
-	db  2, PROFESSOR_OAK
+	db  2, PROFESSOR_ELM
 	db  1, POKEMON_BREEDER
-	db  1, ENERGY_RETRIEVAL
-	db  1, SUPER_ENERGY_RETRIEVAL
+	db  1, ENERGY_AMPLIFER
+	db  1, SUPER_ENERGY_AMPLIFER
 	db  2, ENERGY_REMOVAL
-	db  1, SUPER_ENERGY_REMOVAL
-	db  2, SWITCH
-	db  2, POTION
-	db  1, GAMBLER
+	db  1, THOUGHT_WAVE_MACHINE
+	db  2, DOUBLE_GUST
+	db  2, HEAL_POWDER
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 CutePokemonCardList: ; 1b30d (6:730d)
@@ -344,14 +344,14 @@ CutePokemonCardList: ; 1b30d (6:730d)
 	db  1, JIGGLYPUFF_LV14
 	db  2, WIGGLYTUFF
 	db  4, EEVEE
-	db  2, PROFESSOR_OAK
-	db  3, BILL
-	db  2, CLEFAIRY_DOLL
-	db  2, SCOOP_UP
+	db  2, PROFESSOR_ELM
+	db  3, MARY
+	db  2, MYSTERIOUS_FOSSIL
+	db  2, SUPER_SCOOP_UP
 	db  1, COMPUTER_SEARCH
-	db  1, PLUSPOWER
-	db  1, DEFENDER
-	db  3, POTION
+	db  1, POKEGEAR
+	db  1, ENERGY_ARK
+	db  3, HEAL_POWDER
 	db  0 ; end of list
 
 PokemonFluteCardList: ; 1b34c (6:734c)
@@ -365,14 +365,14 @@ PokemonFluteCardList: ; 1b34c (6:734c)
 	db  3, ELECTABUZZ_LV35
 	db  2, RATTATA
 	db  1, RATICATE
-	db  2, PROFESSOR_OAK
-	db  4, BILL
+	db  2, PROFESSOR_ELM
+	db  4, MARY
 	db  3, ENERGY_REMOVAL
 	db  1, COMPUTER_SEARCH
-	db  3, PLUSPOWER
-	db  2, ITEM_FINDER
+	db  3, POKEGEAR
+	db  2, SUPER_ROD
 	db  4, GUST_OF_WIND
-	db  4, POKEMON_FLUTE
+	db  4, POKEMON_MARCH
 	db  0 ; end of list
 
 YellowFlashCardList: ; 1b371 (6:7371)
@@ -395,11 +395,11 @@ YellowFlashCardList: ; 1b371 (6:7371)
 	db  1, ZAPDOS_LV40
 	db  1, ZAPDOS_LV64
 	db  3, EEVEE
-	db  1, ENERGY_RETRIEVAL
+	db  1, ENERGY_AMPLIFER
 	db  2, ENERGY_REMOVAL
 	db  2, POKE_BALL
-	db  2, PLUSPOWER
-	db  2, DEFENDER
+	db  2, POKEGEAR
+	db  2, ENERGY_ARK
 	db  1, GUST_OF_WIND
 	db  0 ; end of list
 
@@ -417,10 +417,10 @@ ElectricShockCardList: ; 1b3a4 (6:73a4)
 	db  3, ELECTRODE_LV42
 	db  1, ZAPDOS_LV64
 	db  3, PORYGON
-	db  2, ENERGY_RETRIEVAL
-	db  2, PLUSPOWER
-	db  3, DEFENDER
-	db  2, ITEM_FINDER
+	db  2, ENERGY_AMPLIFER
+	db  2, POKEGEAR
+	db  3, ENERGY_ARK
+	db  2, SUPER_ROD
 	db  3, GUST_OF_WIND
 	db  0 ; end of list
 
@@ -434,12 +434,12 @@ ZappingSelfdestructCardList: ; 1b3c9 (6:73c9)
 	db  4, ELECTABUZZ_LV35
 	db  2, KANGASKHAN
 	db  1, TAUROS
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  2, SWITCH
-	db  4, DEFENDER
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  2, DOUBLE_GUST
+	db  4, ENERGY_ARK
 	db  1, GUST_OF_WIND
-	db  4, POTION
+	db  4, HEAL_POWDER
 	db  0 ; end of list
 
 InsectCollectionCardList: ; 1b3e8 (6:73e8)
@@ -456,12 +456,12 @@ InsectCollectionCardList: ; 1b3e8 (6:73e8)
 	db  1, VENOMOTH
 	db  1, SCYTHER
 	db  1, PINSIR
-	db  2, BILL
+	db  2, MARY
 	db  2, POKEMON_BREEDER
-	db  2, SWITCH
+	db  2, DOUBLE_GUST
 	db  2, POKE_BALL
-	db  2, POKEDEX
-	db  2, POTION
+	db  2, NEW_POKEDEX
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 JungleCardList: ; 1b40f (6:740f)
@@ -484,13 +484,13 @@ JungleCardList: ; 1b40f (6:740f)
 	db  1, PINSIR
 	db  1, LICKITUNG
 	db  1, KANGASKHAN
-	db  2, BILL
-	db  1, SWITCH
+	db  2, MARY
+	db  1, DOUBLE_GUST
 	db  1, POKE_BALL
-	db  2, PLUSPOWER
-	db  2, DEFENDER
-	db  2, POTION
-	db  1, FULL_HEAL
+	db  2, POKEGEAR
+	db  2, ENERGY_ARK
+	db  2, HEAL_POWDER
+	db  1, HEAL_POWDER
 	db  0 ; end of list
 
 FlowerGardenCardList: ; 1b444 (6:7444)
@@ -510,10 +510,10 @@ FlowerGardenCardList: ; 1b444 (6:7444)
 	db  2, LICKITUNG
 	db  2, POKEMON_TRADER
 	db  3, POKEMON_BREEDER
-	db  1, ENERGY_SEARCH
-	db  2, SWITCH
-	db  2, POTION
-	db  1, FULL_HEAL
+	db  1, ENERGY_ARK
+	db  2, DOUBLE_GUST
+	db  2, HEAL_POWDER
+	db  1, HEAL_POWDER
 	db  0 ; end of list
 
 KaleidoscopeCardList: ; 1b46d (6:746d)
@@ -533,10 +533,10 @@ KaleidoscopeCardList: ; 1b46d (6:746d)
 	db  4, DITTO
 	db  4, EEVEE
 	db  4, PORYGON
-	db  2, BILL
-	db  2, MR_FUJI
-	db  2, ENERGY_SEARCH
-	db  4, SWITCH
+	db  2, MARY
+	db  2, POKEMON_BREEDER_FIELDS
+	db  2, ENERGY_ARK
+	db  4, DOUBLE_GUST
 	db  2, GUST_OF_WIND
 	db  0 ; end of list
 
@@ -551,12 +551,12 @@ FlowerPowerCardList: ; 1b498 (6:7498)
 	db  2, VILEPLUME
 	db  4, EXEGGCUTE
 	db  3, EXEGGUTOR
-	db  2, PROFESSOR_OAK
-	db  3, BILL
+	db  2, PROFESSOR_ELM
+	db  3, MARY
 	db  2, POKEMON_BREEDER
-	db  2, ENERGY_RETRIEVAL
-	db  2, SWITCH
-	db  2, POTION
+	db  2, ENERGY_AMPLIFER
+	db  2, DOUBLE_GUST
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 PsychicPowerCardList: ; 1b4b9 (6:74b9)
@@ -580,13 +580,13 @@ PsychicPowerCardList: ; 1b4b9 (6:74b9)
 	db  1, CLEFAIRY
 	db  1, CLEFABLE
 	db  1, SNORLAX
-	db  2, PROFESSOR_OAK
+	db  2, PROFESSOR_ELM
 	db  1, POKEMON_TRADER
 	db  1, POKEMON_BREEDER
-	db  2, SWITCH
-	db  1, POKEMON_CENTER
-	db  2, PLUSPOWER
-	db  1, DEVOLUTION_SPRAY
+	db  2, DOUBLE_GUST
+	db  1, ENERGY_CHARGE
+	db  2, POKEGEAR
+	db  1, HYPER_DEVOLUTION_SPRAY
 	db  0 ; end of list
 
 DreamEaterHaunterCardList: ; 1b40f (6:740f)
@@ -602,13 +602,13 @@ DreamEaterHaunterCardList: ; 1b40f (6:740f)
 	db  2, HYPNO
 	db  2, JIGGLYPUFF_LV14
 	db  2, MEOWTH_LV15
-	db  2, PROFESSOR_OAK
-	db  2, BILL
-	db  2, ENERGY_RETRIEVAL
-	db  1, SUPER_ENERGY_RETRIEVAL
-	db  2, SWITCH
+	db  2, PROFESSOR_ELM
+	db  2, MARY
+	db  2, ENERGY_AMPLIFER
+	db  1, SUPER_ENERGY_AMPLIFER
+	db  2, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
-	db  3, REVIVE
+	db  3, MAX_REVIVE
 	db  0 ; end of list
 
 ScavengingSlowbroCardList: ; 1b517 (6:7517)
@@ -621,12 +621,12 @@ ScavengingSlowbroCardList: ; 1b517 (6:7517)
 	db  2, JIGGLYPUFF_LV13
 	db  2, JIGGLYPUFF_LV14
 	db  2, EEVEE
-	db  2, ENERGY_RETRIEVAL
+	db  2, ENERGY_AMPLIFER
 	db  3, ENERGY_REMOVAL
-	db  2, PLUSPOWER
-	db  3, DEFENDER
-	db  3, POTION
-	db  4, RECYCLE
+	db  2, POKEGEAR
+	db  3, ENERGY_ARK
+	db  3, HEAL_POWDER
+	db  4, OLD_ROD
 	db  0 ; end of list
 
 StrangePowerCardList: ; 1b536 (6:7536)
@@ -643,13 +643,13 @@ StrangePowerCardList: ; 1b536 (6:7536)
 	db  2, LICKITUNG
 	db  1, SNORLAX
 	db  2, POKEMON_TRADER
-	db  2, ENERGY_RETRIEVAL
+	db  2, ENERGY_AMPLIFER
 	db  2, ENERGY_REMOVAL
-	db  1, SUPER_ENERGY_REMOVAL
-	db  2, PLUSPOWER
-	db  1, ITEM_FINDER
+	db  1, THOUGHT_WAVE_MACHINE
+	db  2, POKEGEAR
+	db  1, SUPER_ROD
 	db  1, GUST_OF_WIND
-	db  1, FULL_HEAL
+	db  1, HEAL_POWDER
 	db  0 ; end of list
 
 StrangePsyshockCardList: ; 1b55f (6:755f)
@@ -661,13 +661,13 @@ StrangePsyshockCardList: ; 1b55f (6:755f)
 	db  3, CHANSEY
 	db  3, KANGASKHAN
 	db  2, SNORLAX
-	db  2, PROFESSOR_OAK
-	db  2, POKEMON_CENTER
+	db  2, PROFESSOR_ELM
+	db  2, ENERGY_CHARGE
 	db  3, ENERGY_REMOVAL
 	db  3, GUST_OF_WIND
-	db  4, SCOOP_UP
-	db  4, SWITCH
-	db  1, GAMBLER
+	db  4, SUPER_SCOOP_UP
+	db  4, DOUBLE_GUST
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 LovelyNidoranCardList: ; 1b57e (6:757e)
@@ -679,13 +679,13 @@ LovelyNidoranCardList: ; 1b57e (6:757e)
 	db  4, NIDORINO
 	db  4, NIDOKING
 	db  3, LICKITUNG
-	db  2, PROFESSOR_OAK
+	db  2, PROFESSOR_ELM
 	db  3, POKEMON_TRADER
 	db  3, POKEMON_BREEDER
-	db  2, ENERGY_RETRIEVAL
-	db  3, SWITCH
+	db  2, ENERGY_AMPLIFER
+	db  3, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
-	db  2, ITEM_FINDER
+	db  2, SUPER_ROD
 	db  0 ; end of list
 
 ScienceCorpsCardList: ; 1b59d (6:759d)
@@ -706,15 +706,15 @@ ScienceCorpsCardList: ; 1b59d (6:759d)
 	db  1, WEEZING
 	db  2, MEOWTH_LV15
 	db  1, PERSIAN
-	db  1, PROFESSOR_OAK
-	db  1, BILL
+	db  1, PROFESSOR_ELM
+	db  1, MARY
 	db  1, POKEMON_TRADER
 	db  1, POKEMON_BREEDER
-	db  1, POTION
-	db  1, FULL_HEAL
-	db  1, MAINTENANCE
-	db  1, GAMBLER
-	db  1, RECYCLE
+	db  1, HEAL_POWDER
+	db  1, HEAL_POWDER
+	db  1, SUPER_ROD
+	db  1, PROFESSOR_ELM
+	db  1, OLD_ROD
 	db  0 ; end of list
 
 FlyinPokemonCardList: ; 1b5d2 (6:75d2)
@@ -730,10 +730,10 @@ FlyinPokemonCardList: ; 1b5d2 (6:75d2)
 	db  1, PIDGEOT_LV40
 	db  4, SPEAROW
 	db  3, FEAROW
-	db  2, IMPOSTER_PROFESSOR_OAK
-	db  2, LASS
-	db  2, BILL
-	db  4, POTION
+	db  2, TEAM_ROCKETS_EVIL_DEEDS
+	db  2, MASTER_BALL
+	db  2, MARY
+	db  4, HEAL_POWDER
 	db  0 ; end of list
 
 PoisonCardList: ; 1b5f3 (6:75f3)
@@ -748,12 +748,12 @@ PoisonCardList: ; 1b5f3 (6:75f3)
 	db  2, NIDOKING
 	db  3, KOFFING
 	db  2, WEEZING
-	db  1, PROFESSOR_OAK
-	db  2, IMPOSTER_PROFESSOR_OAK
+	db  1, PROFESSOR_ELM
+	db  2, TEAM_ROCKETS_EVIL_DEEDS
 	db  1, POKEMON_BREEDER
-	db  2, POTION
-	db  2, FULL_HEAL
-	db  1, GAMBLER
+	db  2, HEAL_POWDER
+	db  2, HEAL_POWDER
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 WondersOfScienceCardList: ; 1b616 (6:7616)
@@ -767,15 +767,15 @@ WondersOfScienceCardList: ; 1b616 (6:7616)
 	db  1, MEWTWO_ALT_LV60
 	db  1, MEWTWO_LV60
 	db  2, PORYGON
-	db  1, IMPOSTER_PROFESSOR_OAK
-	db  2, PROFESSOR_OAK
-	db  2, BILL
-	db  2, ENERGY_SEARCH
-	db  2, SWITCH
+	db  1, TEAM_ROCKETS_EVIL_DEEDS
+	db  2, PROFESSOR_ELM
+	db  2, MARY
+	db  2, ENERGY_ARK
+	db  2, DOUBLE_GUST
 	db  2, COMPUTER_SEARCH
-	db  2, POKEDEX
-	db  2, MAINTENANCE
-	db  2, FULL_HEAL
+	db  2, NEW_POKEDEX
+	db  2, SUPER_ROD
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 ReplaceEmAllCardList: ; 1b63d (6:763d)
@@ -792,9 +792,9 @@ ReplaceEmAllCardList: ; 1b63d (6:763d)
 	db  1, PIDGEOT_LV40
 	db  3, DODUO
 	db  2, DODRIO
-	db  2, PROFESSOR_OAK
-	db  2, IMPOSTER_PROFESSOR_OAK
-	db  2, LASS
+	db  2, PROFESSOR_ELM
+	db  2, TEAM_ROCKETS_EVIL_DEEDS
+	db  2, MASTER_BALL
 	db  3, GUST_OF_WIND
 	db  0 ; end of list
 
@@ -809,12 +809,12 @@ ChariSaurCardList: ; 1b660 (6:7660)
 	db  2, CHARIZARD
 	db  3, FLAREON_LV22
 	db  4, EEVEE
-	db  2, BILL
+	db  2, MARY
 	db  3, POKEMON_TRADER
 	db  3, POKEMON_BREEDER
-	db  2, ENERGY_RETRIEVAL
+	db  2, ENERGY_AMPLIFER
 	db  1, ENERGY_REMOVAL
-	db  2, POTION
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 TrafficLightCardList: ; 1b681 (6:7681)
@@ -832,9 +832,9 @@ TrafficLightCardList: ; 1b681 (6:7681)
 	db  2, ELECTRODE_LV42
 	db  2, JOLTEON_LV24
 	db  4, EEVEE
-	db  2, ENERGY_SEARCH
-	db  2, SWITCH
-	db  3, PLUSPOWER
+	db  2, ENERGY_ARK
+	db  2, DOUBLE_GUST
+	db  3, POKEGEAR
 	db  0 ; end of list
 
 FirePokemonCardList: ; 1b6a4 (6:76a4)
@@ -856,13 +856,13 @@ FirePokemonCardList: ; 1b6a4 (6:76a4)
 	db  1, FLAREON_LV28
 	db  1, MOLTRES_LV35
 	db  3, EEVEE
-	db  1, PROFESSOR_OAK
-	db  2, BILL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
 	db  1, POKEMON_TRADER
 	db  1, POKEMON_BREEDER
-	db  1, ENERGY_RETRIEVAL
-	db  1, SUPER_ENERGY_RETRIEVAL
-	db  1, SWITCH
+	db  1, ENERGY_AMPLIFER
+	db  1, SUPER_ENERGY_AMPLIFER
+	db  1, DOUBLE_GUST
 	db  1, GUST_OF_WIND
 	db  0 ; end of list
 
@@ -877,16 +877,16 @@ FireChargeCardList: ; 1b6d9 (6:76d9)
 	db  1, WIGGLYTUFF
 	db  2, CHANSEY
 	db  2, TAUROS
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  2, ENERGY_RETRIEVAL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  2, ENERGY_AMPLIFER
 	db  1, POKE_BALL
 	db  1, COMPUTER_SEARCH
-	db  2, DEFENDER
-	db  3, POTION
-	db  1, FULL_HEAL
-	db  3, RECYCLE
-	db  1, GAMBLER
+	db  2, ENERGY_ARK
+	db  3, HEAL_POWDER
+	db  1, HEAL_POWDER
+	db  3, OLD_ROD
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 CharmanderAndFriendsCardList: ; 1b702 (6:7702)
@@ -912,13 +912,13 @@ CharmanderAndFriendsCardList: ; 1b702 (6:7702)
 	db  2, RATTATA
 	db  1, RATICATE
 	db  1, MEOWTH_LV14
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  1, SWITCH
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  1, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
-	db  1, PLUSPOWER
-	db  2, POTION
-	db  2, FULL_HEAL
+	db  1, POKEGEAR
+	db  2, HEAL_POWDER
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 SquirtleAndFriendsCardList: ; 1b73d (6:773d)
@@ -947,14 +947,14 @@ SquirtleAndFriendsCardList: ; 1b73d (6:773d)
 	db  2, RATTATA
 	db  1, RATICATE
 	db  1, MEOWTH_LV14
-	db  1, PROFESSOR_OAK
-	db  1, BILL
-	db  1, SWITCH
+	db  1, PROFESSOR_ELM
+	db  1, MARY
+	db  1, DOUBLE_GUST
 	db  1, POKE_BALL
-	db  1, SCOOP_UP
-	db  1, ITEM_FINDER
-	db  1, POTION
-	db  1, FULL_HEAL
+	db  1, SUPER_SCOOP_UP
+	db  1, SUPER_ROD
+	db  1, HEAL_POWDER
+	db  1, HEAL_POWDER
 	db  0 ; end of list
 
 BulbasaurAndFriendsCardList: ; 1b780 (6:7780)
@@ -980,15 +980,15 @@ BulbasaurAndFriendsCardList: ; 1b780 (6:7780)
 	db  1, JIGGLYPUFF_LV14
 	db  1, MEOWTH_LV14
 	db  1, KANGASKHAN
-	db  1, PROFESSOR_OAK
-	db  1, BILL
-	db  1, SWITCH
+	db  1, PROFESSOR_ELM
+	db  1, MARY
+	db  1, DOUBLE_GUST
 	db  1, POKE_BALL
-	db  2, PLUSPOWER
-	db  1, DEFENDER
+	db  2, POKEGEAR
+	db  1, ENERGY_ARK
 	db  1, GUST_OF_WIND
-	db  2, POTION
-	db  2, FULL_HEAL
+	db  2, HEAL_POWDER
+	db  2, HEAL_POWDER
 	db  0 ; end of list
 
 PsychicMachampCardList: ; 1b7b (6:77b)
@@ -1016,12 +1016,12 @@ PsychicMachampCardList: ; 1b7b (6:77b)
 	db  1, PIDGEOT_LV40
 	db  2, RATTATA
 	db  1, RATICATE
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  1, SWITCH
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  1, DOUBLE_GUST
 	db  1, GUST_OF_WIND
-	db  2, POTION
-	db  1, FULL_HEAL
+	db  2, HEAL_POWDER
+	db  1, HEAL_POWDER
 	db  0 ; end of list
 
 WaterBeetleCardList: ; 1b7fc (6:77fc)
@@ -1049,13 +1049,13 @@ WaterBeetleCardList: ; 1b7fc (6:77fc)
 	db  1, LICKITUNG
 	db  1, KANGASKHAN
 	db  1, TAUROS
-	db  1, PROFESSOR_OAK
-	db  2, BILL
-	db  1, ENERGY_RETRIEVAL
-	db  1, ENERGY_SEARCH
-	db  1, SWITCH
-	db  1, PLUSPOWER
-	db  1, FULL_HEAL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
+	db  1, ENERGY_AMPLIFER
+	db  1, ENERGY_ARK
+	db  1, DOUBLE_GUST
+	db  1, POKEGEAR
+	db  1, HEAL_POWDER
 	db  0 ; end of list
 
 LegendaryMoltresCardList: ; 1b83b (6:783b)
@@ -1068,15 +1068,15 @@ LegendaryMoltresCardList: ; 1b83b (6:783b)
 	db  2, MAGMAR_LV31
 	db  2, MOLTRES_LV35
 	db  2, MOLTRES_LV37
-	db  3, BILL
-	db  2, LASS
+	db  3, MARY
+	db  2, MASTER_BALL
 	db  1, POKEMON_TRADER
-	db  1, ENERGY_RETRIEVAL
-	db  1, SUPER_ENERGY_RETRIEVAL
+	db  1, ENERGY_AMPLIFER
+	db  1, SUPER_ENERGY_AMPLIFER
 	db  2, ENERGY_REMOVAL
-	db  2, SWITCH
-	db  1, POTION
-	db  1, SUPER_POTION
+	db  2, DOUBLE_GUST
+	db  1, HEAL_POWDER
+	db  1, SUPER_HEAL_POWDER
 	db  0 ; end of list
 
 LegendaryZapdosCardList: ; 1b860 (6:7860)
@@ -1089,12 +1089,12 @@ LegendaryZapdosCardList: ; 1b860 (6:7860)
 	db  1, ZAPDOS_LV64
 	db  2, ZAPDOS_LV68
 	db  3, EEVEE
-	db  4, BILL
-	db  2, ENERGY_RETRIEVAL
-	db  2, SWITCH
-	db  3, PLUSPOWER
-	db  3, POTION
-	db  1, GAMBLER
+	db  4, MARY
+	db  2, ENERGY_AMPLIFER
+	db  2, DOUBLE_GUST
+	db  3, POKEGEAR
+	db  3, HEAL_POWDER
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 LegendaryArticunoCardList: ; 1b87f (6:787f)
@@ -1106,12 +1106,12 @@ LegendaryArticunoCardList: ; 1b87f (6:787f)
 	db  2, ARTICUNO_LV35
 	db  3, CHANSEY
 	db  2, DITTO
-	db  2, PROFESSOR_OAK
+	db  2, PROFESSOR_ELM
 	db  2, POKEMON_TRADER
-	db  3, ENERGY_RETRIEVAL
-	db  3, SWITCH
-	db  4, SCOOP_UP
-	db  1, GAMBLER
+	db  3, ENERGY_AMPLIFER
+	db  3, DOUBLE_GUST
+	db  4, SUPER_SCOOP_UP
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 LegendaryDragoniteCardList: ; 1b89c (6:789c)
@@ -1127,13 +1127,13 @@ LegendaryDragoniteCardList: ; 1b89c (6:789c)
 	db  4, DRATINI
 	db  3, DRAGONAIR
 	db  2, DRAGONITE_LV41
-	db  2, PROFESSOR_OAK
+	db  2, PROFESSOR_ELM
 	db  2, POKEMON_TRADER
 	db  2, POKEMON_BREEDER
-	db  1, ENERGY_RETRIEVAL
-	db  1, SUPER_ENERGY_RETRIEVAL
-	db  2, SWITCH
-	db  1, GAMBLER
+	db  1, ENERGY_AMPLIFER
+	db  1, SUPER_ENERGY_AMPLIFER
+	db  2, DOUBLE_GUST
+	db  1, PROFESSOR_ELM
 	db  0 ; end of list
 
 MysteriousPokemonCardList: ; 1b8c3 (6:78c3)
@@ -1149,10 +1149,10 @@ MysteriousPokemonCardList: ; 1b8c3 (6:78c3)
 	db  2, MR_MIME
 	db  1, MEW_LV8
 	db  2, MEW_LV15
-	db  1, PROFESSOR_OAK
-	db  2, BILL
+	db  1, PROFESSOR_ELM
+	db  2, MARY
 	db  2, POKEMON_BREEDER
 	db  1, ENERGY_REMOVAL
-	db  2, SWITCH
-	db  1, POKEMON_CENTER
+	db  2, DOUBLE_GUST
+	db  1, ENERGY_CHARGE
 	db  0 ; end of list
