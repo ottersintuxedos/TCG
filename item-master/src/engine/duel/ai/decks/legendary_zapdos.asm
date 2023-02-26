@@ -66,7 +66,7 @@ AIActionTable_LegendaryZapdos:
 	db $00
 
 .list_prize
-	db GAMBLER
+	db PROFESSOR_ELM
 	db ZAPDOS_LV68
 	db $00
 

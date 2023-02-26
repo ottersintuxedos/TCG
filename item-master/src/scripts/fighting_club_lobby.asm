@@ -130,8 +130,8 @@ Script_BeatImakuni:
 	print_npc_text Text046e
 .give_imakuni_card
 	print_npc_text Text046f
-	give_card IMAKUNI_CARD
-	show_card_received_screen IMAKUNI_CARD
+	give_card SUPER_ENERGY_RETRIEVAL
+	show_card_received_screen SUPER_ENERGY_RETRIEVAL
 .done
 	print_npc_text Text0470
 	script_jump Script_LostToImakuni.imakuni_common

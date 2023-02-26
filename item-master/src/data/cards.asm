@@ -9916,7 +9916,7 @@ SuperEnergyRetrievalCard: ; 33e05 (c:7e05)
 	tx SuperEnergyRetrievalName ; name
 	db STAR ; rarity
 	db EVOLUTION | NONE ; sets
-	db SUPERENERGY_RETRIEVAL
+	db SUPER_ENERGY_RETRIEVAL
 	dw SuperEnergyRetrievalEffectCommands ; effect commands
 	tx SuperEnergyRetrievalDescription ; description
 	dw NONE ; description (cont)
@@ -9951,7 +9951,7 @@ ProfessorElmCard: ; 33e05 (c:7e05)
 	db COLOSSEUM | NONE ; sets
 	db PROFESSOR_ELM
 	dw ProfessorElmEffectCommands ; effect commands
-	tx EeeeeeekDescription ; description
+	tx ProfessorElmDescription ; description
 	dw NONE ; description (cont)
  
 SuperScoopUpCard: ; 33e05 (c:7e05)
@@ -9960,7 +9960,7 @@ SuperScoopUpCard: ; 33e05 (c:7e05)
 	tx SuperScoopUpName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db SUPERSCOOP_UP
+	db SUPER_SCOOP_UP
 	dw SuperScoopUpEffectCommands ; effect commands
 	tx SuperScoopUpDescription ; description
 	dw NONE ; description (cont)
@@ -10018,7 +10018,7 @@ FossilEggCard: ; 33e05 (c:7e05)
 	db FOSSIL_EGG
 	dw FossilEggEffectCommands ; effect commands
 	tx FossilEggDescription ; description
-	tx FossilEggDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
  
 HyperDevolutionSprayCard: ; 33e05 (c:7e05)
 	db TYPE_TRAINER ; type
@@ -10026,7 +10026,7 @@ HyperDevolutionSprayCard: ; 33e05 (c:7e05)
 	tx HyperDevolutionSprayName ; name
 	db DIAMOND ; rarity
 	db EVOLUTION | NONE ; sets
-	db HYPERDEVOLUTION_SPRAY
+	db HYPER_DEVOLUTION_SPRAY
 	dw HyperDevolutionSprayEffectCommands ; effect commands
 	tx HyperDevolutionSprayDescription ; description
 	dw NONE ; description (cont)
@@ -10048,7 +10048,7 @@ PokemonBreederFieldsCard: ; 33e05 (c:7e05)
 	tx PokemonBreederFieldsName ; name
 	db DIAMOND ; rarity
 	db COLOSSEUM | NONE ; sets
-	db POKEMONBREEDER_FIELDS
+	db POKEMON_BREEDER_FIELDS
 	dw PokemonBreederFieldsEffectCommands ; effect commands
 	tx PokemonBreederFieldsDescription ; description
 	dw NONE ; description (cont)
@@ -10070,10 +10070,10 @@ ThoughtWaveMachineCard: ; 33e05 (c:7e05)
 	tx ThoughtWaveMachineName ; name
 	db STAR ; rarity
 	db MYSTERY | NONE ; sets
-	db THOUGHTWAVE_MACHINE
+	db THOUGHT_WAVE_MACHINE
 	dw ThoughtWaveMachineEffectCommands ; effect commands
 	tx ThoughtWaveMachineDescription ; description
-	tx ThoughtWaveMachineDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
  
 EnergyAmplifierCard: ; 33e05 (c:7e05)
 	db TYPE_TRAINER ; type
@@ -10084,7 +10084,7 @@ EnergyAmplifierCard: ; 33e05 (c:7e05)
 	db ENERGY_AMPLIFIER
 	dw EnergyAmplifierEffectCommands ; effect commands
 	tx EnergyAmplifierDescription ; description
-	tx EnergyAmplifierDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
  
 TeamRocketsEvilDeedsCard: ; 33e05 (c:7e05)
 	db TYPE_TRAINER ; type

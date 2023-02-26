@@ -69,7 +69,7 @@ DetermineAIScoreOfAttackEnergyRequirement: ; 16695 (5:6695)
 Each deck AI lists some card IDs that are not supposed to be placed as Prize cards in the beginning of the duel. If the deck configuration after the initial shuffling results in any of these cards being placed as Prize cards, the game is supposed to reshuffle the deck. An example of such a list, for the Go GO Rain Dance deck, is:
 ```
 .list_prize ; 14fe6 (5:4fe6)
-	db GAMBLER
+	db PROFESSOR_ELM
 	db ENERGY_RETRIEVAL
 	db SUPER_ENERGY_RETRIEVAL
 	db BLASTOISE

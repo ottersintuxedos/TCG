@@ -347,8 +347,8 @@ OmastarWaterGunEffectCommands:
 	db  $00
 
 OmastarSpikeCannonEffectCommands:
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, OmastarSpikeCannon_MultiplierEffect
-	dbw EFFECTCMDTYPE_AI, OmastarSpikeCannon_AIEffect
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ThirtyTimesTwo_MultiplierEffect
+	dbw EFFECTCMDTYPE_AI, ExpectingTwenty_AIEffect
 	db  $00
 
 OmanyteClairvoyanceEffectCommands:
@@ -553,10 +553,10 @@ VaporeonFocusEnergyEffectCommands:
 	db  $00
 
 ArcanineFlamethrowerEffectCommands:
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, ArcanineFlamethrower_CheckEnergy
-	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, ArcanineFlamethrower_PlayerSelectEffect
-	dbw EFFECTCMDTYPE_DISCARD_ENERGY, ArcanineFlamethrower_DiscardEffect
-	dbw EFFECTCMDTYPE_AI_SELECTION, ArcanineFlamethrower_AISelectEffect
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, Fire_CheckEnergy
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, FireCardToDiscard_PlayerSelectEffect
+	dbw EFFECTCMDTYPE_DISCARD_ENERGY, DiscardEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DiscardFireEnergy_AISelectEffect
 	db  $00
 
 ArcanineTakeDownEffectCommands:
@@ -1440,7 +1440,6 @@ MasterBallEffectCommands:
 	dbw EFFECTCMDTYPE_REQUIRE_SELECTION, MasterBall_PlayerSelection
 	db  $00
 
-
 MaxReviveEffectCommands:
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, MaxRevive_BenchCheck
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, MaxRevive_HandDeckCheck
@@ -1488,15 +1487,14 @@ ProfessorElmEffectCommands:
 
 SuperScoopUpEffectCommands:
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, SuperScoopUp_BenchCheck
-    dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, ScoopUp_PlayerSelection
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, ScoopUp_ReturnToHandEffect ; incomplete
+    dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, SuperScoopUp_PlayerSelection
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, SuperScoopUp_ReturnToHandEffect ; incomplete
 	db  $00
 
 DoubleGustEffectCommands:
     dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, DoubleGust_BenchCheck
-	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, DoubleGust_SwitchDefendingPokemon
-	dbw EFFECTCMDTYPE_REQUIRE_SELECTION, DoubleGust_SelectSwitchPokemon
-	dbw EFFECTCMDTYPE_AI_SELECTION, DoubleGust_GetBenchPokemonWithLowestHP
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, DoubleGust_SwitchEffect
+	dbw EFFECTCMDTYPE_AI_SELECTION, DoubleGust_AISelectEffect
 	db  $00
 
 MooMooMilkEffectCommands:
@@ -1534,13 +1532,13 @@ HyperDevolutionSprayEffectCommands:
 EnergyArkEffectCommands:
     dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, EnergyArk_DeckCheck
     dbw EFFECTCMDTYPE_BEFORE_DAMAGE, EnergyArk_AddToHandEffect
-    dbw EFFECTCMDTYPE_PLAYER_SELECTION, EnergyArk_PlayerSelection
+    dbw EFFECTCMDTYPE_REQUIRE_SELECTION, EnergyArk_PlayerSelection
     db  $00
 
 PokemonBreederFieldsEffectCommands:
-    dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, PokemonBreederFields_EvolutionCheck
+    dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, PokemonBreederFields_PlayAreaEvolutionCheck
     dbw EFFECTCMDTYPE_BEFORE_DAMAGE, PokemonBreederFields_AddToHandEffect
-    dbw EFFECTCMDTYPE_PLAYER_SELECTION, PokemonBreederFields_PlayerSelection
+    dbw EFFECTCMDTYPE_REQUIRE_SELECTION, PokemonBreederFields_PlayerSelection
     dbw EFFECTCMDTYPE_AI_SELECTION, PokemonBreederFields_AISelectEffect
     db  $00
 
@@ -1558,7 +1556,7 @@ ThoughtWaveMachineEffectCommands:
 EnergyAmplifierEffectCommands:
     dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, EnergyAmplifier_HandDeckCheck
     dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, EnergyAmplifier_PlayerHandSelection
-    dbw EFFECTCMDTYPE_BEFORE_DAMAGE, EnergyAmplifier_AddToHandEffect
+    dbw EFFECTCMDTYPE_BEFORE_DAMAGE, EnergyArk_AddToHandEffect
     dbw EFFECTCMDTYPE_REQUIRE_SELECTION, EnergyAmplifier_PlayerDeckSelection
     db  $00
 
@@ -1610,4 +1608,9 @@ PokemonBreederEffectCommands:
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, PokemonBreeder_HandPlayAreaCheck
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, PokemonBreeder_PlayerSelection
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, PokemonBreeder_EvolveEffect
+	db  $00
+
+MysteriousFossilEffectCommands:
+	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, MysteriousFossil_BenchCheck
+	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, MysteriousFossil_PlaceInPlayAreaEffect
 	db  $00

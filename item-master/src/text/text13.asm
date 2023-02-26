@@ -72,19 +72,6 @@ EnergyAmplifierDescriptionCont:
     text "Shuffle your deck afterward."
     done
 
-MagnifierName:
-    text "Magnifier"
-    done
-
-MagnifierDescription:
-    text "Attach Magnifier to 1 of your"
-    line "Pokémon. At the end of your turn,"
-    line "discard Magnifier. If the Pokémon"
-    line "Magnifier is attached to attacks,"
-    line "don't apply Resistance for that"
-    line "attack."
-    done
-
 TeamRocketsEvilDeedsName:
     text "Team Rockets Evil Deeds"
     done

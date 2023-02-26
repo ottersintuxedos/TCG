@@ -78,7 +78,7 @@ AIActionTable_LegendaryRonald:
 	db ARTICUNO_LV37
 	db ZAPDOS_LV68
 	db DRAGONITE_LV41
-	db GAMBLER
+	db PROFESSOR_ELM
 	db $00
 
 .store_list_pointers

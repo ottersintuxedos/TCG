@@ -44,7 +44,7 @@ ApplyStatusEffect: ; 2c035 (b:4035)
 	cp [hl]
 	jr nz, .can_induce_status
 	ld a, [wTempNonTurnDuelistCardID]
-	cp CLEFAIRY_DOLL
+	cp MYSTERIOUS_FOSSIL
 	jr z, .cant_induce_status
 	cp MYSTERIOUS_FOSSIL
 	jr z, .cant_induce_status
@@ -663,6 +663,7 @@ CheckIfDeckIsEmpty: ; 2c2e0 (b:42e0)
 ;	SEARCHEFFECT_BASIC_FIGHTING = search for any Basic Fighting Pokemon
 ;	SEARCHEFFECT_BASIC_ENERGY = search for any Basic Energy
 ;	SEARCHEFFECT_POKEMON = search for any Pokemon card
+;	SEARCHEFFECT_FOSSIL = search for Omanyte, Kabuto, or Aerodactyl
 ; input:
 ;	d = SEARCHEFFECT_* constant
 ;	e = (optional) card ID to search for in deck
@@ -2759,19 +2760,6 @@ ApplyExtraWaterEnergyDamageBonus: ; 2cec8 (b:4ec8)
 OmastarWaterGunEffect: ; 2cf05 (b:4f05)
 	lb bc, 1, 1
 	jr ApplyExtraWaterEnergyDamageBonus
-
-OmastarSpikeCannon_MultiplierEffect: ; 2cf12 (b:4f12)
-	ld hl, 30
-	call LoadTxRam3
-	ld a, 2
-	ldtx de, DamageCheckIfHeadsXDamageText
-	call TossCoinATimes_BankB
-	ld e, a
-	add a
-	add e
-	call ATimes10
-	call SetDefiniteDamage ; 3 * 10 * heads
-	ret
 
 ClairvoyanceEffect: ; 2cf2a (b:4f2a)
 	scf
@@ -5632,7 +5620,7 @@ StoneBarrage_MultiplierEffect: ; 2e052 (b:6052)
 	xor a
 	ldh [hTemp_ffa0], a
 .loop_coin_toss
-	ldtx de, FlipUntilFailAppears10DamageForEachHeadsText
+	ldtx de, ForEachHeadsSearchDeckForBasicEnergyText
 	xor a
 	call TossCoinATimes_BankB
 	jr nc, .tails
@@ -8607,7 +8595,7 @@ PokeBall_AddToHandEffect: ; 2fb15 (b:7b15)
 	ret
 
 ; return carry if no cards in deck
-Masterball_DeckCheck: ; 2f8e1 (b:78e1)
+MasterBall_DeckCheck: ; 2f8e1 (b:78e1)
 	ld a, DUELVARS_NUMBER_OF_CARDS_NOT_IN_DECK
 	call GetTurnDuelistVariable
 	ldtx hl, NoCardsLeftInTheDeckText
@@ -8615,7 +8603,7 @@ Masterball_DeckCheck: ; 2f8e1 (b:78e1)
 	ccf
 	ret
 
-Masterball_PlayerSelection: ; 2f8ed (b:78ed)
+MasterBall_PlayerSelection: ; 2f8ed (b:78ed)
 ; print text box
 	ldtx hl, ChooseAPokemonToAddToYourDeckText
 	call DrawWideTextBox_WaitForInput
@@ -8763,7 +8751,7 @@ EnergyCharge_PlayerDiscardPileSelection: ; 2f2b9 (b:72b9)
 
 ; create list of energy in the discard pile
 	ldh [hCurSelectionItem], a
-	ldtx hl, Choose2EnergyCardsFromDiscardPileText
+	ldtx hl, Choose2BasicEnergyCardsFromDiscardPileText
 	call DrawWideTextBox_WaitForInput
 	call CreateEnergyCardListFromDiscardPile_AllEnergy
 
@@ -8863,7 +8851,7 @@ PokeGear_DeckCheck: ; 2f8e1 (b:78e1)
 
 PokeGear_PlayerSelection: ; 2f8ed (b:78ed)
 ; print text box
-	ldtx hl, ChooseATrainerToAddToYourDeckText
+	ldtx hl, ChooseATrainerToAddToYourHandText
 	call DrawWideTextBox_WaitForInput
 
 ; cap the number of cards to reorder up to
@@ -8896,8 +8884,8 @@ PokeGear_PlayerSelection: ; 2f8ed (b:78ed)
 
 ; display card list to order
 	bank1call InitAndDrawCardListScreenLayout
-	ldtx hl, ChooseATrainerToAddToYourDeckText
-	ldtx de, Top7CardsText
+	ldtx hl, ChooseATrainerToAddToYourHandText
+	ldtx de, DuelistDeckText
 	bank1call SetCardListHeaderText
 
 .read_input
@@ -10098,8 +10086,6 @@ EnergyArk_PlayerSelection:
 	ldtx de, ForEachHeadsSearchDeckForBasicEnergyText
 	ld a, 2
 	call TossCoinATimes_BankB
-	ret c
-
 	ld a, hTemp_ffa0
 	call CreateDeckCardList
 	lb de, SEARCHEFFECT_BASIC_ENERGY, 0
@@ -10163,20 +10149,25 @@ EnergyArk_AddToHandEffect: ; 2f372 (b:7372)
 	call Func_2c0bd
 	ret
 
-PokemonBreederFields_EvolutionCheck:
-	;if neither player can evolve a pokemon or has cards left in their deck, return
+; return carry if Turn Duelist has no Evolution cards in Play Area (Basic or Stage 1)
+PokemonBreederFields_PlayAreaEvolutionCheck: ; 2fc0b (b:7c0b)
+	ld a, DUELVARS_NUMBER_OF_POKEMON_IN_PLAY_AREA
+	call GetTurnDuelistVariable
+	ld c, a
+	ld l, DUELVARS_ARENA_CARD
+.loop
+	ld a, [hli]
+	call LoadCardDataToBuffer2_FromDeckIndex
+	ld a, [wLoadedCard2Stage]
+	or a
+	ret nz ; found an Evolution card
+	dec c
+	jr nz, .loop
 
-PokemonBreederFields_Effect:
-	call SwapTurn
-	call .SearchDeckForEvolution
-	call SwapTurn
-	call .SearchDeckForEvolution
+	ldtx hl, ThereAreNoStage1PokemonText
+	scf
+	ret
 
-.SearchDeckForEvolution
-	
-
-
-	call CheckIfCanEvolveInto
 
 ; this needs to check if there are pokemon or trainer cards
 ; essentially if there are only energy in the discard, it returns
@@ -10256,7 +10247,7 @@ ThoughtWaveMachine_EnergyCheck: ; 2f252 (b:7252)
 	
 	
 	call SwapTurn
-	call CheckIfThereAreAnyEnergyCardsAttachedToActive
+	call CheckIfThereAreAnyEnergyCardsAttached
 	ldtx hl, NoEnergyAttachedToOppActivePokemonText
 	call SwapTurn
 	ret
@@ -10378,7 +10369,7 @@ EnergyAmplifier_PlayerDeckSelection:
 	call ReturnCardToDeck
 
 ;
-	ldtx hl, ChooseUpTo3EnergyFromDeckText
+	ldtx hl, Choose3BasicEnergyFromDeckText
 	call DrawWideTextBox_WaitForInput
 
 
@@ -10392,7 +10383,7 @@ EnergyAmplifier_PlayerDeckSelection:
 	; B pressed
 	ld a, 5
 	call AskWhetherToQuitSelectingCards
-	jr c, .loop_discard_pile_selection ; player selected to continue
+	jr c, .loop_deck_selection ; player selected to continue
 	jr .done
 
 .store_selected_card
@@ -10406,11 +10397,12 @@ EnergyAmplifier_PlayerDeckSelection:
 	; this shouldn't happen
 	ldh a, [hCurSelectionItem]
 	cp 6
-	jr c, .loop_discard_pile_selection
+	jr c, .loop_deck_selection
 
 
 
 ; display deck card list screen
+.done
 	ldtx hl, Choose3BasicEnergyFromDeckText
 	call DrawWideTextBox_WaitForInput
 	call CreateDeckCardList
@@ -10458,38 +10450,6 @@ EnergyAmplifier_PlayerDeckSelection:
 	call SearchCardInDeckAndAddToHand
 	call AddCardToHand
 	or a
-	ret
-
-Magnifier_PlayerSelection:
-	ldtx hl, ChoosePokemonToAttachMagnifierToText
-	call DrawWideTextBox_WaitForInput
-	bank1call HasAlivePokemonInPlayArea
-	bank1call OpenPlayAreaScreenForSelection
-	ldh a, [hTempPlayAreaLocation_ff9d]
-	ldh [hTemp_ffa0], a
-	ret
-
-Magnifier_AttachMagniferEffect:
-; attach Trainer card to Play Area Pokemon
-	ldh a, [hTemp_ffa0]
-	ld e, a
-	ldh a, [hTempCardIndex_ff9f]
-	call PutHandCardInPlayArea
-
-; increase number of Defender cards of this location by 1
-	ldh a, [hTemp_ffa0]
-	add DUELVARS_ARENA_CARD_ATTACHED_MAGNIFIER ; read core.asm carefully and duel.asm and damage_calculation.asm 
-	call GetTurnDuelistVariable
-	inc [hl]
-	call IsPlayerTurn
-	ret c
-
-	ld hl, wDamage + 1
-	set UNAFFECTED_BY_WEAKNESS_RESISTANCE_F, [hl]
-	ret
-
-	ldh a, [hTemp_ffa0]
-	call Func_2c10b
 	ret
 
 TeamRocketsEvilDeeds_PlayerSelection: ; 2f9e3 (b:79e3)
@@ -11265,4 +11225,49 @@ SuperEnergyRemoval_DiscardEffect: ; 2fd73 (b:7d73)
 	ldh a, [hPlayAreaEffectTarget]
 	call Func_2c10b
 	call SwapTurn
+	ret
+
+; checks if there is at least one Energy card
+; attached to some card in the Turn Duelist's Play Area.
+; return no carry if one is found,
+; and returns carry set if none is found.
+CheckIfThereAreAnyEnergyCardsAttached: ; 2f1c4 (b:71c4)
+	ld a, DUELVARS_CARD_LOCATIONS
+	call GetTurnDuelistVariable
+.loop_deck
+	ld a, [hl]
+	bit CARD_LOCATION_PLAY_AREA_F, a
+	jr z, .next_card ; skip if not in Play Area
+	ld a, l
+	call LoadCardDataToBuffer2_FromDeckIndex
+	ld a, [wLoadedCard2Type]
+	cp TYPE_TRAINER
+	jr z, .next_card ; skip if it's a Trainer card
+	cp TYPE_ENERGY
+	jr nc, .found
+.next_card
+	inc l
+	ld a, l
+	cp DECK_SIZE
+	jr c, .loop_deck
+	scf
+	ret
+.found
+	or a
+	ret
+
+; check if card index in a is a Basic Energy card.
+; returns carry in case it's not.
+CheckIfCardIsBasicEnergy: ; 2f38f (b:738f)
+	call LoadCardDataToBuffer2_FromDeckIndex
+	ld a, [wLoadedCard2Type]
+	cp TYPE_ENERGY
+	jr c, .not_basic_energy
+	cp TYPE_ENERGY_DOUBLE_COLORLESS
+	jr nc, .not_basic_energy
+; is basic energy
+	or a
+	ret
+.not_basic_energy
+	scf
 	ret

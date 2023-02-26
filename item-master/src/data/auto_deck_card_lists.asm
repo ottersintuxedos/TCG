@@ -40,7 +40,7 @@ BenchAttackCardList: ; 1b10b (6:710b)
 	db  1, PROFESSOR_ELM
 	db  2, MARY
 	db  1, POKEMON_BREEDER_FIELDS
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  2, DOUBLE_GUST
 	db  1, SUPER_SCOOP_UP
 	db  2, POKEGEAR
@@ -120,12 +120,12 @@ SqueakingMouseCardList: ; 1b191 (6:7191)
 	db  1, PROFESSOR_ELM
 	db  2, MARY
 	db  1, POKEMON_TRADER
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  1, COMPUTER_SEARCH
 	db  3, POKEGEAR
 	db  2, ENERGY_ARK
 	db  2, HEAL_POWDER
-	db  1, SUPER_HEAL_POWDER
+	db  1, MOOMOO_MILK
 	db  0 ; end of list
 
 GreatQuakeCardList: ; 1b1ba (6:71ba)
@@ -204,7 +204,7 @@ RockCrusherCardList: ; 1b223 (6:7223)
 	db  2, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
 	db  2, ENERGY_ARK
-	db  1, SUPER_HEAL_POWDER
+	db  1, MOOMOO_MILK
 	db  2, HEAL_POWDER
 	db  0 ; end of list
 
@@ -236,7 +236,7 @@ BlueWaterCardList: ; 1b246 (6:7246)
 	db  1, ENERGY_ARK
 	db  1, POKE_BALL
 	db  1, HEAL_POWDER
-	db  1, SUPER_HEAL_POWDER
+	db  1, MOOMOO_MILK
 	db  0 ; end of list
 
 OnTheBeachCardList: ; 1b27f (6:727f)
@@ -253,7 +253,7 @@ OnTheBeachCardList: ; 1b27f (6:727f)
 	db  3, SANDSHREW
 	db  2, SANDSLASH
 	db  2, MARY
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  2, ENERGY_REMOVAL
 	db  2, GUST_OF_WIND
 	db  3, HEAL_POWDER
@@ -311,8 +311,8 @@ RainDancerCardList: ; 1b2e8 (6:72e8)
 	db  2, LAPRAS
 	db  2, PROFESSOR_ELM
 	db  1, POKEMON_BREEDER
-	db  1, ENERGY_AMPLIFER
-	db  1, SUPER_ENERGY_AMPLIFER
+	db  1, ENERGY_AMPLIFIER
+	db  1, ENERGY_AMPLIFIER
 	db  2, ENERGY_REMOVAL
 	db  1, THOUGHT_WAVE_MACHINE
 	db  2, DOUBLE_GUST
@@ -395,7 +395,7 @@ YellowFlashCardList: ; 1b371 (6:7371)
 	db  1, ZAPDOS_LV40
 	db  1, ZAPDOS_LV64
 	db  3, EEVEE
-	db  1, ENERGY_AMPLIFER
+	db  1, ENERGY_AMPLIFIER
 	db  2, ENERGY_REMOVAL
 	db  2, POKE_BALL
 	db  2, POKEGEAR
@@ -417,7 +417,7 @@ ElectricShockCardList: ; 1b3a4 (6:73a4)
 	db  3, ELECTRODE_LV42
 	db  1, ZAPDOS_LV64
 	db  3, PORYGON
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  2, POKEGEAR
 	db  3, ENERGY_ARK
 	db  2, SUPER_ROD
@@ -554,7 +554,7 @@ FlowerPowerCardList: ; 1b498 (6:7498)
 	db  2, PROFESSOR_ELM
 	db  3, MARY
 	db  2, POKEMON_BREEDER
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  2, DOUBLE_GUST
 	db  2, HEAL_POWDER
 	db  0 ; end of list
@@ -604,8 +604,8 @@ DreamEaterHaunterCardList: ; 1b40f (6:740f)
 	db  2, MEOWTH_LV15
 	db  2, PROFESSOR_ELM
 	db  2, MARY
-	db  2, ENERGY_AMPLIFER
-	db  1, SUPER_ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
+	db  1, ENERGY_AMPLIFIER
 	db  2, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
 	db  3, MAX_REVIVE
@@ -621,7 +621,7 @@ ScavengingSlowbroCardList: ; 1b517 (6:7517)
 	db  2, JIGGLYPUFF_LV13
 	db  2, JIGGLYPUFF_LV14
 	db  2, EEVEE
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  3, ENERGY_REMOVAL
 	db  2, POKEGEAR
 	db  3, ENERGY_ARK
@@ -643,7 +643,7 @@ StrangePowerCardList: ; 1b536 (6:7536)
 	db  2, LICKITUNG
 	db  1, SNORLAX
 	db  2, POKEMON_TRADER
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  2, ENERGY_REMOVAL
 	db  1, THOUGHT_WAVE_MACHINE
 	db  2, POKEGEAR
@@ -682,7 +682,7 @@ LovelyNidoranCardList: ; 1b57e (6:757e)
 	db  2, PROFESSOR_ELM
 	db  3, POKEMON_TRADER
 	db  3, POKEMON_BREEDER
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  3, DOUBLE_GUST
 	db  1, COMPUTER_SEARCH
 	db  2, SUPER_ROD
@@ -812,7 +812,7 @@ ChariSaurCardList: ; 1b660 (6:7660)
 	db  2, MARY
 	db  3, POKEMON_TRADER
 	db  3, POKEMON_BREEDER
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  1, ENERGY_REMOVAL
 	db  2, HEAL_POWDER
 	db  0 ; end of list
@@ -860,8 +860,8 @@ FirePokemonCardList: ; 1b6a4 (6:76a4)
 	db  2, MARY
 	db  1, POKEMON_TRADER
 	db  1, POKEMON_BREEDER
-	db  1, ENERGY_AMPLIFER
-	db  1, SUPER_ENERGY_AMPLIFER
+	db  1, ENERGY_AMPLIFIER
+	db  1, ENERGY_AMPLIFIER
 	db  1, DOUBLE_GUST
 	db  1, GUST_OF_WIND
 	db  0 ; end of list
@@ -879,7 +879,7 @@ FireChargeCardList: ; 1b6d9 (6:76d9)
 	db  2, TAUROS
 	db  1, PROFESSOR_ELM
 	db  2, MARY
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  1, POKE_BALL
 	db  1, COMPUTER_SEARCH
 	db  2, ENERGY_ARK
@@ -1051,7 +1051,7 @@ WaterBeetleCardList: ; 1b7fc (6:77fc)
 	db  1, TAUROS
 	db  1, PROFESSOR_ELM
 	db  2, MARY
-	db  1, ENERGY_AMPLIFER
+	db  1, ENERGY_AMPLIFIER
 	db  1, ENERGY_ARK
 	db  1, DOUBLE_GUST
 	db  1, POKEGEAR
@@ -1071,12 +1071,12 @@ LegendaryMoltresCardList: ; 1b83b (6:783b)
 	db  3, MARY
 	db  2, MASTER_BALL
 	db  1, POKEMON_TRADER
-	db  1, ENERGY_AMPLIFER
-	db  1, SUPER_ENERGY_AMPLIFER
+	db  1, ENERGY_AMPLIFIER
+	db  1, ENERGY_AMPLIFIER
 	db  2, ENERGY_REMOVAL
 	db  2, DOUBLE_GUST
 	db  1, HEAL_POWDER
-	db  1, SUPER_HEAL_POWDER
+	db  1, MOOMOO_MILK
 	db  0 ; end of list
 
 LegendaryZapdosCardList: ; 1b860 (6:7860)
@@ -1090,7 +1090,7 @@ LegendaryZapdosCardList: ; 1b860 (6:7860)
 	db  2, ZAPDOS_LV68
 	db  3, EEVEE
 	db  4, MARY
-	db  2, ENERGY_AMPLIFER
+	db  2, ENERGY_AMPLIFIER
 	db  2, DOUBLE_GUST
 	db  3, POKEGEAR
 	db  3, HEAL_POWDER
@@ -1108,7 +1108,7 @@ LegendaryArticunoCardList: ; 1b87f (6:787f)
 	db  2, DITTO
 	db  2, PROFESSOR_ELM
 	db  2, POKEMON_TRADER
-	db  3, ENERGY_AMPLIFER
+	db  3, ENERGY_AMPLIFIER
 	db  3, DOUBLE_GUST
 	db  4, SUPER_SCOOP_UP
 	db  1, PROFESSOR_ELM
@@ -1130,8 +1130,8 @@ LegendaryDragoniteCardList: ; 1b89c (6:789c)
 	db  2, PROFESSOR_ELM
 	db  2, POKEMON_TRADER
 	db  2, POKEMON_BREEDER
-	db  1, ENERGY_AMPLIFER
-	db  1, SUPER_ENERGY_AMPLIFER
+	db  1, ENERGY_AMPLIFIER
+	db  1, ENERGY_AMPLIFIER
 	db  2, DOUBLE_GUST
 	db  1, PROFESSOR_ELM
 	db  0 ; end of list
