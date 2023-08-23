@@ -3357,7 +3357,7 @@ PokeGear_DeckCheck: ; 2f8e1 (b:78e1)
 
 PokeGear_PlayerSelection: ; 2f8ed (b:78ed)
 ; print text box
-	ldtx hl, ChooseATrainerToAddToYourDeckText
+	ldtx hl, ChooseATrainerToAddToYourHandText
 	call DrawWideTextBox_WaitForInput
 
 ; cap the number of cards to reorder up to
@@ -3390,7 +3390,7 @@ PokeGear_PlayerSelection: ; 2f8ed (b:78ed)
 
 ; display card list to order
 	bank1call InitAndDrawCardListScreenLayout
-	ldtx hl, ChooseATrainerToAddToYourDeckText
+	ldtx hl, ChooseATrainerToAddToYourHandText
 	ldtx de, Top7CardsText
 	bank1call SetCardListHeaderText
 
@@ -4872,7 +4872,7 @@ EnergyAmplifier_PlayerDeckSelection:
 	call ReturnCardToDeck
 
 ;
-	ldtx hl, ChooseUpTo3EnergyFromDeckText
+	ldtx hl, Choose3BasicEnergyFromDeckText
 	call DrawWideTextBox_WaitForInput
 
 

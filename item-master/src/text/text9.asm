@@ -725,216 +725,89 @@ PokemonTradingCardGameStaffText: ; 564db (15:64db)
 	line "                  Staff"
 	done
 
-ProducersText: ; 56518 (15:6518)
+NoPokemonWithDamageCountersOrAffectedByPoisonSleepParalysisOrConfusionText: ; 56518 (15:6518)
+	text "No damage counters or status conditions."
+	done
+
+Choose3BasicEnergyFromDeckText: ; 5658f (15:658f)
+	text "Choose up to 3 Basic Energy."
+	done
+
+ChooseCardToReturnToDeck: ; 5663a (15:663a)
+	text "Choose card to return to deck."
+	done
+
+Choose1BasicEnergyCardFromHandToReturnToDeckText: ; 566b5 (15:66b5)
+	text "Choose Basic Energy to return to deck."
+	done
+
+ForEachHeadsSearchDeckForBasicEnergyText: ; 5670b (15:670b)
+	text "No energy cards in your deck."
+	done
+
+FlipUntilFailAppears1EnergyForEachHeadsText: ; 56764 (15:6764) 
+	text "One energy per heads."
+	done
+
+NoEnergyAttachedToOppActivePokemonText: ; 5679d (15:679d) 
+	text "No energy attached to opponents Pokémon."
+	done
+
+RetrievePokemonIfTwoHeadsTrainerIfTwoTailsText: ; 567d9 (15:67d9) 
+	text "If two heads, Pokémon. If two tails, Trainer."
+	done
+
+ChooseFossilText: ; 56873 (15:6873) 
+	text "Choose fossil to play."
+	done
+
+FossilPokemonText: ;  568b1 (15:68b1)
+	text "Fossil Pokémon"
+	done
+
+ChooseFossilPokemonFromDeckText: ; 568ee (15:68ee)
+	text "Choose Fossil."
+	done
+
+RetrieveEvolutionCardIfHeadsBasicIfTailsText: ; 5692c (15:692c)
+	text "If heads, evolution. If tails, Basic."
+	done
+
+ChooseBasicPokemonText: ; 569c0 (15:69c0) 
+	text "Choose Basic Pokémon."
+	done
+
+BasicPokemonDeckText: ; 56a30 (15:6a30)
+	text "Basic Pokémon."
+	done
+
+ChooseBasicPokemonFromDeckText: ; 56a8c (15:6a8c)
+	text "Choose a Basic Pokémon."
+	done
+
+HealCheckOfHeadsXHealText: ; 56ac3 (15:6ac3)
+	text "Heal 20 times number of heads."
+	done
+
+IfHeadsDraw4CardsText: ; 56b3a (15:6b3a)
+	text "If heads draw 4 cards."
+	done
+
+ChooseATrainerToAddToYourHandText: ; 56b71 (15:6b71)
+	text "Choose a Trainer to add to your hand."
+	done
+
+ChooseCardsToPutBackText: ; 56c5e (15:6c5e)
+	text "Choose cards to put back."
+	done
+
+
+ChooseAPokemonToAddToYourDeckText: ; 56d12 (15:6d12)
 	text ""
-	line "                Producers"
-	line ""
-	line ""
-	line "           Tsunekazu Ishihara"
-	line "            Shinichi Nakamoto"
-	line "             Takehiro Izushi"
 	done
 
-DirectorText: ; 5658f (15:658f)
+ThereAreNoEnergyCardsInDeckThatYouCanShuffleText: ; 56d53 (15:6d53)
 	text ""
-	line "                Director"
-	line ""
-	line ""
-	line "                Koji Arai"
-	done
-
-ProgrammersText: ; 565c6 (15:65c6)
-	text ""
-	line "               Programmers"
-	line ""
-	line ""
-	line "             Masahiro Tobita"
-	line "             Satoshi Mikami"
-	line "             Masaki Tsumori"
-	done
-
-GBGraphicDesigners1Text: ; 5663a (15:663a)
-	text ""
-	line "           GB Graphic Designers"
-	line ""
-	line ""
-	line "             Kazuhiko Nonaka"
-	line "             Yasuhiro Fujii"
-	line "           Tsuguyuki Yamamoto"
-	done
-
-GBGraphicDesigners2Text: ; 566b5 (15:66b5)
-	text "            Yasuhiro Ichizawa"
-	line "              Miwa Matsuda"
-	line "             Norihiro Kanie"
-	done
-
-GBGraphicDesigners3Text: ; 5670b (15:670b)
-	text "             Kazushi Kousaka"
-	line "              Hiromi Sugiue"
-	line "           Katsuhisa Nishikawa"
-	done
-
-MusicText: ; 56764 (15:6764)
-	text ""
-	line "                  Music"
-	line ""
-	line ""
-	line "            Ichiro Shimakura"
-	done
-
-SoundEffectsText: ; 5679d (15:679d)
-	text ""
-	line "              Sound Effects"
-	line ""
-	line ""
-	line "              Masato Aihara"
-	done
-
-SoundDirectorText: ; 567d9 (15:67d9)
-	text ""
-	line "             Sound Director"
-	line ""
-	line ""
-	line "            Toshiaki Takimoto"
-	done
-
-SoundSystemSupportText: ; 56817 (15:6817)
-	text ""
-	line "          Sound System Support"
-	line ""
-	line ""
-	line "           Katsunori Takahashi"
-	line "               Hideki Oka"
-	done
-
-CardGameCreator1Text: ; 56873 (15:6873)
-	text ""
-	line "            Card Game Creator"
-	line ""
-	line ""
-	line "             Takumi Akabane"
-	done
-
-CardGameCreator2Text: ; 568b1 (15:68b1)
-	text ""
-	line "            Card Game Creator"
-	line ""
-	line ""
-	line "             Kouichi Oyama"
-	done
-
-CardGameCreator3Text: ; 568ee (15:68ee)
-	text ""
-	line "            Card Game Creator"
-	line ""
-	line ""
-	line "              Akihiko Miura"
-	done
-
-CardIllustrators1Text: ; 5692c (15:692c)
-	text ""
-	line "            Card Illustrators"
-	line ""
-	line ""
-	line "              Ken Sugimori"
-	line "             Mitsuhiro Arita"
-	line "             Keiji Kinebuchi"
-	line "             Kagemaru Himeno"
-	done
-
-CardIllustrators2Text: ; 569c0 (15:69c0)
-	text "             Tomoaki Imakuni"
-	line "               Miki Tanaka"
-	line "              Toshinao Aoki"
-	line "              Benimaru Ito"
-	done
-
-SpecialAppearances1Text: ; 56a30 (15:6a30)
-	text ""
-	line "         Special Appearances by"
-	line ""
-	line ""
-	line "             Hiroko Ohashi"
-	line "             Masako Uchiyama"
-	done
-
-SpecialAppearances2Text: ; 56a8c (15:6a8c)
-	text "             Kunimi Kawamura"
-	line "                Imakuni?"
-	done
-
-USCoordination1Text: ; 56ac3 (15:6ac3)
-	text ""
-	line "             US COORDINATION"
-	line "           NINTENDO OF AMERICA"
-	line ""
-	line ""
-	line "               GAIL TILDEN"
-	line "              HIRO NAKAMURA"
-	done
-
-USCoordination2Text: ; 56b3a (15:6b3a)
-	text "              KENJI OKUBO"
-	line "             WILLIAM TRINEN"
-	done
-
-USCoordination3Text: ; 56b71 (15:6b71)
-	text ""
-	line "             US COORDINATION"
-	line "           Wizards of the Coast"
-	line "          Pokémon Templating Team"
-	line ""
-	line ""
-	line "            Robert Gutschera"
-	line "             Jessica Beaven"
-	done
-
-USCoordination4Text: ; 56c0d (15:6c0d)
-	text "             Paul Peterson"
-	line "            Michael G. Ryan"
-	line "               Tom Wylie"
-	done
-
-TranslationDraftText: ; 56c5e (15:6c5e)
-	text ""
-	line "            TRANSLATION/DRAFT"
-	line ""
-	line ""
-	line "               BILL RITCH"
-	done
-
-MasteringText: ; 56c9a (15:6c9a)
-	text ""
-	line "                Mastering"
-	line ""
-	line ""
-	line "             Tetsuya Komatsu"
-	done
-
-ManualCreationText: ; 56cd5 (15:6cd5)
-	text ""
-	line "             Manual Creation"
-	line ""
-	line ""
-	line "              Haruki Mitani"
-	done
-
-ManualIllustrationsText: ; 56d12 (15:6d12)
-	text ""
-	line "           Manual Illustrations"
-	line ""
-	line ""
-	line "             Kagemaru Himeno"
-	done
-
-PokemonOriginalStoryText: ; 56d53 (15:6d53)
-	text ""
-	line "          Pokémon Original Story"
-	line ""
-	line ""
-	line "             Satoshi Tajiri"
-	line ""
 	done
 
 CreatedInCooperationWithText: ; 56d95 (15:6d95)

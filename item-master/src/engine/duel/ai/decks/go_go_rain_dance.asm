@@ -63,8 +63,8 @@ AIActionTable_GoGoRainDance:
 	db $00
 
 .list_prize
-	db GAMBLER
-	db ENERGY_RETRIEVAL
+	db PROFESSOR_ELM
+	db ENERGY_AMPLIFIER
 	db SUPER_ENERGY_RETRIEVAL
 	db BLASTOISE
 	db $00

@@ -2284,63 +2284,63 @@ PokeBallCardGfx::
 	INCBIN "gfx/cards/pokeball.2bpp"
 	INCBIN "gfx/cards/pokeball.pal"
 
-MasterBallCardGfx:
+MasterBallCardGfx::
 	INCBIN "gfx/cards/masterball.2bpp"
 	INCBIN "gfx/cards/masterball.pal"
 
-MaxReviveCardGfx:
+MaxReviveCardGfx::
 	INCBIN "gfx/cards/maxrevive.2bpp"
 	INCBIN "gfx/cards/maxrevive.pal"
 
-EnergyChargeCardGfx:
+EnergyChargeCardGfx::
 	INCBIN "gfx/cards/energycharge.2bpp"
 	INCBIN "gfx/cards/energycharge.pal"
 
-MaryCardGfx:
+MaryCardGfx::
 	INCBIN "gfx/cards/mary.2bpp"
 	INCBIN "gfx/cards/mary.pal"
 
-PokeGearCardGfx:
+PokeGearCardGfx::
 	INCBIN "gfx/cards/pokegear.2bpp"
 	INCBIN "gfx/cards/pokegear.pal"
 
-SuperEnergyRetrievalCardGfx:
+SuperEnergyRetrievalCardGfx::
 	INCBIN "gfx/cards/superenergyretrieval.2bpp"
 	INCBIN "gfx/cards/superenergyretrieval.pal"
 
-BillsTeleporterCardGfx:
+BillsTeleporterCardGfx::
 	INCBIN "gfx/cards/billsteleporter.2bpp"
 	INCBIN "gfx/cards/billsteleporter.pal"
 
-NewPokedexCardGfx:
+NewPokedexCardGfx::
 	INCBIN "gfx/cards/newpokedex.2bpp"
 	INCBIN "gfx/cards/newpokedex.pal"
 
-ProfessorElmCardGfx:
+ProfessorElmCardGfx::
 	INCBIN "gfx/cards/professorelm.2bpp"
 	INCBIN "gfx/cards/professorelm.pal"
 
-SuperScoopUpCardGfx:
+SuperScoopUpCardGfx::
 	INCBIN "gfx/cards/superscoopup.2bpp"
 	INCBIN "gfx/cards/superscoopup.pal"
 
-DoubleGustCardGfx:
+DoubleGustCardGfx::
 	INCBIN "gfx/cards/doublegust.2bpp"
 	INCBIN "gfx/cards/doublegust.pal"
 
-MooMooMilkCardGfx:
+MooMooMilkCardGfx::
 	INCBIN "gfx/cards/moomoomilk.2bpp"
 	INCBIN "gfx/cards/moomoomilk.pal"
 
-PokemonMarchCardGfx:
+PokemonMarchCardGfx::
 	INCBIN "gfx/cards/pokemonmarch.2bpp"
 	INCBIN "gfx/cards/pokemonmarch.pal"
 
-SuperRodCardGfx:
+SuperRodCardGfx::
 	INCBIN "gfx/cards/superrod.2bpp"
 	INCBIN "gfx/cards/superrod.pal"
 
-FossilEggCardGfx:
+FossilEggCardGfx::
 	INCBIN "gfx/cards/fossilegg.2bpp"
 	INCBIN "gfx/cards/fossilegg.pal"
 
@@ -2348,35 +2348,35 @@ FossilEggCardGfx:
 
 SECTION "Card Gfx 11", ROMX
 
-HyperDevolutionSprayCardGfx:
+HyperDevolutionSprayCardGfx::
 	INCBIN "gfx/cards/hyperdevolutionspray.2bpp"
 	INCBIN "gfx/cards/hyperdevolutionspray.pal"
 
-EnergyArkCardGfx:
+EnergyArkCardGfx::
 	INCBIN "gfx/cards/energyark.2bpp"
 	INCBIN "gfx/cards/energyark.pal"
 
-PokemonBreederFieldsCardGfx:
+PokemonBreederFieldsCardGfx::
 	INCBIN "gfx/cards/pokemonbreederfields.2bpp"
 	INCBIN "gfx/cards/pokemonbreederfields.pal"
 
-OldRodCardGfx:
+OldRodCardGfx::
 	INCBIN "gfx/cards/oldrod.2bpp"
 	INCBIN "gfx/cards/oldrod.pal"
 
-ThoughtWaveMachineCardGfx:
+ThoughtWaveMachineCardGfx::
 	INCBIN "gfx/cards/thoughtwavemachine.2bpp"
 	INCBIN "gfx/cards/thoughtwavemachine.pal"
 
-EnergyAmplifierCardGfx:
+EnergyAmplifierCardGfx::
 	INCBIN "gfx/cards/energyamplifier.2bpp"
 	INCBIN "gfx/cards/energyamplifier.pal"
 
-TeamRocketsEvilDeedsCardGfx:
+TeamRocketsEvilDeedsCardGfx::
 	INCBIN "gfx/cards/teamrocketsevildeeds.2bpp"
 	INCBIN "gfx/cards/teamrocketsevildeeds.pal"
 
-HealPowderCardGfx:
+HealPowderCardGfx::
 	INCBIN "gfx/cards/healpowder.2bpp"
 	INCBIN "gfx/cards/healpowder.pal"
 
@@ -2403,3 +2403,7 @@ PokemonTraderCardGfx::
 PokemonBreederCardGfx::
 	INCBIN "gfx/cards/pokemonbreeder.2bpp"
 	INCBIN "gfx/cards/pokemonbreeder.pal"
+
+MysteriousFossilCardGfx:: ; eaa70 (3a:6a70)
+	INCBIN "gfx/cards/mysteriousfossil.2bpp"
+	INCBIN "gfx/cards/mysteriousfossil.pal"

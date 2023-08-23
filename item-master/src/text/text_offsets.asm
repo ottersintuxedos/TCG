@@ -1971,40 +1971,6 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer Text07af                                           ; 0x07af
 	textpointer Text07b0                                           ; 0x07b0
 	textpointer PokemonTradingCardGameStaffText                    ; 0x07b1
-	textpointer ProducersText                                      ; 0x07b2
-	textpointer DirectorText                                       ; 0x07b3
-	textpointer ProgrammersText                                    ; 0x07b4
-	textpointer GBGraphicDesigners1Text                            ; 0x07b5
-	textpointer GBGraphicDesigners2Text                            ; 0x07b6
-	textpointer GBGraphicDesigners3Text                            ; 0x07b7
-	textpointer MusicText                                          ; 0x07b8
-	textpointer SoundEffectsText                                   ; 0x07b9
-	textpointer SoundDirectorText                                  ; 0x07ba
-	textpointer SoundSystemSupportText                             ; 0x07bb
-	textpointer CardGameCreator1Text                               ; 0x07bc
-	textpointer CardGameCreator2Text                               ; 0x07bd
-	textpointer CardGameCreator3Text                               ; 0x07be
-	textpointer CardIllustrators1Text                              ; 0x07bf
-	textpointer CardIllustrators2Text                              ; 0x07c0
-	textpointer SpecialAppearances1Text                            ; 0x07c1
-	textpointer SpecialAppearances2Text                            ; 0x07c2
-	textpointer USCoordination1Text                                ; 0x07c3
-	textpointer USCoordination2Text                                ; 0x07c4
-	textpointer USCoordination3Text                                ; 0x07c5
-	textpointer USCoordination4Text                                ; 0x07c6
-	textpointer TranslationDraftText                               ; 0x07c7
-	textpointer MasteringText                                      ; 0x07c8
-	textpointer ManualCreationText                                 ; 0x07c9
-	textpointer ManualIllustrationsText                            ; 0x07ca
-	textpointer PokemonOriginalStoryText                           ; 0x07cb
-	textpointer CreatedInCooperationWithText                       ; 0x07cc
-	textpointer WithCooperation1Text                               ; 0x07cd
-	textpointer WithCooperation2Text                               ; 0x07ce
-	textpointer WithCooperation3Text                               ; 0x07cf
-	textpointer ProjectManagerText                                 ; 0x07d0
-	textpointer SupervisorText                                     ; 0x07d1
-	textpointer ExecutiveProducerText                              ; 0x07d2
-	textpointer CreatedByText                                      ; 0x07d3
 	textpointer ChallengeMachineText                               ; 0x07d4
 	textpointer PlayersScoreText                                   ; 0x07d5
 	textpointer Defeated5OpponentsXTimesText                       ; 0x07d6
@@ -2922,7 +2888,9 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer DoubleAttackX40Description                          ; 0x0b66
 	textpointer DragoniteDescription                                ; 0x0b67
 	textpointer PokeBallName										; 0x0b68			
-	textpointer PokeBallDescription									; 0x0b69				
+	textpointer PokeBallDescription									; 0x0b69
+	textpointer MasterBallName
+	textpointer MasterBallDescription				
 	textpointer MaxReviveName										; 0x0b6a			
 	textpointer MaxReviveDescription								; 0x0b6b					
 	textpointer EnergyChargeName									; 0x0b6c				
@@ -2981,3 +2949,25 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer PokemonBreederDescription                           ; 0x0ba2
 	textpointer MysteriousFossilDescription                         ; 0x0ba3
 	textpointer MysteriousFossilDescriptionCont                     ; 0x0ba4
+	textpointer Choose3BasicEnergyFromDeckText
+	textpointer ChooseCardToReturnToDeck
+	textpointer Choose1BasicEnergyCardFromHandToReturnToDeckText
+	textpointer ThereAreNoEnergyCardsInDeckThatYouCanShuffleText
+	textpointer FlipUntilFailAppears1EnergyForEachHeadsText
+	textpointer NoEnergyAttachedToOppActivePokemonText
+	textpointer RetrievePokemonIfTwoHeadsTrainerIfTwoTailsText
+	textpointer ForEachHeadsSearchDeckForBasicEnergyText
+	textpointer ChooseFossilText
+	textpointer FossilPokemonText
+	textpointer ChooseFossilPokemonFromDeckText
+	textpointer RetrieveEvolutionCardIfHeadsBasicIfTailsText
+	textpointer ChooseBasicPokemonText
+	textpointer BasicPokemonDeckText
+	textpointer ChooseBasicPokemonFromDeckText
+	textpointer HealCheckOfHeadsXHealText
+	textpointer IfHeadsDraw4CardsText
+	textpointer ChooseATrainerToAddToYourHandText
+	textpointer ChooseAPokemonToAddToYourDeckText
+	textpointer ChooseCardsToPutBackText
+	textpointer NoPokemonWithDamageCountersOrAffectedByPoisonSleepParalysisOrConfusionText
+

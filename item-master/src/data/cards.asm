@@ -9860,7 +9860,7 @@ MasterBallCard: ; 33e05 (c:7e05)
 	gfx MasterBallCardGfx ; gfx
 	tx MasterBallName ; name
 	db DIAMOND ; rarity
-	db REVELATION | NONE ; sets
+	db LABORATORY | NONE ; sets
 	db MASTER_BALL
 	dw MasterBallEffectCommands ; effect commands
 	tx MasterBallDescription ; description
@@ -9871,7 +9871,7 @@ MaxReviveCard: ; 33e05 (c:7e05)
 	gfx MaxReviveCardGfx ; gfx
 	tx MaxReviveName ; name
 	db DIAMOND ; rarity
-	db DISCOVERY | NONE ; sets
+	db EVOLUTION | NONE ; sets
 	db MAX_REVIVE
 	dw MaxReviveEffectCommands ; effect commands
 	tx MaxReviveDescription ; description
@@ -9882,7 +9882,7 @@ EnergyChargeCard: ; 33e05 (c:7e05)
 	gfx EnergyChargeCardGfx ; gfx
 	tx EnergyChargeName ; name
 	db STAR ; rarity
-	db REVELATION | NONE ; sets
+	db COLOSSEUM | NONE ; sets
 	db ENERGY_CHARGE
 	dw EnergyChargeEffectCommands ; effect commands
 	tx EnergyChargeDescription ; description
@@ -9893,7 +9893,7 @@ MaryCard: ; 33e05 (c:7e05)
 	gfx MaryCardGfx ; gfx
 	tx MaryName ; name
 	db STAR ; rarity
-	db DISCOVERY | NONE ; sets
+	db COLOSSEUM | NONE ; sets
 	db 
 	dw MaryEffectCommands ; effect commands
 	tx MaryDescription ; description
@@ -9904,8 +9904,8 @@ PokeGearCard: ; 33e05 (c:7e05)
 	gfx PokeGearCardGfx ; gfx
 	tx PokeGearName ; name
 	db STAR ; rarity
-	db GENESIS | NONE ; sets
-	db POKE_GEAR
+	db LABORATORY | NONE ; sets
+	db POKEGEAR
 	dw PokeGearEffectCommands ; effect commands
 	tx PokeGearDescription ; description
 	dw NONE ; description (cont)
@@ -9915,8 +9915,8 @@ SuperEnergyRetrievalCard: ; 33e05 (c:7e05)
 	gfx SuperEnergyRetrievalCardGfx ; gfx
 	tx SuperEnergyRetrievalName ; name
 	db STAR ; rarity
-	db DISCOVERY | NONE ; sets
-	db SUPERENERGY_RETRIEVAL
+	db EVOLUTION | NONE ; sets
+	db SUPER_ENERGY_RETRIEVAL
 	dw SuperEnergyRetrievalEffectCommands ; effect commands
 	tx SuperEnergyRetrievalDescription ; description
 	dw NONE ; description (cont)
@@ -9926,7 +9926,7 @@ BillsTeleporterCard: ; 33e05 (c:7e05)
 	gfx BillsTeleporterCardGfx ; gfx
 	tx BillsTeleporterName ; name
 	db DIAMOND ; rarity
-	db DISCOVERY | NONE ; sets
+	db LABORATORY | NONE ; sets
 	db BILLS_TELEPORTER
 	dw BillsTeleporterEffectCommands ; effect commands
 	tx BillsTeleporterDescription ; description
@@ -9937,7 +9937,7 @@ NewPokedexCard: ; 33e05 (c:7e05)
 	gfx NewPokedexCardGfx ; gfx
 	tx NewPokedexName ; name
 	db DIAMOND ; rarity
-	db GENESIS | NONE ; sets
+	db EVOLUTION | NONE ; sets
 	db NEW_POKEDEX
 	dw NewPokedexEffectCommands ; effect commands
 	tx NewPokedexDescription ; description
@@ -9948,10 +9948,10 @@ ProfessorElmCard: ; 33e05 (c:7e05)
 	gfx ProfessorElmCardGfx ; gfx
 	tx ProfessorElmName ; name
 	db DIAMOND ; rarity
-	db GENESIS | NONE ; sets
+	db COLOSSEUM | NONE ; sets
 	db PROFESSOR_ELM
 	dw ProfessorElmEffectCommands ; effect commands
-	tx EeeeeeekDescription ; description
+	tx ProfessorElmDescription ; description
 	dw NONE ; description (cont)
  
 SuperScoopUpCard: ; 33e05 (c:7e05)
@@ -9959,8 +9959,8 @@ SuperScoopUpCard: ; 33e05 (c:7e05)
 	gfx SuperScoopUpCardGfx ; gfx
 	tx SuperScoopUpName ; name
 	db DIAMOND ; rarity
-	db REVELATION | NONE ; sets
-	db SUPERSCOOP_UP
+	db EVOLUTION | NONE ; sets
+	db SUPER_SCOOP_UP
 	dw SuperScoopUpEffectCommands ; effect commands
 	tx SuperScoopUpDescription ; description
 	dw NONE ; description (cont)
@@ -9970,7 +9970,7 @@ DoubleGustCard: ; 33e05 (c:7e05)
 	gfx DoubleGustCardGfx ; gfx
 	tx DoubleGustName ; name
 	db CIRCLE ; rarity
-	db REVELATION | NONE ; sets
+	db EVOLUTION | NONE ; sets
 	db DOUBLE_GUST
 	dw DoubleGustEffectCommands ; effect commands
 	tx DoubleGustDescription ; description
@@ -9981,7 +9981,7 @@ MooMooMilkCard: ; 33e05 (c:7e05)
 	gfx MooMooMilkCardGfx ; gfx
 	tx MooMooMilkName ; name
 	db CIRCLE ; rarity
-	db DISCOVERY | NONE ; sets
+	db COLOSSEUM | NONE ; sets
 	db MOOMOO_MILK
 	dw MooMooMilkEffectCommands ; effect commands
 	tx MooMooMilkDescription ; description
@@ -9992,7 +9992,7 @@ PokemonMarchCard: ; 33e05 (c:7e05)
 	gfx PokemonMarchCardGfx ; gfx
 	tx PokemonMarchName ; name
 	db CIRCLE ; rarity
-	db GENESIS | NONE ; sets
+	db MYSTERY | NONE ; sets
 	db POKEMON_MARCH
 	dw PokemonMarchEffectCommands ; effect commands
 	tx PokemonMarchDescription ; description
@@ -10003,7 +10003,7 @@ SuperRodCard: ; 33e05 (c:7e05)
 	gfx SuperRodCardGfx ; gfx
 	tx SuperRodName ; name
 	db DIAMOND ; rarity
-	db DISCOVERY | NONE ; sets
+	db EVOLUTION | NONE ; sets
 	db SUPER_ROD
 	dw SuperRodEffectCommands ; effect commands
 	tx SuperRodDescription ; description
@@ -10014,19 +10014,19 @@ FossilEggCard: ; 33e05 (c:7e05)
 	gfx FossilEggCardGfx ; gfx
 	tx FossilEggName ; name
 	db DIAMOND ; rarity
-	db REVELATION | NONE ; sets
+	db MYSTERY | NONE ; sets
 	db FOSSIL_EGG
 	dw FossilEggEffectCommands ; effect commands
 	tx FossilEggDescription ; description
-	tx FossilEggDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
  
 HyperDevolutionSprayCard: ; 33e05 (c:7e05)
 	db TYPE_TRAINER ; type
 	gfx HyperDevolutionSprayCardGfx ; gfx
 	tx HyperDevolutionSprayName ; name
 	db DIAMOND ; rarity
-	db REVELATION | NONE ; sets
-	db HYPERDEVOLUTION_SPRAY
+	db EVOLUTION | NONE ; sets
+	db HYPER_DEVOLUTION_SPRAY
 	dw HyperDevolutionSprayEffectCommands ; effect commands
 	tx HyperDevolutionSprayDescription ; description
 	dw NONE ; description (cont)
@@ -10036,7 +10036,7 @@ EnergyArkCard: ; 33e05 (c:7e05)
 	gfx EnergyArkCardGfx ; gfx
 	tx EnergyArkName ; name
 	db CIRCLE ; rarity
-	db DISCOVERY | NONE ; sets
+	db MYSTERY | NONE ; sets
 	db ENERGY_ARK
 	dw EnergyArkEffectCommands ; effect commands
 	tx EnergyArkDescription ; description
@@ -10047,8 +10047,8 @@ PokemonBreederFieldsCard: ; 33e05 (c:7e05)
 	gfx PokemonBreederFieldsCardGfx ; gfx
 	tx PokemonBreederFieldsName ; name
 	db DIAMOND ; rarity
-	db DISCOVERY | NONE ; sets
-	db POKEMONBREEDER_FIELDS
+	db COLOSSEUM | NONE ; sets
+	db POKEMON_BREEDER_FIELDS
 	dw PokemonBreederFieldsEffectCommands ; effect commands
 	tx PokemonBreederFieldsDescription ; description
 	dw NONE ; description (cont)
@@ -10058,7 +10058,7 @@ OldRodCard: ; 33e05 (c:7e05)
 	gfx OldRodCardGfx ; gfx
 	tx OldRodName ; name
 	db CIRCLE ; rarity
-	db GENESIS | NONE ; sets
+	db LABORATORY | NONE ; sets
 	db OLD_ROD
 	dw OldRodEffectCommands ; effect commands
 	tx OldRodDescription ; description
@@ -10069,32 +10069,21 @@ ThoughtWaveMachineCard: ; 33e05 (c:7e05)
 	gfx ThoughtWaveMachineCardGfx ; gfx
 	tx ThoughtWaveMachineName ; name
 	db STAR ; rarity
-	db REVELATION | NONE ; sets
-	db THOUGHTWAVE_MACHINE
+	db MYSTERY | NONE ; sets
+	db THOUGHT_WAVE_MACHINE
 	dw ThoughtWaveMachineEffectCommands ; effect commands
 	tx ThoughtWaveMachineDescription ; description
-	tx ThoughtWaveMachineDescriptionCont ; description (cont)
+	dw NONE ; description (cont)
  
 EnergyAmplifierCard: ; 33e05 (c:7e05)
 	db TYPE_TRAINER ; type
 	gfx EnergyAmplifierCardGfx ; gfx
 	tx EnergyAmplifierName ; name
 	db DIAMOND ; rarity
-	db REVELATION | NONE ; sets
+	db MYSTERY | NONE ; sets
 	db ENERGY_AMPLIFIER
 	dw EnergyAmplifierEffectCommands ; effect commands
 	tx EnergyAmplifierDescription ; description
-	tx EnergyAmplifierDescriptionCont ; description (cont)
- 
-MagnifierCard: ; 33e05 (c:7e05)
-	db TYPE_TRAINER ; type
-	gfx MagnifierCardGfx ; gfx
-	tx MagnifierName ; name
-	db DIAMOND ; rarity
-	db DISCOVERY | NONE ; sets
-	db 
-	dw MagnifierEffectCommands ; effect commands
-	tx MagnifierDescription ; description
 	dw NONE ; description (cont)
  
 TeamRocketsEvilDeedsCard: ; 33e05 (c:7e05)
@@ -10102,8 +10091,8 @@ TeamRocketsEvilDeedsCard: ; 33e05 (c:7e05)
 	gfx TeamRocketsEvilDeedsCardGfx ; gfx
 	tx TeamRocketsEvilDeedsName ; name
 	db DIAMOND ; rarity
-	db DISCOVERY | NONE ; sets
-	db TEAMROCKETSEVIL_DEEDS
+	db LABORATORY | NONE ; sets
+	db TEAM_ROCKETS_EVIL_DEEDS
 	dw TeamRocketsEvilDeedsEffectCommands ; effect commands
 	tx TeamRocketsEvilDeedsDescription ; description
 	dw NONE ; description (cont)
@@ -10113,7 +10102,7 @@ HealPowderCard: ; 33e05 (c:7e05)
 	gfx HealPowderCardGfx ; gfx
 	tx HealPowderName ; name
 	db CIRCLE ; rarity
-	db GENESIS | NONE ; sets
+	db COLOSSEUM | NONE ; sets
 	db HEAL_POWDER
 	dw HealPowderEffectCommands ; effect commands
 	tx HealPowderDescription ; description

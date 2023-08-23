@@ -1866,7 +1866,6 @@ ApplyDamageModifiers_DamageToTarget:
 	xor a
 	ld [wDamageEffectiveness], a
 	call HandleDoubleDamageSubstatus
-	jr .check_pluspower_and_defender
 .safe
 	call HandleDoubleDamageSubstatus
 	ld a, e
@@ -1890,23 +1889,12 @@ ApplyDamageModifiers_DamageToTarget:
 	call GetArenaCardResistance
 	call SwapTurn
 	and b
-	jr z, .check_pluspower_and_defender ; jump if not resistant
 	ld hl, -30
 	add hl, de
 	ld e, l
 	ld d, h
 	ld hl, wDamageEffectiveness
 	set RESISTANCE, [hl]
-.check_pluspower_and_defender
-	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedPluspower
-	call SwapTurn
-	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedDefender
-	call HandleDamageReduction
-	bit 7, d
-	jr z, .no_underflow
-	ld de, 0
 .no_underflow
 	call SwapTurn
 	ret
@@ -1963,46 +1951,10 @@ ApplyDamageModifiers_DamageToSelf:
 	set RESISTANCE, [hl]
 .not_resistant
 	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedPluspower
-	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedDefender
 	bit 7, d ; test for underflow
 	ret z
 .no_damage
 	ld de, 0
-	ret
-
-; increases de by 10 points for each Pluspower found in location b
-ApplyAttachedPluspower:
-	push de
-	call GetTurnDuelistVariable
-	ld de, PLUSPOWER
-	call CountCardIDInLocation
-	ld l, a
-	ld h, 10
-	call HtimesL
-	pop de
-	add hl, de
-	ld e, l
-	ld d, h
-	ret
-
-; reduces de by 20 points for each Defender found in location b
-ApplyAttachedDefender:
-	push de
-	call GetTurnDuelistVariable
-	ld de, DEFENDER
-	call CountCardIDInLocation
-	ld l, a
-	ld h, 20
-	call HtimesL
-	pop de
-	ld a, e
-	sub l
-	ld e, a
-	ld a, d
-	sbc h
-	ld d, a
 	ret
 
 ; hl: address to subtract HP from
@@ -2121,12 +2073,10 @@ DealDamageToPlayAreaPokemon:
 	or a
 	jr z, .turn_swapped
 	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedPluspower
 	jr .next
 .turn_swapped
 	call SwapTurn
 	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedPluspower
 	call SwapTurn
 .next
 	ld a, [wLoadedAttackCategory]
@@ -2135,7 +2085,6 @@ DealDamageToPlayAreaPokemon:
 	ld a, [wTempPlayAreaLocation_cceb]
 	or CARD_LOCATION_PLAY_AREA
 	ld b, a
-	call ApplyAttachedDefender
 .skip_defender
 	ld a, [wTempPlayAreaLocation_cceb]
 	or a ; cp PLAY_AREA_ARENA

@@ -66,7 +66,7 @@ AIActionTable_LegendaryDragonite:
 	db $00
 
 .list_prize
-	db GAMBLER
+	db PROFESSOR_ELM
 	db DRAGONITE_LV41
 	db KANGASKHAN
 	db $00

@@ -372,7 +372,7 @@ AIDecideWhetherToRetreat:
 	pop de
 	cp MYSTERIOUS_FOSSIL
 	jr z, .loop_ko_2
-	cp CLEFAIRY_DOLL
+	cp MYSTERIOUS_FOSSIL
 	jr z, .loop_ko_2
 	ld a, e
 	ldh [hTempPlayAreaLocation_ff9d], a
@@ -393,9 +393,9 @@ AIDecideWhetherToRetreat:
 	call GetCardIDFromDeckIndex
 	ld a, e
 	cp MYSTERIOUS_FOSSIL
-	jr z, .mysterious_fossil_or_clefairy_doll
-	cp CLEFAIRY_DOLL
-	jr z, .mysterious_fossil_or_clefairy_doll
+	jr z, .mysterious_fossil_or_MYSTERIOUS_FOSSIL
+	cp MYSTERIOUS_FOSSIL
+	jr z, .mysterious_fossil_or_MYSTERIOUS_FOSSIL
 
 ; if wAIScore is at least 131, set carry
 	ld a, [wAIScore]
@@ -412,7 +412,7 @@ AIDecideWhetherToRetreat:
 ; either Mysterious Fossil or Clefairy Doll
 ; and there's a bench Pokémon who is not KO'd
 ; by defending Pokémon and can damage it
-.mysterious_fossil_or_clefairy_doll
+.mysterious_fossil_or_MYSTERIOUS_FOSSIL
 	ld e, 0
 .loop_ko_3
 	inc e
@@ -699,17 +699,17 @@ AIDecideBenchPokemonToSwitchTo:
 .asm_15cf0
 	ld a, [wLoadedCard1Unknown2]
 	cp $01
-	jr nz, .mysterious_fossil_or_clefairy_doll
+	jr nz, .mysterious_fossil_or_MYSTERIOUS_FOSSIL
 	ld a, 2
 	call SubFromAIScore
 
 ; if card is Mysterious Fossil or Clefairy Doll,
 ; lower AI score
-.mysterious_fossil_or_clefairy_doll
+.mysterious_fossil_or_MYSTERIOUS_FOSSIL
 	ld a, [wLoadedCard1ID]
 	cp MYSTERIOUS_FOSSIL
 	jr z, .lower_score_2
-	cp CLEFAIRY_DOLL
+	cp MYSTERIOUS_FOSSIL
 	jr nz, .ai_score_bonus
 .lower_score_2
 	ld a, 10
@@ -825,9 +825,9 @@ AITryToRetreat:
 	call GetCardIDFromDeckIndex
 	ld a, e
 	cp MYSTERIOUS_FOSSIL
-	jp z, .mysterious_fossil_or_clefairy_doll
-	cp CLEFAIRY_DOLL
-	jp z, .mysterious_fossil_or_clefairy_doll
+	jp z, .mysterious_fossil_or_MYSTERIOUS_FOSSIL
+	cp MYSTERIOUS_FOSSIL
+	jp z, .mysterious_fossil_or_MYSTERIOUS_FOSSIL
 
 ; if card is Asleep or Paralyzed, set carry and exit
 ; else, load the status in hTemp_ffa0
@@ -983,7 +983,7 @@ AITryToRetreat:
 ; handle Mysterious Fossil and Clefairy Doll
 ; if there are bench Pokémon, use effect to discard card
 ; this is equivalent to using its Pokémon Power
-.mysterious_fossil_or_clefairy_doll
+.mysterious_fossil_or_MYSTERIOUS_FOSSIL
 	ld a, DUELVARS_NUMBER_OF_POKEMON_IN_PLAY_AREA
 	call GetTurnDuelistVariable
 	cp 2

@@ -2025,7 +2025,7 @@ ShuffleDeckAndDrawSevenCards:
 	push hl
 	push bc
 	call LoadCardDataToBuffer1_FromDeckIndex
-	call IsLoadedCard1BasicPokemon.skip_mysterious_fossil_clefairy_doll
+	call IsLoadedCard1BasicPokemon.skip_mysterious_fossil_MYSTERIOUS_FOSSIL
 	pop bc
 	pop hl
 	or b
@@ -2040,18 +2040,18 @@ ShuffleDeckAndDrawSevenCards:
 	ret
 
 ; return nc if the card at wLoadedCard1 is a basic Pokemon card
-; MYSTERIOUS_FOSSIL and CLEFAIRY_DOLL do count as basic Pokemon cards
+; MYSTERIOUS_FOSSIL and MYSTERIOUS_FOSSIL do count as basic Pokemon cards
 IsLoadedCard1BasicPokemon:
 	ld a, [wLoadedCard1ID]
 	cp MYSTERIOUS_FOSSIL
 	jr z, .basic
-	cp CLEFAIRY_DOLL
+	cp MYSTERIOUS_FOSSIL
 	jr z, .basic
 ;	fallthrough
 
 ; return nc if the card at wLoadedCard1 is a basic Pokemon card
-; MYSTERIOUS_FOSSIL and CLEFAIRY_DOLL do NOT count unless already checked
-.skip_mysterious_fossil_clefairy_doll
+; MYSTERIOUS_FOSSIL and MYSTERIOUS_FOSSIL do NOT count unless already checked
+.skip_mysterious_fossil_MYSTERIOUS_FOSSIL
 	ld a, [wLoadedCard1Type]
 	cp TYPE_ENERGY
 	jr nc, .energy_trainer_nonbasic
@@ -2068,7 +2068,7 @@ IsLoadedCard1BasicPokemon:
 	scf
 	ret
 
-.basic ; MYSTERIOUS_FOSSIL or CLEFAIRY_DOLL
+.basic ; MYSTERIOUS_FOSSIL or MYSTERIOUS_FOSSIL
 	ld a, $01
 	or a
 	ret ; nz
@@ -6805,9 +6805,7 @@ HandleBetweenTurnsEvents:
 	call IsArenaPokemonAsleepOrPoisoned
 	call SwapTurn
 	jr c, .something_to_handle
-	call DiscardAttachedPluspowers
 	call SwapTurn
-	call DiscardAttachedDefenders
 	call SwapTurn
 	ret
 
@@ -6852,7 +6850,6 @@ HandleBetweenTurnsEvents:
 	call WaitForWideTextBoxInput
 
 .discard_pluspower
-	call DiscardAttachedPluspowers
 	call SwapTurn
 	ld a, DUELVARS_ARENA_CARD
 	call GetTurnDuelistVariable
@@ -6867,36 +6864,9 @@ HandleBetweenTurnsEvents:
 	jr c, .asm_6c3a
 	call HandleSleepCheck
 .asm_6c3a
-	call DiscardAttachedDefenders
 	call SwapTurn
 	call Func_6e4c
 	ret
-
-; discard any PLUSPOWER attached to the turn holder's arena and/or bench Pokemon
-DiscardAttachedPluspowers:
-	ld a, DUELVARS_ARENA_CARD_ATTACHED_PLUSPOWER
-	call GetTurnDuelistVariable
-	ld e, MAX_PLAY_AREA_POKEMON
-	xor a
-.unattach_pluspower_loop
-	ld [hli], a
-	dec e
-	jr nz, .unattach_pluspower_loop
-	ld de, PLUSPOWER
-	jp MoveCardToDiscardPileIfInArena
-
-; discard any DEFENDER attached to the turn holder's arena and/or bench Pokemon
-DiscardAttachedDefenders:
-	ld a, DUELVARS_ARENA_CARD_ATTACHED_DEFENDER
-	call GetTurnDuelistVariable
-	ld e, MAX_PLAY_AREA_POKEMON
-	xor a
-.unattach_defender_loop
-	ld [hli], a
-	dec e
-	jr nz, .unattach_defender_loop
-	ld de, DEFENDER
-	jp MoveCardToDiscardPileIfInArena
 
 ; return carry if the turn holder's arena Pokemon card is asleep, poisoned, or double poisoned.
 ; also, if confused, paralyzed, or asleep, return the status condition in a.
@@ -7107,16 +7077,16 @@ ConvertSpecialTrainerCardToPokemon:
 	ret z ; return if the card is not in the arena or bench
 	ld a, e
 	cp MYSTERIOUS_FOSSIL
-	jr nz, .check_for_clefairy_doll
+	jr nz, .check_for_MYSTERIOUS_FOSSIL
 	ld a, d
 	cp $00 ; MYSTERIOUS_FOSSIL >> 8
 	jr z, .start_ram_data_overwrite
 	ret
-.check_for_clefairy_doll
-	cp CLEFAIRY_DOLL
+.check_for_MYSTERIOUS_FOSSIL
+	cp MYSTERIOUS_FOSSIL
 	ret nz
 	ld a, d
-	cp $00 ; CLEFAIRY_DOLL >> 8
+	cp $00 ; MYSTERIOUS_FOSSIL >> 8
 	ret nz
 .start_ram_data_overwrite
 	push de

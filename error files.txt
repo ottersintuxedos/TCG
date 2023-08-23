@@ -11,7 +11,7 @@ ai/retreat.asm
 ai/deck_ai.asm
 data/auto_deck_card_lists.asm
 duel/core.asm
-data/cards.asm
+data/cards.asm			/
 duel/effec_commands.asm
 macros/code.asm
 duel/effect_functions.asm

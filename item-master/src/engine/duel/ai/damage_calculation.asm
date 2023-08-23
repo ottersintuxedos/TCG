@@ -169,10 +169,8 @@ _CalculateDamage_VersusDefendingPokemon: ; 14462 (5:4462)
 	ldh a, [hTempPlayAreaLocation_ff9d]
 	add CARD_LOCATION_ARENA
 	ld b, a
-	call ApplyAttachedPluspower
 	call SwapTurn
 	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedDefender
 	call HandleDamageReduction
 	; test if de underflowed
 	bit 7, d
@@ -406,12 +404,10 @@ CalculateDamage_FromDefendingPokemon: ; 1458c (5:458c)
 	; apply pluspower and defender boosts
 	call SwapTurn
 	ld b, CARD_LOCATION_ARENA
-	call ApplyAttachedPluspower
 	call SwapTurn
 	ldh a, [hTempPlayAreaLocation_ff9d]
 	add CARD_LOCATION_ARENA
 	ld b, a
-	call ApplyAttachedDefender
 	ldh a, [hTempPlayAreaLocation_ff9d]
 	or a
 	call z, HandleDamageReduction
